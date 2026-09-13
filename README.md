@@ -212,10 +212,14 @@ The game credits **Sound Ideas® sound effects library**.
 **CD Audio → FLAC & MP3 Conversion:** `3 / 3` files converted\
 *Tools used:* **Windows Media Player Legacy**
 
-**OGG → OGG Conversion:** `0 / 3` files converted\
+**OGG → OGG Conversion:** 3 / 3` files converted\
 *Tools used:* No conversion needed.
 
 ## Data Formats
+**RBX → RBX Conversion:** `4 / 4` files converted (Not included in this repo)\
+*Tools used:* [rbx converter](./tools/rbx/rbx%20converter.html)\
+*Explanation:* `.rbx` files are archives that contain game assets. Since the files contained within them will already be preserved in the `raw files` folder, there is no need to duplicate the archive contents.
+
 **TXT → TODO Conversion:** `0 / 17` files converted\
 *Tools used:* 
 

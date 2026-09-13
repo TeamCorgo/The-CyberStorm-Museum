@@ -1,0 +1,462 @@
+<title>RBX Archive Extractor</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<style>
+:root{
+  --bg: #12161c;
+  --panel: #181d25;
+  --panel-2: #1e2530;
+  --line: #2a323f;
+  --text: #d8dee8;
+  --text-dim: #8993a4;
+  --text-faint: #5c6675;
+  --accent: #ff9f43;
+  --accent-dim: #6b4a24;
+  --ok: #6fcf97;
+  --warn: #e0b84b;
+  --err: #e0645f;
+  --mono: 'IBM Plex Mono', ui-monospace, 'Cascadia Code', Consolas, monospace;
+  --sans: 'IBM Plex Sans', ui-sans-serif, system-ui, sans-serif;
+}
+/* Dark-first tool aesthetic: this page commits to one look (a disassembler / hex-view
+   utility) on purpose, since the subject is a reverse-engineered binary archive format.
+   It still resolves to a legible palette regardless of host theme. */
+@media (prefers-color-scheme: light){
+  :root:not([data-theme="dark"]){
+    --bg: #eef0f3;
+    --panel: #ffffff;
+    --panel-2: #f4f5f7;
+    --line: #d8dce2;
+    --text: #1c222c;
+    --text-dim: #5b6472;
+    --text-faint: #8b93a1;
+    --accent: #c96a1a;
+    --accent-dim: #f0d9bd;
+  }
+}
+:root[data-theme="light"]{
+  --bg: #eef0f3;
+  --panel: #ffffff;
+  --panel-2: #f4f5f7;
+  --line: #d8dce2;
+  --text: #1c222c;
+  --text-dim: #5b6472;
+  --text-faint: #8b93a1;
+  --accent: #c96a1a;
+  --accent-dim: #f0d9bd;
+}
+*{box-sizing:border-box;}
+body{
+  margin:0; background:var(--bg); color:var(--text); font-family:var(--sans);
+  min-height:100vh; padding:32px 20px 64px;
+}
+.wrap{max-width:920px; margin:0 auto; display:flex; flex-direction:column; gap:22px;}
+
+header{display:flex; flex-direction:column; gap:6px;}
+.eyebrow{
+  font-family:var(--mono); font-size:11.5px; letter-spacing:.12em; text-transform:uppercase;
+  color:var(--accent);
+}
+h1{
+  font-family:var(--mono); font-weight:600; font-size:clamp(22px,4vw,30px);
+  margin:0; text-wrap:balance; letter-spacing:-.01em;
+}
+.sub{color:var(--text-dim); font-size:14.5px; line-height:1.55; max-width:62ch;}
+.sub code{font-family:var(--mono); font-size:.92em; background:var(--panel-2); padding:1px 5px; border-radius:4px; border:1px solid var(--line);}
+
+.panel{
+  background:var(--panel); border:1px solid var(--line); border-radius:10px;
+  padding:20px;
+}
+
+.drop{
+  border:1.5px dashed var(--line); border-radius:10px; padding:36px 20px;
+  display:flex; flex-direction:column; align-items:center; gap:10px; text-align:center;
+  cursor:pointer; transition:border-color .15s ease, background .15s ease;
+  background:var(--panel-2);
+}
+.drop:hover, .drop.drag{border-color:var(--accent); background:color-mix(in srgb, var(--accent) 6%, var(--panel-2));}
+.drop svg{width:30px; height:30px; stroke:var(--text-dim);}
+.drop .ttl{font-family:var(--mono); font-size:14px; font-weight:500;}
+.drop .hint{font-size:12.5px; color:var(--text-faint);}
+input[type=file]{display:none;}
+
+.filebar{
+  display:flex; align-items:center; justify-content:space-between; gap:12px;
+  font-family:var(--mono); font-size:13px; color:var(--text-dim);
+}
+.filebar b{color:var(--text); font-weight:500;}
+button.linklike{
+  background:none; border:none; color:var(--accent); font-family:var(--mono); font-size:12.5px;
+  cursor:pointer; padding:0; text-decoration:underline; text-underline-offset:2px;
+}
+
+.status{
+  font-family:var(--mono); font-size:13px; padding:10px 14px; border-radius:8px;
+  border:1px solid var(--line); background:var(--panel-2); color:var(--text-dim);
+  display:flex; align-items:center; gap:8px;
+}
+.status.err{border-color:color-mix(in srgb, var(--err) 55%, var(--line)); color:var(--err);}
+.status.ok{border-color:color-mix(in srgb, var(--ok) 45%, var(--line)); color:var(--ok);}
+.dot{width:7px; height:7px; border-radius:50%; background:currentColor; flex:none;}
+
+.metarow{display:flex; flex-wrap:wrap; gap:10px 26px; font-family:var(--mono); font-size:12.5px; color:var(--text-dim);}
+.metarow b{color:var(--text); font-weight:500;}
+
+.tablewrap{overflow-x:auto; border:1px solid var(--line); border-radius:10px;}
+table{border-collapse:collapse; width:100%; font-family:var(--mono); font-size:12.8px; min-width:520px;}
+thead th{
+  text-align:left; font-weight:500; color:var(--text-faint); font-size:11px; letter-spacing:.06em;
+  text-transform:uppercase; padding:10px 14px; border-bottom:1px solid var(--line); background:var(--panel-2);
+  position:sticky; top:0;
+}
+tbody td{padding:8px 14px; border-bottom:1px solid var(--line); color:var(--text); font-variant-numeric:tabular-nums;}
+tbody tr:last-child td{border-bottom:none;}
+tbody tr:hover{background:var(--panel-2);}
+td.num{text-align:right; color:var(--text-dim);}
+td.name{color:var(--text);}
+.tag{
+  display:inline-block; font-size:10.5px; font-family:var(--mono); padding:1px 6px; border-radius:4px;
+  border:1px solid var(--line); color:var(--text-faint); margin-left:6px;
+}
+.tag.hit{color:var(--ok); border-color:color-mix(in srgb, var(--ok) 50%, var(--line));}
+
+.actions{display:flex; align-items:center; gap:12px; flex-wrap:wrap;}
+button.primary{
+  font-family:var(--mono); font-size:13.5px; font-weight:500; letter-spacing:.01em;
+  background:var(--accent); color:#20140a; border:none; border-radius:8px;
+  padding:11px 20px; cursor:pointer; transition:filter .12s ease, transform .06s ease;
+}
+button.primary:hover{filter:brightness(1.08);}
+button.primary:active{transform:translateY(1px);}
+button.primary:disabled{opacity:.45; cursor:not-allowed; filter:none;}
+button.primary:focus-visible, .drop:focus-visible, button.linklike:focus-visible{
+  outline:2px solid var(--accent); outline-offset:2px;
+}
+.progress{
+  flex:1; min-width:160px; height:6px; border-radius:3px; background:var(--panel-2);
+  border:1px solid var(--line); overflow:hidden;
+}
+.progress > div{height:100%; width:0%; background:var(--accent); transition:width .12s ease;}
+
+details.notes{font-size:13px; color:var(--text-dim); line-height:1.6;}
+details.notes summary{cursor:pointer; font-family:var(--mono); font-size:12.5px; color:var(--text-faint); user-select:none;}
+details.notes summary:hover{color:var(--text-dim);}
+details.notes .body{margin-top:10px; display:flex; flex-direction:column; gap:8px;}
+details.notes code{font-family:var(--mono); background:var(--panel-2); padding:1px 5px; border-radius:4px; border:1px solid var(--line); font-size:.92em;}
+
+footer{font-family:var(--mono); font-size:11.5px; color:var(--text-faint); text-align:center; padding-top:8px;}
+
+@media (prefers-reduced-motion: reduce){
+  *{transition:none !important;}
+}
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Missionforce: Cyberstorm &middot; CYBDATAn.RBX</div>
+    <h1>RBX Archive Extractor</h1>
+    <p class="sub">
+      Unpacks the resource archive format used by <code>cstorm.exe</code> (name-table + offset entries,
+      each pointing to a 4-byte length prefix followed by raw data). Everything runs locally in your
+      browser — nothing is uploaded.
+    </p>
+  </header>
+
+  <div class="panel" style="display:flex; flex-direction:column; gap:16px;">
+    <div id="drop" class="drop" tabindex="0" role="button" aria-label="Choose an .RBX file">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="M7 8l5-5 5 5"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>
+      <div class="ttl">Drop a .RBX file here, or click to browse</div>
+      <div class="hint">e.g. CYBDATA1.RBX — CYBDATA4.RBX</div>
+      <input id="file" type="file" accept=".rbx,*/*">
+    </div>
+
+    <div id="filebar" class="filebar" hidden>
+      <span><b id="fname"></b> — <span id="fsize"></span></span>
+      <button class="linklike" id="clearBtn">choose a different file</button>
+    </div>
+
+    <div id="status" class="status" hidden><span class="dot"></span><span id="statusText"></span></div>
+
+    <div id="metarow" class="metarow" hidden></div>
+
+    <div id="tableSection" hidden>
+      <div class="tablewrap">
+        <table>
+          <thead><tr><th>Name</th><th style="text-align:right">Offset</th><th style="text-align:right">Size</th></tr></thead>
+          <tbody id="entriesBody"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div id="actionsRow" class="actions" hidden>
+      <button id="extractBtn" class="primary">Extract to .zip</button>
+      <div class="progress" id="progressWrap" hidden><div id="progressBar"></div></div>
+    </div>
+
+    <details class="notes">
+      <summary>How this was reverse-engineered</summary>
+      <div class="body">
+        <div>Decompiled from <code>cstorm.exe</code> in Ghidra: <code>OpenResourceFile_FromArchive_2</code> binary-searches
+        a sorted table of 16-byte directory entries (12-byte uppercase name + 4-byte offset) using <code>RTL_MemCmp</code>
+        on the name field.</div>
+        <div>The offset field points to a location in the file holding a 4-byte length, immediately followed by that
+        many bytes of data — that's the exact seek/read pattern the game performs before handing the buffer to
+        <code>FileHandle_SetVirtualWindow</code>.</div>
+        <div>The one thing the disassembly didn't pin down directly is where the entry <em>count</em> and table itself
+        start — that setup happens lazily elsewhere. This tool assumes the common layout, <code>[u32 count][count × 16-byte
+        entries]</code> at offset 0, and falls back to scanning nearby offsets if that doesn't parse cleanly. If your
+        file loads with 0 entries, it's a header layout this heuristic didn't catch.</div>
+      </div>
+    </details>
+  </div>
+
+  <footer>runs entirely client-side — parsing and zipping happen in your browser</footer>
+</div>
+
+<script>
+(function(){
+  let downloadsPromise = null;
+  function getDownloads(){
+    if (!downloadsPromise){
+      downloadsPromise = (window.claude && window.claude.use)
+        ? window.claude.use('downloads').catch(() => null)
+        : Promise.resolve(null);
+    }
+    return downloadsPromise;
+  }
+
+  const dropEl = document.getElementById('drop');
+  const fileInput = document.getElementById('file');
+  const filebar = document.getElementById('filebar');
+  const fnameEl = document.getElementById('fname');
+  const fsizeEl = document.getElementById('fsize');
+  const clearBtn = document.getElementById('clearBtn');
+  const statusEl = document.getElementById('status');
+  const statusText = document.getElementById('statusText');
+  const metarow = document.getElementById('metarow');
+  const tableSection = document.getElementById('tableSection');
+  const entriesBody = document.getElementById('entriesBody');
+  const actionsRow = document.getElementById('actionsRow');
+  const extractBtn = document.getElementById('extractBtn');
+  const progressWrap = document.getElementById('progressWrap');
+  const progressBar = document.getElementById('progressBar');
+
+  let currentBuf = null;
+  let currentEntries = null;
+  let currentBaseName = 'archive';
+
+  function fmtBytes(n){
+    if(n < 1024) return n + ' B';
+    if(n < 1024*1024) return (n/1024).toFixed(1) + ' KB';
+    return (n/(1024*1024)).toFixed(2) + ' MB';
+  }
+  function hex(n){ return '0x' + n.toString(16).toUpperCase().padStart(6,'0'); }
+
+  function setStatus(kind, msg){
+    statusEl.hidden = false;
+    statusEl.className = 'status' + (kind ? ' ' + kind : '');
+    statusText.textContent = msg;
+  }
+  function resetOutput(){
+    metarow.hidden = true; metarow.innerHTML = '';
+    tableSection.hidden = true; entriesBody.innerHTML = '';
+    actionsRow.hidden = true;
+    statusEl.hidden = true;
+    progressWrap.hidden = true; progressBar.style.width = '0%';
+  }
+
+  // --- Directory-table parsing -------------------------------------------------
+  // Entry layout (16 bytes): 12-byte name (space/NUL padded, uppercase) + u32 LE offset.
+  // At that offset in the file: u32 LE length, then `length` bytes of raw data.
+  function isPlausibleNameByte(b){
+    // printable ASCII, excluding control chars; allow space/NUL as padding
+    return b === 0 || b === 0x20 || (b >= 0x21 && b <= 0x7e);
+  }
+
+  function parseCandidate(view, bytes, tableOffset, count){
+    const entries = [];
+    const fileLen = bytes.length;
+    if (count <= 0 || count > 20000) return null;
+    const tableBytes = count * 16;
+    if (tableOffset + tableBytes > fileLen) return null;
+
+    let prevOffset = -1;
+    for (let i = 0; i < count; i++){
+      const base = tableOffset + i * 16;
+      const nameBytes = bytes.subarray(base, base + 12);
+      for (let j = 0; j < 12; j++){
+        if (!isPlausibleNameByte(nameBytes[j])) return null;
+      }
+      let nameEnd = 12;
+      while (nameEnd > 0 && (nameBytes[nameEnd-1] === 0 || nameBytes[nameEnd-1] === 0x20)) nameEnd--;
+      if (nameEnd === 0) return null;
+      const name = new TextDecoder('ascii').decode(nameBytes.subarray(0, nameEnd));
+      const dataOffset = view.getUint32(base + 12, true);
+      if (dataOffset < 4 || dataOffset + 4 > fileLen) return null;
+      // directory should be sorted ascending by name (binary-search precondition)
+      entries.push({ name, dataOffset });
+    }
+
+    // verify sortedness (binary search requires it) — reject if wildly out of order
+    let outOfOrder = 0;
+    for (let i = 1; i < entries.length; i++){
+      if (entries[i].name < entries[i-1].name) outOfOrder++;
+    }
+    if (entries.length > 1 && outOfOrder / entries.length > 0.15) return null;
+
+    // resolve lengths and validate they fit in the file
+    let validCount = 0;
+    for (const e of entries){
+      const len = view.getUint32(e.dataOffset, true);
+      if (len >= 0 && e.dataOffset + 4 + len <= fileLen + 0){
+        e.length = len;
+        e.dataStart = e.dataOffset + 4;
+        if (e.dataOffset + 4 + len <= fileLen) validCount++;
+      } else {
+        e.length = null;
+      }
+    }
+    if (validCount / entries.length < 0.7) return null;
+
+    return entries.filter(e => e.length !== null && e.dataStart + e.length <= fileLen);
+  }
+
+  function findDirectory(bytes){
+    const view = new DataView(bytes.buffer, bytes.byteOffset, bytes.byteLength);
+    // Primary assumption: u32 count at offset 0, table right after.
+    const attempts = [];
+    if (bytes.length >= 4){
+      const count0 = view.getUint32(0, true);
+      attempts.push({ tableOffset: 4, count: count0, label: 'count-prefixed @ 0x0' });
+    }
+    // Fallback: scan small header offsets (some archive variants pad the count field
+    // or precede it with a short fixed header) for a table that parses cleanly.
+    for (let off = 0; off <= 64; off += 4){
+      if (off + 4 > bytes.length) break;
+      const c = view.getUint32(off, true);
+      attempts.push({ tableOffset: off + 4, count: c, label: 'count-prefixed @ ' + hex(off) });
+    }
+
+    let best = null;
+    for (const a of attempts){
+      const result = parseCandidate(view, bytes, a.tableOffset, a.count);
+      if (result && result.length > 0 && (!best || result.length > best.entries.length)){
+        best = { entries: result, label: a.label, count: a.count };
+      }
+    }
+    return best;
+  }
+
+  function renderEntries(entries){
+    resetOutput();
+    if (!entries || entries.length === 0){
+      setStatus('err', 'Could not locate a valid directory table in this file — the header layout differs from the assumed format (see “How this was reverse-engineered” below).');
+      return;
+    }
+    setStatus('ok', `Parsed ${entries.length} ${entries.length === 1 ? 'entry' : 'entries'} from the directory table.`);
+    metarow.hidden = false;
+    const totalBytes = entries.reduce((s,e)=>s+e.length,0);
+    metarow.innerHTML = `
+      <span>Entries: <b>${entries.length}</b></span>
+      <span>Total extracted size: <b>${fmtBytes(totalBytes)}</b></span>
+    `;
+    tableSection.hidden = false;
+    entriesBody.innerHTML = entries.map(e => `
+      <tr>
+        <td class="name">${e.name}</td>
+        <td class="num">${hex(e.dataOffset)}</td>
+        <td class="num">${fmtBytes(e.length)}</td>
+      </tr>
+    `).join('');
+    actionsRow.hidden = false;
+  }
+
+  function handleFile(file){
+    resetOutput();
+    currentBaseName = file.name.replace(/\.[^.]+$/, '') || 'archive';
+    fnameEl.textContent = file.name;
+    fsizeEl.textContent = fmtBytes(file.size);
+    filebar.hidden = false;
+    setStatus(null, 'Reading file…');
+
+    const reader = new FileReader();
+    reader.onload = () => {
+      currentBuf = reader.result;
+      const bytes = new Uint8Array(currentBuf);
+      setStatus(null, 'Scanning for directory table…');
+      const found = findDirectory(bytes);
+      currentEntries = found ? found.entries : null;
+      renderEntries(currentEntries);
+    };
+    reader.onerror = () => setStatus('err', 'Could not read the file.');
+    reader.readAsArrayBuffer(file);
+  }
+
+  dropEl.addEventListener('click', () => fileInput.click());
+  dropEl.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' '){ e.preventDefault(); fileInput.click(); } });
+  fileInput.addEventListener('change', () => { if (fileInput.files[0]) handleFile(fileInput.files[0]); });
+
+  ['dragenter','dragover'].forEach(evt => dropEl.addEventListener(evt, (e) => {
+    e.preventDefault(); dropEl.classList.add('drag');
+  }));
+  ['dragleave','drop'].forEach(evt => dropEl.addEventListener(evt, (e) => {
+    e.preventDefault(); dropEl.classList.remove('drag');
+  }));
+  dropEl.addEventListener('drop', (e) => {
+    const f = e.dataTransfer.files && e.dataTransfer.files[0];
+    if (f) handleFile(f);
+  });
+
+  clearBtn.addEventListener('click', () => {
+    fileInput.value = '';
+    currentBuf = null; currentEntries = null;
+    filebar.hidden = true;
+    resetOutput();
+  });
+
+  extractBtn.addEventListener('click', async () => {
+    if (!currentEntries || !currentBuf) return;
+    extractBtn.disabled = true;
+    progressWrap.hidden = false;
+    const bytes = new Uint8Array(currentBuf);
+    const zip = new JSZip();
+    const seen = new Map();
+
+    for (let i = 0; i < currentEntries.length; i++){
+      const e = currentEntries[i];
+      let outName = e.name || ('ENTRY_' + i);
+      if (seen.has(outName)){
+        const n = seen.get(outName) + 1;
+        seen.set(outName, n);
+        outName = outName + '_' + n;
+      } else {
+        seen.set(outName, 0);
+      }
+      const data = bytes.subarray(e.dataStart, e.dataStart + e.length);
+      zip.file(outName, data);
+      progressBar.style.width = Math.round(((i+1)/currentEntries.length) * 70) + '%';
+    }
+
+    setStatus(null, 'Building .zip…');
+    const blob = await zip.generateAsync({ type: 'blob', compression: 'DEFLATE', compressionOptions: { level: 6 } },
+      (meta) => { progressBar.style.width = (70 + Math.round(meta.percent * 0.3)) + '%'; });
+
+    progressBar.style.width = '100%';
+    const filename = currentBaseName + '_extracted.zip';
+
+    const downloads = await getDownloads();
+    if (downloads){
+      try {
+        await downloads.save({ filename, data: blob });
+        setStatus('ok', `Done — ${currentEntries.length} files written to ${filename}`);
+      } catch (err){
+        setStatus('err', 'Save was cancelled or failed: ' + (err && err.message ? err.message : err));
+      }
+    } else {
+      setStatus('err', 'This viewer can’t offer file downloads — open this page in claude.ai to save the .zip.');
+    }
+    extractBtn.disabled = false;
+  });
+})();
+</script>
