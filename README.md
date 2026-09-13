@@ -1,7 +1,7 @@
 <p align="center">
   <img src="./images/web_header.gif" alt="MissionForce: CyberStorm Logo">
 </p>
-A fan-driven historical archive dedicated to MissionForce: CyberStorm — Sierra’s dark, tactical science-fiction wargame that combined brutal turn-based combat, persistent pilots, and corporate warfare into one of the most unforgiving strategy experiences of the 1990s.
+A fan-driven historical archive dedicated to MissionForce: CyberStorm; Sierra’s dark, tactical science-fiction wargame that combined brutal turn-based combat, persistent pilots, and corporate warfare into one of the most unforgiving strategy experiences of the 1990s.
 
 # Motivation
 Despite its age, *MissionForce: CyberStorm* is not truly dead. Player uploads, scattered discussions, and surviving archives prove there is still a pulse beneath the surface. More importantly, the game remains fully playable on modern systems and is legally available through [GOG.com](https://www.gog.com/en/game/missionforce_cyberstorm), creating a rare opportunity to introduce a new generation of players to one of Sierra’s most overlooked strategy titles.
