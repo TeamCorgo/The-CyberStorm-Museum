@@ -1,0 +1,32 @@
+-----------------------------------------------------------------------
+                        Limbs Table
+-----------------------------------------------------------------------
+                                   S R S O G D R J
+                                   H E E G I E E U
+                                   A M N R A M A G
+Type          Rank Afac   Wt  Cost D O S E N N P G
+============  ==== ====  ===  ==== = = = = = = = =
+Standard         0  400    0    50 * * . . . . . .
+Reinforced       0  265   17   398 * * . . . . . .
+Standard         1  222    0   100 . . * . . . . .
+Reinforced       1  148   79   710 . . * . . . . .
+Standard         1  154    0   150 . . . * * . . .
+Reinforced       1  102   90  1165 . . . * * . . .
+Standard         1  111    0   200 . . . . . * . .
+Reinforced       1   74  314  1542 . . . . . * . .
+Standard         1   83    0   250 . . . . . . * .
+Reinforced       1   56  333  3707 . . . . . . * .
+Standard         1   67    0   300 . . . . . . . *
+Reinforced       1   44  444  1790 . . . . . . . *
+                                            
+Type   = Type of leg
+Rank   = Required rank
+AFac   = Armor factor. This is a factor that says how much damage 
+          applied to the component is passed through.  An Armor factor
+          of 40 means that only 40% of the damage is applied to the 
+          component, and that 60% is deflected by the components 
+          toughness.  An armor factor of 200 means that the damage is
+          effectively doubled, meaning the component is not very sturdy.
+Wt     = Weight
+Cost   = Base cost
+

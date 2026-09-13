@@ -1,0 +1,314 @@
+Bertrand Ore Extractor
+   Required Rank:    0
+   Armor Factor:     40
+   Weight:           200
+   Cost:             100
+   Repair Factor:    10
+   Energy to start:  10
+   Energy per turn:  n/a
+   Notes: Storage: 400 units.  Retrieval: 90%.
+                       Extraction energy: 100%.
+
+Low-Energy Extractor
+   Required Rank:    1
+   Armor Factor:     40
+   Weight:           200
+   Cost:             500
+   Repair Factor:    25
+   Energy to start:  5
+   Energy per turn:  n/a
+   Notes: Storage: 400 units.  Retrieval: 90%. 
+                       Extraction energy: 50%.
+
+Maxim Extractor
+   Required Rank:    1
+   Armor Factor:     20
+   Weight:           500
+   Cost:             1000
+   Repair Factor:    60
+   Energy to start:  10
+   Energy per turn:  n/a
+   Notes: Storage: 1600 units.  Retrieval: 90%.
+                       Extraction energy: 100%.
+
+Fueller Device
+   Required Rank:    1
+   Armor Factor:     40
+   Weight:           300
+   Cost:             800
+   Repair Factor:    30
+   Energy to start:  20
+   Energy per turn:  n/a
+   Notes: Storage: 500 units.   Retrieval: 100%.
+                       Extraction energy: 130%.
+
+Improved Extractor
+   Required Rank:    6
+   Armor Factor:     40
+   Weight:           400
+   Cost:             2500
+   Repair Factor:    50
+   Energy to start:  5
+   Energy per turn:  n/a
+   Notes: Storage: 1200 units.  Retrieval: 100%.
+                       Extraction energy: 40%.
+
+ProtoNanite Repair
+   Required Rank:    2
+   Armor Factor:     2000
+   Weight:           100
+   Cost:             15000
+   Repair Factor:    50
+   Energy to start:  n/a
+   Energy per turn:  n/a
+   Notes:  150 units of Nanorepair
+
+Partial Nanorepair
+   Required Rank:    4
+   Armor Factor:     1800
+   Weight:           150
+   Cost:             20000
+   Repair Factor:    50
+   Energy to start:  n/a
+   Energy per turn:  n/a
+   Notes:  250 units of Nanorepair
+
+Enhanced Nanorepair
+   Required Rank:    6
+   Armor Factor:     1500
+   Weight:           200
+   Cost:             30000
+   Repair Factor:    50
+   Energy to start:  0
+   Energy per turn:  0
+   Notes:  350 units of Nanorepair
+
+True Nanorepair
+   Required Rank:    8
+   Armor Factor:     1200
+   Weight:           200
+   Cost:             40000
+   Repair Factor:    50
+   Energy to start:  n/a
+   Energy per turn:  n/a
+   Notes:  400 units of Nanorepair
+
+Nanorepair Glands
+   Required Rank:    11
+   Armor Factor:     500
+   Weight:           400
+   Cost:             55000
+   Repair Factor:    50
+   Energy to start:  n/a
+   Energy per turn:  n/a
+   Notes:  450 units of Nanorepair
+
+Self Detonator (SHADOW/REMORA VERSION!)
+   Required Rank:    3
+   Armor Factor:     50
+   Weight:           10
+   Cost:             3000
+   Repair Factor:    50
+   Energy to start:  0
+   Energy per turn:  n/a
+   Notes:            Up to 250 damage points against shields or armor 
+                      across 5 hex diameter.
+
+Self Detonator (SENSEI/OGRE VERSION!)
+   Required Rank:    3
+   Armor Factor:     50
+   Weight:           10
+   Cost:             6000
+   Repair Factor:    50
+   Energy to start:  0
+   Energy per turn:  n/a
+   Notes:            Up to 500 damage points against shields or armor 
+                      across 7 hex diameter.
+
+Self Detonator  (GIANT/DEMON VERSION!)
+   Required Rank:    3
+   Armor Factor:     50
+   Weight:           10
+   Cost:             9000
+   Repair Factor:    50
+   Energy to start:  0
+   Energy per turn:  n/a
+   Notes:            Up to 1000 damage points against shields or armor 
+                      across 7 hex diameter.
+
+Self Detonator (REAPER VERSION!)
+   Required Rank:    3
+   Armor Factor:     50
+   Weight:           10
+   Cost:             12000
+   Repair Factor:    50
+   Energy to start:  0
+   Energy per turn:  n/a
+   Notes:            Up to 1500 damage points against shields or armor 
+                      across 7 hex diameter.
+
+Self Detonator  (JUGGERNAUT VERSION!)
+   Required Rank:    3
+   Armor Factor:     50
+   Weight:           10
+   Cost:             20000
+   Repair Factor:    50
+   Energy to start:  0
+   Energy per turn:  n/a
+   Notes:            Up to 2000 damage points against shields or armor 
+                      across 7 hex diameter.
+
+Single-Band ECM
+   Required Rank:    0
+   Armor Factor:     500
+   Weight:           100
+   Cost:             500
+   Repair Factor:    50
+   Energy to start:  10
+   Energy per turn:  10
+   Notes:   Reduces opponent's chance to hit by 5%
+
+Zerosignal Dampener
+   Required Rank:    3
+   Armor Factor:     500
+   Weight:           100
+   Cost:             2500
+   Repair Factor:    50
+   Energy to start:  15
+   Energy per turn:  15
+   Notes:   Reduces opponent's chance to hit by 10%
+
+Variable Pulse Ghoster
+   Required Rank:    5
+   Armor Factor:     500
+   Weight:           150
+   Cost:             5000
+   Repair Factor:    50
+   Energy to start:  25
+   Energy per turn:  25
+   Notes:   Reduces opponent's chance to hit by 15%
+
+Elec Image Displacer
+   Required Rank:    7
+   Armor Factor:     500
+   Weight:           200
+   Cost:             8000
+   Repair Factor:    50
+   Energy to start:  35
+   Energy per turn:  35
+   Notes:   Reduces opponent's chance to hit by 20%
+
+Active Offsrc Jamming
+   Required Rank:    9
+   Armor Factor:     500
+   Weight:           300
+   Cost:             12000
+   Repair Factor:    50
+   Energy to start:  45
+   Energy per turn:  45
+   Notes:   Reduces opponent's chance to hit by 25%
+
+AntiGravity Unit
+   Required Rank:    7
+   Armor Factor:     100
+   Weight:           0
+   Cost:             7000
+   Repair Factor:    50
+   Energy to start:  20
+   Energy per turn:  20
+   Notes:   Makes effective gravity on Herc like a low-gravity world.
+            This subtracts 125 points from the gravity, with a cap
+            at 25% gravity.  
+   Example: If you were on a 200% gravity world, the antigrav unit would 
+            subtract 125 points from the gravity applied to the herc, so 
+            that the herc would move as if on a 75% gravity world.   
+   Example: If you were on a 80% gravity world, the antigrav device would
+            subtract 125 points from the gravity applied to the herc
+            (which would be -45% gravity).   But since that is below the
+            effectiveness cap of the unit (the unit can only lower the
+            gravity to a minimum of 25%), the resulting gravity applied 
+            to the herc is the 25%.
+   Example: If you were on a 25% gravity world, the antigravity device
+            would have no effect whatsoever, since it is not capable of
+            lowering the gravity any further.  You should turn off the 
+            device, since it is needlessly consuming energy.
+
+Resupply Drone v1
+   Required Rank:    0
+   Armor Factor:     300
+   Weight:           100
+   Cost:             1000
+   Repair Factor:    50
+   Energy to start:  0
+   Energy per turn:  n/a
+   Notes:   Restock: 2x. Max Range: 10 hexes. 
+
+Resupply Drone v2
+   Required Rank:    0
+   Armor Factor:     250
+   Weight:           200
+   Cost:             2000
+   Repair Factor:    50
+   Energy to start:  0
+   Energy per turn:  0
+   Notes:   Restock: 4x. Max Range: 20 hexes. 
+
+Resupply Drone v3
+   Required Rank:    0
+   Armor Factor:     200
+   Weight:           300
+   Cost:             4000
+   Repair Factor:    50
+   Energy to start:  0
+   Energy per turn:  n/a
+   Notes:   Restock: 6x. Max Range: 20 hexes. 
+
+Resupply Drone v4
+   Required Rank:    1
+   Armor Factor:     150
+   Weight:           500
+   Cost:             6000
+   Repair Factor:    50
+   Energy to start:  0
+   Energy per turn:  n/a
+   Notes:   Restock: 8x. Max Range: 30 hexes. 
+
+Resupply Drone v5
+   Required Rank:    1
+   Armor Factor:     100
+   Weight:           800
+   Cost:             9000
+   Repair Factor:    50
+   Energy to start:  0
+   Energy per turn:  n/a
+   Notes:   Restock: 10x. Max Range: 40 hexes. 
+
+Overdrive Node
+   Required Rank:    4
+   Armor Factor:     100
+   Weight:           0
+   Cost:             5000
+   Repair Factor:    100
+   Energy to start:  0
+   Energy per turn:  10
+   Notes:   Boosts drive efficiency by 15%
+
+Shield Amplifier
+   Required Rank:    8
+   Armor Factor:     200
+   Weight:           300
+   Cost:             8000
+   Repair Factor:    100
+   Energy to start:  0
+   Energy per turn:  20
+   Notes:   Boosts shield regeneration by 50% + 50 points
+
+Sensor Amplifier
+   Required Rank:    10
+   Armor Factor:     200
+   Weight:           200
+   Cost:             5000
+   Repair Factor:    100
+   Energy to start:  0
+   Energy per turn:  15
+   Notes:   Boosts sensors by one hex radius

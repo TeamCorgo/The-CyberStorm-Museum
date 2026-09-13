@@ -1,0 +1,45 @@
+-----------------------------------------------------------------------
+                         Drive Table
+-----------------------------------------------------------------------
+                                                  S R S O G D R J
+                                                  H E E G I E E U
+                                        |=======| A M N R A M A G
+Name              Rank  Afac  Wt   Cost |EnrgFac| D O S E N N P G
+===============   ====  ====  ===  ==== |=======| = = = = = = = =
+Pre-Flexive R1       0   200  N/A   100 |   9000| * * . . . . . .
+Flexive R1           0   200  N/A   374 |  10500| * * . . . . . .
+Improved R1          8   200  N/A  1533 |  12000| * * . . . . . .
+Trivate R1          12   200  N/A  8622 |  13000| * * . . . . . .
+Pre-Flexive R2       0   133  N/A   200 |   9000| . . * . . . . .
+Flexive R2           1   133  N/A   428 |  10500| . . * . . . . .
+Improved R2          7   133  N/A  2371 |  12000| . . * . . . . .
+Trivate R2          12   133  N/A  9399 |  14000| . . * . . . . .
+Pre-Flexive R3       1    83  N/A   300 |   9000| . . . * . . . .
+Flexive R3           1    83  N/A   892 |  10500| . . . * . . . .
+Improved R3          7    83  N/A  4756 |  12000| . . . * . . . .
+Trivate R3          11    83  N/A 18739 |  14000| . . . * . . . .
+Pre-Flexive R4       1    56  N/A   400 |   9000| . . . . * * . .
+Flexive R4           1    56  N/A  1325 |  10500| . . . . * * . .
+Improved R4          6    56  N/A  5872 |  12000| . . . . * * . .
+Trivate R4          10    56  N/A 28730 |  14000| . . . . * * . .
+Pre-Flexive R5       1    45  N/A   500 |   9000| . . . . . . * .
+Flexive R5           1    45  N/A  1600 |  10500| . . . . . . * .
+Improved R5          6    45  N/A  7619 |  12000| . . . . . . * .
+Trivate R5          10    45  N/A 31248 |  14000| . . . . . . * .
+Pre-Flexive R6       1    33  N/A   618 |   9000| . . . . . . . *
+Flexive R6           1    33  N/A  2239 |  10500| . . . . . . . *
+Improved R6          6    33  N/A 10999 |  12000| . . . . . . . *
+Trivate R6          10    33  N/A 43676 |  14000| . . . . . . . *
+
+
+Name    = Drive Name
+Rank    = Required rank
+AFac    = Armor factor. This is a factor that says how much damage 
+          applied to the component is passed through.  An Armor factor 
+          of 40 means that only 40% of the damage is applied to the 
+          component, and that 60% is deflected by the components 
+          toughness.  An armor factor of 200 means that the damage is
+          effectively doubled, meaning the component is not very sturdy.
+Wt      = Weight
+Cost    = Base cost
+EnrgFac = Energy factor (more == better)

@@ -1,0 +1,36 @@
+-----------------------------------------------------------------------
+                   Targeting Computer Table
+----------------------------------------------------------------------
+                                                        S R S O G D R J  
+                                                        H E E G I E E U  
+                                             |========| A M N R A M A G  
+Name                Rank Afac   Wt Cost  Rep |Hit Enrg| D O S E N N P G  
+=================== ==== ====  === ====  === |=== ====| = = = = = = = =  
+Bertrand-Altase        1  200   50   50   50 |  2    0| * * * * * * * *  
+Lock-On 100            0 1000   50  100   90 |  5    1| * * * * * * * *  
+Lock-On 205            1  800   55  250   90 |  9    2| * * * * * * * *  
+Lock-On 440            3  750   60  650   90 | 14    3| * * * * * * * *  
+Quickfire 11           4  650  100 1200   90 | 18    4| * * * * * * * *  
+Quickfire 11A          6  580  100 1875   90 | 23    8| * * * * * * * *  
+Lock-On 1000           7  490  150 2490   90 | 27   10| * * * * * * * *  
+Image Enhancement      9  420    0 3105  100 | 32   10| * * * * * * * *  
+True Lock             10  370  400 4230   90 | 36   10| * * * * * * * *  
+Fire Control Manager  11  323  600 5175  100 | 41   10| * * * * * * * *  
+Quickfire 3000        12  286  800 7275  100 | 45   10| * * * * * * * *  
+                                                                      
+                                                                         
+                                                                         
+Rank = Rank needed
+AFac = Armor factor.   This is a factor that says how much damage 
+        applied to the component is passed through.  An Armor factor
+        of 40 means that only 40% of the damage is applied to the 
+        component, and that 60% is deflected by the components 
+        toughness.  An armor factor of 200 means that the damage is
+        effectively doubled, meaning the component is not very sturdy.
+Wt   = Weight
+Cost = Base cost
+Rep  = Repair cost
+Hit  = Hit bonus percentage (The bonus given for the chance to hit)
+Enrg = Energy auto-used each turn
+                                                                         
+                                                 

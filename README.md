@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./images/web_header.gif" alt="MissionForce: CyberStorm Logo">
+  <img src="./overhead/web_header.gif" alt="MissionForce: CyberStorm Logo">
 </p>
 A fan-driven historical archive dedicated to MissionForce: CyberStorm; Sierra’s dark, tactical science-fiction wargame that combined brutal turn-based combat, persistent pilots, and corporate warfare into one of the most unforgiving strategy experiences of the 1990s.
 
@@ -83,7 +83,7 @@ My typical workflow is to spam `-[>` at the start of each battle, then ending ea
 
 A keyboard graphic was generated based on the information provided in the Quick Reference Card.
 <p align="center">
-  <img src="./images/hotkeys.png" alt="MissionForce: CyberStorm Keyboard Hotkeys">
+  <img src="./overhead/hotkeys.png" alt="MissionForce: CyberStorm Keyboard Hotkeys">
 </p>
 
 
@@ -196,6 +196,32 @@ No credits are attributed, however the theme appears to be reasonably well devel
 **On-line Manual Graphic Design:** Egil G. Gløersen
 
 **Sound Engineer:** Ken Rogers\
-**Music:** Loudmouth
+**Music:** [Loudmouth](https://dynamix.fandom.com/wiki/Loudmouth)\
+The game credits **Sound Ideas® sound effects library**.
 
 **Video Production:** James Carey, David Aughenbaugh
+
+## Video Formats
+**AVI → AVI Conversion:** `3 / 3` files converted\
+*Tools used:* No conversion needed.
+
+## Audio Formats
+**WAX → WAV Conversion:** `439 / 439` files converted\
+*Tools used:* [SoX](https://sourceforge.net/projects/sox/) cannot convert files directly and needs addtional context fed into the conversion process. [wax2wav.py](https://github.com/juanitogan/rbxit/blob/master/tools/wax2wav.py) is used to supply **SoX** with headers needed for the conversion.
+
+**CD Audio → FLAC & MP3 Conversion:** `3 / 3` files converted\
+*Tools used:* **Windows Media Player Legacy**
+
+**OGG → OGG Conversion:** `0 / 3` files converted\
+*Tools used:* No conversion needed.
+
+## Data Formats
+**TXT → TODO Conversion:** `0 / 17` files converted\
+*Tools used:* 
+
+**XLS → TODO Conversion:** `0 / 1` files converted\
+*Tools used:* 
+
+**XXX → XXX Conversion:** `1 / 1` files converted\
+*Tools used:* No conversion needed. The file is a compressed copy of the **Miles DirectSound driver**. The `.xxx` extension is used to prevent Microsoft Windows from treating the file as a `.dll` and interfering with the process.
+

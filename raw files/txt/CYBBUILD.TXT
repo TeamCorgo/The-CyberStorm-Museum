@@ -1,0 +1,263 @@
+==============================================================
+                    COMMAND NODES
+==============================================================                        
+Command Node v1
+      Armor Factor:    40 
+      Armor type:      Antiballistic
+      Shield Points:   900
+      Notes:           Boosts all cybrid targetting by 6%,
+Command Node v2
+      Armor Factor:    40 
+      Armor type:      Antiballistic
+      Shield Points:   1200
+      Notes:           Boosts all cybrid targetting by 9%,
+Command Node v3
+      Armor Factor:    40
+      Armor type:      Antiballistic
+      Shield Points:   1200
+      Notes:           Boosts all cybrid targetting by 12%,
+Command Node v4
+      Armor Factor:    40
+      Armor type:      Antiballistic
+      Shield Points:   1500
+      Notes:           Boosts all cybrid targetting by 15%,
+
+
+==============================================================
+                     MISC. NODES
+==============================================================                        
+Research Node
+      Armor Factor:    50 
+      Armor type:      Standard 18cm
+      Shield Points:   1200
+Sensor Array
+      Armor Factor:    400 
+      Armor type:      Standard 18cm
+      Shield Points:   600
+      Notes:           Boosts all cybrid targetting by 12%,
+Manufacturing Node
+      Armor Factor:    55 
+      Armor type:      Didrate 17.8cm
+      Shield Points:   600
+
+
+==============================================================
+                     PROCESSING NODES
+==============================================================                        
+Processing Node v1
+      Armor Factor:    40 
+      Armor type:      Standard 18cm
+      Shield Points:   600 
+      Notes:           Boosts all cybrid targetting by 3%,
+Processing Node v2
+      Armor Factor:    40 
+      Armor type:      Standard 18cm
+      Shield Points:   900
+      Notes:           Boosts all cybrid targetting by 6%,
+Processing Node v3
+      Armor Factor:    40 
+      Armor type:      Standard 18cm
+      Shield Points:   1200
+      Notes:           Boosts all cybrid targetting by 9%,
+Processing Node v4
+      Armor Factor:    40 
+      Armor type:      Standard 18cm
+      Shield Points:   1500
+      Notes:           Boosts all cybrid targetting by 12%,
+
+==============================================================
+                      CONSTRUCTION NODES
+==============================================================                        
+Construction v1
+      Armor Factor:    50 
+      Armor type:      Standard 18cm
+      Shield Points:   900
+      Notes:           (Constructs up to 1 Verminus every 4 turns)
+Construction v2
+      Armor Factor:    50 
+      Armor type:      Standard 18cm
+      Shield Points:   1200
+      Notes:           (Constructs up to 1 Verminus every 2 turns)
+Construction v3
+      Armor Factor:    50 
+      Armor type:      Standard 18cm
+      Shield Points:   1500
+      Notes:           (Constructs up to 1 Verminus every turn)
+Construction v4
+      Armor Factor:    50 
+      Armor type:      Standard 18cm
+      Shield Points:   1500
+      Notes:           (Constructs up to 2 Verminus every turn)
+Construction v5
+      Armor Factor:    50 
+      Armor type:      Standard 18cm
+      Shield Points:   1500
+      Notes:           (Constructs up to 3 Verminus every turn)
+
+
+==============================================================
+                     HEAVY TURRETS
+==============================================================                        
+Heavy Turret v1
+      Armor Factor:    50 
+      Armor type:      Standard 18cm
+      Shield Points:   300
+      Targeting Comp:  Bertrand-Altase
+      Weapon Type:     SE1000 Laser
+      Weapon Type:     SE1000 Laser
+      Weapon Type:     120mm Autocannon
+      Weapon Type:     120mm Autocannon
+Heavy Turret v2
+      Armor Factor:    50 
+      Armor type:      Standard 18cm
+      Shield Points:   1500
+      Targeting Comp:  QuickFire 11
+      Weapon Type:     SCX Heavy Compress Laser
+      Weapon Type:     SCX Heavy Compress Laser
+      Weapon Type:     120mm Autocannon
+      Weapon Type:     120mm Autocannon
+Heavy Turret v3
+      Armor Factor:    50 
+      Armor type:      Standard 18cm
+      Shield Points:   2400
+      Targeting Comp:  Lock-On 1000
+      Weapon Type:     Magna Pulse Laser(SP1200)
+      Weapon Type:     Magna Pulse Laser(SP1200)
+      Weapon Type:     Heavy Particle Gun(HPG)
+      Weapon Type:     Heavy Particle Gun(HPG)
+Heavy Turret v4
+      Armor Factor:    50 
+      Armor type:      Standard 18cm
+      Shield Points:   2850
+      Targeting Comp:  Image Enhancement
+      Weapon Type:     Heavy Comp Blaster(HCBlaster)
+      Weapon Type:     Heavy Comp Blaster(HCBlaster)
+      Weapon Type:     Heavy Comp Blaster(HCBlaster)
+      Weapon Type:     Heavy Comp Blaster(HCBlaster)
+Heavy Turret v5
+      Armor Factor:    50 
+      Armor type:      Standard 18cm
+      Shield Points:   3900
+      Targeting Comp:  QuickFire 11A
+      Weapon Type:     Heavy Comp Blaster(HCBlaster)
+      Weapon Type:     Heavy Comp Blaster(HCBlaster)
+      Weapon Type:     Heavy Comp Blaster(HCBlaster)
+      Weapon Type:     Heavy Comp Blaster(HCBlaster)
+      Weapon Type:     Heavy Comp Blaster(HCBlaster)
+      Weapon Type:     Heavy Comp Blaster(HCBlaster)
+
+==============================================================
+                   LIGHT TURRETS    
+==============================================================                        
+Light Turret v1
+      Armor Factor:    40 
+      Armor type:      Standard 18cm
+      Shield Points:   300
+      Targeting Comp:  Bertrand-Altase
+      Weapon Type:     SE400 Laser
+      Weapon Type:     SE400 Laser
+Light Turret v2
+      Armor Factor:    40 
+      Armor type:      Standard 18cm
+      Shield Points:   900
+      Targeting Comp:  Bertrand-Altase
+      Weapon Type:     SC400 Compression Laser
+      Weapon Type:     SC400 Compression Laser
+      Weapon Type:     SC400 Compression Laser
+      Weapon Type:     SC400 Compression Laser
+      Weapon Type:     20mm Autocannon
+      Weapon Type:     20mm Autocannon
+Light Turret v3
+      Armor Factor:    40 
+      Armor type:      Standard 18cm
+      Shield Points:   1200
+      Targeting Comp:  Bertrand-Altase
+      Weapon Type:     Light Pulse Laser(SP500)
+      Weapon Type:     Light Pulse Laser(SP500)
+      Weapon Type:     Light Pulse Laser(SP500)
+      Weapon Type:     Light Pulse Laser(SP500)
+      Weapon Type:     Light Particle Gun(LPG)
+      Weapon Type:     Light Particle Gun(LPG)
+Light Turret v4
+      Armor Factor:    40 
+      Armor type:      Standard 18cm
+      Shield Points:   900
+      Targeting Comp:  Bertrand-Altase
+      Weapon Type:     Light Pulse Laser(SP500)
+      Weapon Type:     Light Pulse Laser(SP500)
+      Weapon Type:     Light Pulse Laser(SP500)
+      Weapon Type:     Light Pulse Laser(SP500)
+      Weapon Type:     Light Particle Gun(LPG)
+      Weapon Type:     Light Particle Gun(LPG)
+Light Turret v5
+      Armor Factor:    40 
+      Armor type:      Standard 18cm
+      Shield Points:   2400
+      Targeting Comp:  Lock-On 100
+      Weapon Type:     Light Comp Blaster(LCBlaster)
+      Weapon Type:     Light Comp Blaster(LCBlaster)
+      Weapon Type:     Light Comp Blaster(LCBlaster)
+      Weapon Type:     Light Comp Blaster(LCBlaster)
+
+==============================================================
+                    MISSILE TURRETS    
+==============================================================                        
+Missile Turret v1
+      Armor Factor:    70 
+      Armor type:      Standard 18cm
+      Shield Points:   600
+      Targeting Comp:  Bertrand-Altase
+      Weapon Type:     SE400 Laser
+      Weapon Type:     SE400 Laser
+      Weapon Type:     SG Missile Launcher
+      Weapon Type:     SG Missile Launcher
+      Weapon Type:     SG Missile Launcher
+      Weapon Type:     SG Missile Launcher
+Missile Turret v2
+      Armor Factor:    70 
+      Armor type:      Standard 18cm
+      Shield Points:   1200
+      Targeting Comp:  Lock-On 100
+      Weapon Type:     SC400 Compression Laser
+      Weapon Type:     SC400 Compression Laser
+      Weapon Type:     SP-2 Heavy Missile Launcher
+      Weapon Type:     SP-2 Heavy Missile Launcher
+      Weapon Type:     SP-2 Heavy Missile Launcher
+      Weapon Type:     SP-2 Heavy Missile Launcher
+Missile Turret v3
+      Armor Factor:    70 
+      Armor type:      Standard 18cm
+      Shield Points:   1500
+      Targeting Comp:  Bertrand-Altase
+      Weapon Type:     Light Pulse Laser(SP500)
+      Weapon Type:     Light Pulse Laser(SP500)
+      Weapon Type:     Saturation Missile Launcher
+      Weapon Type:     Saturation Missile Launcher
+      Weapon Type:     Saturation Missile Launcher
+      Weapon Type:     Saturation Missile Launcher
+Missile Turret v4
+      Armor Factor:    70 
+      Armor type:      Standard 18cm
+      Shield Points:   1950
+      Targeting Comp:  QuickFire 11A
+      Weapon Type:     SP800 Pulse Laser Gatling
+      Weapon Type:     SP800 Pulse Laser Gatling
+      Weapon Type:     Hunter-Killer Missile Launcher
+      Weapon Type:     Hunter-Killer Missile Launcher
+      Weapon Type:     Hunter-Killer Missile Launcher
+      Weapon Type:     Hunter-Killer Missile Launcher
+      Weapon Type:     Hunter-Killer Missile Launcher
+      Weapon Type:     Hunter-Killer Missile Launcher
+Missile Turret v5
+      Armor Factor:    70 
+      Armor type:      Standard 18cm
+      Shield Points:   2400
+      Targeting Comp:  Fire Control Manager
+      Weapon Type:     Heavy Comp Blaster(HCBlaster)
+      Weapon Type:     Heavy Comp Blaster(HCBlaster)
+      Weapon Type:     Hunter-Killer Missile Launcher
+      Weapon Type:     Hunter-Killer Missile Launcher
+      Weapon Type:     Hunter-Killer Missile Launcher
+      Weapon Type:     Hunter-Killer Missile Launcher
+      Weapon Type:     Hunter-Killer Missile Launcher
+      Weapon Type:     Hunter-Killer Missile Launcher

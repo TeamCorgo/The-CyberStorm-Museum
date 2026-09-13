@@ -1,0 +1,575 @@
+-----------------------------------------------------------------------
+                            Chassis Table
+-----------------------------------------------------------------------
+
+Type      Rk Afac Weight  Cost Jump    Crch  
+========= == ==== ====== ===== ======= ====  
+SHADOW     0 100     500   500 MINIMAL  10   
+REMORA     0  90     700  1000 LOW      10   
+SENSEI     1  75    1500  1750 MED      15   
+OGRE       1  60    4000  5000 HIGH     20   
+GIANT      1  50    6000  9000 HIGH     23   
+DEMON      3  40   12000 19000 HIGH     28   
+REAPER     6  30   15000 33000 HIGH     32   
+JUGGERNAUT 9  20   20000 60000 HIGH     40   
+
+Type     = Chassis Type
+Rk       = Required rank
+AFac     = Armor factor.   This is a factor that says how much damage 
+            applied to the component is passed through.  An Armor factor
+            of 40 means that only 40% of the damage is applied to the
+            component, and that 60% is deflected by the components
+            toughness.  An armor factor of 200 means that the damage is
+            effectively doubled, meaning the component is not very 
+            sturdy.
+Weight   = Weight
+Cost     = Base Cost
+Jump     = Jump costs
+Crch     = Crouch costs
+
+
+Chassis vulnerability notes
+=====================================================================
+SHADOW     Sensors, Weapons, Legs (if not reinforced)
+REMORA     Weapon slots 3 and 4, Legs (if not reinforced)
+SENSEI     Sensor!, Arms, Legs (if not reinforced)
+OGRE       Fairly balanced
+GIANT      Fairly balanced   
+DEMON      Fairly balanced
+REAPER     Most Weapons, Legs take lots of hits but sturdy
+JUGGERNAUT Arms & Missiles, Center gun and Legs take lots of hits but
+            sturdy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+------------------------------------------------------------------------
+                                Armor Table
+------------------------------------------------------------------------
+                                                         S R S O G D R J
+                                                         H E E G I E E U
+                               |=======================| A M N R A M A G
+Name            Rk   Cost   Wt |SWE HEX D100 D0 S100 S0| D O S E N N P G
+=============== ==  =====  === |=== === ==== == ==== ==| = = = = = = = =
+Standard 5cm     0    200  100 |Def  N    6   1   0   0| * * * * * . . .
+Standard 11cm    0    250  371 |Def  N   13   3   0   0| . . * * * * . .
+Standard 18cm    1    300  689 |Def  N   21   4   0   0| . . . * * * . .
+Standard 22cm    1    351 1045 |Def  N   26   5   0   0| . . . . * * * .
+Trinnium 4cm     3    500   80 |Tri  N    6   1   0   0| * * * * * . . .
+Trinnium 10cm    2    700  337 |Tri  N   13   3   0   0| . . * * * * . .
+Trinnium 17cm    2    900  651 |Tri  N   22   5   0   0| . . . * * * . .
+Trinnium 18cm    2   1128  788 |Tri  N   23   6   0   0| . . . * * * * .
+Trinnium 22cm    3   4339 1650 |Tri  N   29   7   0   0| . . . . . . * *
+Assault 18cm     3   1452  689 |Tri  R   23   6   0   0| . . . * * * . .
+Assault 23cm     3   1810  977 |Tri  R   30   8   0   0| . . . . * * . .
+Didrate 4.1cm    5   1573   82 |Did  N    7   3   0   0| * * * * * . . .
+Didrate 10.5cm   5   1892  354 |Did  N   15   5   1   0| . . * * * * . .
+Didrate 17.8cm   5   2122  682 |Did  N   25   8   2   1| . . . * * * . .
+Didrate 22.9cm   5   2405 1526 |Did  N   32  11   2   1| . . . . . * * *
+Didrate 28cm     5   2763 2100 |Did  N   39  13   2   1| . . . . . . * *
+Didrate 35cm     7   3236 3150 |Did  N   49  16   3   1| . . . . . . . *
+Antiballistic    6   3076  375 |Ant  N   14   5   1   0| * * * * * * * *
+Tri-di 8cm       8   6039  210 | TD  N   12   4   2   1| . . . * * * * *
+Tri-di 19cm      8  13867  728 | TD  N   29  10   4   1| . . . * * * * .
+Tri-di 27cm      8  17638 2025 | TD  N   40  14   5   2| . . . . . . * *
+Tri-di 34cm      8  25211 3060 | TD  N   51  17   7   2| . . . . . . . *
+Adv Heat Diff    7  15220  385 | HD  N   15   5   2   1| * * * * * * * *
+Impr 8.6cm Asslt 8   4671  215 | TD  R   15   4   4   4| . . . . * * . *
+Lqd Tri 7.2cm   12  16013  180 |Def  N   12   6   2   1| * * * * * * . .
+Lqd Tri 18cm    11  19540  954 |Def  N   29  15   5   3| . . . * * * * *
+Lqd Tri 26.6cm  11  26037 1995 |Def  N   43  21   8   4| . . . . . . * *
+Lqd Tri 33.1cm  11  32737 2979 |Def  N   53  26  10   5| . . . . . . . *
+Heavy Assault   12  27891 2700 |Def  R   48  24   9   5| . . . . . . . *
+Crystalline      9  20100  375 |Cry  N   24  12   4   2| * * * * * * * *
+Clearplast      12  44160  375 |Clp  N   30  15   6   3| * * * * * * * *
+
+Name     = Armor Type name
+Rank     = Required rank
+Base     = Base Cost
+Weight   = Weight
+SWE      = Define special weapon effects (See table)
+HEX      = Hex reinforcement
+
+            N = Normal.  Balanced protection on all sides.
+            R = Reinforced.  Heavier protection in front
+                  Front:         Only 60% damage goes through
+                  Front-Right:   Only 80% damage goes through
+                  Front-Left:    Only 80% damage goes through
+                  Back sides:    Damage is amplified by 50%
+
+P100     = Percent of damage deflected when armor is functioning 100%
+P0       = Percent of damage deflected when armor is functioning 0%
+S100     = Amount of damage subtracted when armor is functioning 100%
+S0       = Amount of damage subtracted when armor is functioning 0%
+
+
+
+Special Weapons Effects (SWE) for Armor types:
+
+                  Energy  Missile  Cannon  Plasma   ELF  AdvTech  Bomb
+Def (Default)        100      100     100     100   100      100   100
+Tri (Trinnium)       125       75      75     100   100      100   100
+Did (Didrate)         75      100     100      75   100      100   100
+TD  (TriDidrate)      75      100     100      75    75       75   100
+Ant (Antiballistic)  100       40      40     100   100      100    40
+HD  (Heat Diff)       80      100     100      25    80       80   100
+Cry (Crystaline)      40      100     100     100   100       40   100
+Clp (Clearplast)     150       40      40      40   100      100    40
+
+
+------------------------------------------------------------------------
+                            Drive Table
+------------------------------------------------------------------------
+                                                  S R S O G D R J
+                                                  H E E G I E E U
+                                        |=======| A M N R A M A G
+Name              Rank  Afac  Wt   Cost |EnrgFac| D O S E N N P G
+===============   ====  ====  ===  ==== |=======| = = = = = = = =
+Pre-Flexive R1       0   200  N/A   100 |   9000| * * . . . . . .
+Flexive R1           0   200  N/A   374 |  10500| * * . . . . . .
+Improved R1          8   200  N/A  1533 |  12000| * * . . . . . .
+Trivate R1          12   200  N/A  8622 |  13000| * * . . . . . .
+Pre-Flexive R2       0   133  N/A   200 |   9000| . . * . . . . .
+Flexive R2           1   133  N/A   428 |  10500| . . * . . . . .
+Improved R2          7   133  N/A  2371 |  12000| . . * . . . . .
+Trivate R2          12   133  N/A  9399 |  14000| . . * . . . . .
+Pre-Flexive R3       1    83  N/A   300 |   9000| . . . * . . . .
+Flexive R3           1    83  N/A   892 |  10500| . . . * . . . .
+Improved R3          7    83  N/A  4756 |  12000| . . . * . . . .
+Trivate R3          11    83  N/A 18739 |  14000| . . . * . . . .
+Pre-Flexive R4       1    56  N/A   400 |   9000| . . . . * * . .
+Flexive R4           1    56  N/A  1325 |  10500| . . . . * * . .
+Improved R4          6    56  N/A  5872 |  12000| . . . . * * . .
+Trivate R4          10    56  N/A 28730 |  14000| . . . . * * . .
+Pre-Flexive R5       1    45  N/A   500 |   9000| . . . . . . * .
+Flexive R5           1    45  N/A  1600 |  10500| . . . . . . * .
+Improved R5          6    45  N/A  7619 |  12000| . . . . . . * .
+Trivate R5          10    45  N/A 31248 |  14000| . . . . . . * .
+Pre-Flexive R6       1    33  N/A   618 |   9000| . . . . . . . *
+Flexive R6           1    33  N/A  2239 |  10500| . . . . . . . *
+Improved R6          6    33  N/A 10999 |  12000| . . . . . . . *
+Trivate R6          10    33  N/A 43676 |  14000| . . . . . . . *
+
+
+Name    = Drive Name
+Rank    = Required rank
+AFac    = Armor factor.   This is a factor that says how much damage 
+            applied to the component is passed through.  An Armor factor
+            of 40 means that only 40% of the damage is applied to the 
+            component, and that 60% is deflected by the components 
+            toughness.  An armor factor of 200 means that the damage 
+            is effectively doubled, meaning the component is not very
+            sturdy.
+Wt      = Weight
+Cost    = Base cost
+EnrgFac = Energy factor (more == better)
+
+
+
+------------------------------------------------------------------------
+                                Limbs Table
+------------------------------------------------------------------------
+                                   S R S O G D R J
+                                   H E E G I E E U
+                                   A M N R A M A G
+Type          Rank Afac   Wt  Cost D O S E N N P G
+============  ==== ====  ===  ==== = = = = = = = =
+Standard         0  400    0    50 * * . . . . . .
+Reinforced       0  265   17   398 * * . . . . . .
+Standard         1  222    0   100 . . * . . . . .
+Reinforced       1  148   79   710 . . * . . . . .
+Standard         1  154    0   150 . . . * * . . .
+Reinforced       1  102   90  1165 . . . * * . . .
+Standard         1  111    0   200 . . . . . * . .
+Reinforced       1   74  314  1542 . . . . . * . .
+Standard         1   83    0   250 . . . . . . * .
+Reinforced       1   56  333  3707 . . . . . . * .
+Standard         1   67    0   300 . . . . . . . *
+Reinforced       1   44  444  1790 . . . . . . . *
+                                            
+Type   = Type of leg
+Rank   = Required rank
+AFac   = Armor factor.   This is a factor that says how much damage 
+         applied to the component is passed through.  An Armor factor
+         of 40 means that only 40% of the damage is applied to the 
+         component, and that 60% is deflected by the components 
+         toughness.  An armor factor of 200 means that the damage
+         is effectively doubled, meaning the component is not very
+         sturdy.
+Wt     = Weight
+Cost   = Base cost
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+------------------------------------------------------------------------
+                              Reactor Table
+------------------------------------------------------------------------
+                                              S R S O G D R J
+                                              H E E G I E E U
+                                        |====|A M N R A M A G
+Name              Rank  Afac   Wt  Base |Enrg|D O S E N N P G
+================  ====  ====  ===  ==== |====|= = = = = = = =
+Fission 100          0   200  N/A   100 | 100|* * . . . . . .
+Fission 130          1   133  N/A   200 | 130|. . * . . . . .
+Fission 200          0    83  N/A   300 | 200|. . . * * . . .
+Fission 300          0    56  N/A   400 | 300|. . . . . * . .
+Fission 350          0    45  N/A   500 | 350|. . . . . . * .
+Fission 400          0    33  N/A   600 | 400|. . . . . . . *
+Ion 130              4   200  N/A   600 | 130|* * . . . . . .
+Ion 196              4   133  N/A   900 | 196|. . * . . . . .
+Ion 260              4    83  N/A  1200 | 260|. . . * * . . .
+Ion 390              4    56  N/A  1500 | 390|. . . . . * . .
+Ion 455              4    45  N/A  1800 | 455|. . . . . . * .
+Ion 524              4    33  N/A  2100 | 524|. . . . . . . *
+Matter Conv 150      8   200  N/A  2100 | 150|* * . . . . . .
+Matter Conv 225      8   133  N/A  3000 | 225|. . * . . . . .
+Matter Conv 326      8    83  N/A  3900 | 326|. . . * * . . .
+Matter Conv 452      8    56  N/A  4800 | 452|. . . . . * . .
+Matter Conv 526      8    45  N/A  5700 | 526|. . . . . . * .
+Matter Conv 609      8    33  N/A  6600 | 609|. . . . . . . *
+
+Name  = Name of reactor
+Rank  = Required rank
+AFac  = Armor factor.   This is a factor that says how much damage 
+            applied to the component is passed through.  An Armor factor
+            of 40 means that only 40% of the damage is applied to the 
+            component, and that 60% is deflected by the components 
+            toughness.  An armor factor of 200 means that the damage
+            is effectively doubled, meaning the component is not 
+            very sturdy.
+Wt    = Weight
+Cost  = Base cost
+Enrg  = Points of energy generated per turn
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+------------------------------------------------------------------------
+                        Battery Table
+------------------------------------------------------------------------
+                                           S R S O G D R J
+                                           H E E G I E E U
+                                           A M N R A M A G
+Name           Rank Afac    Wt  Cost |Max| D O S E N N P G
+=============  ==== ====  ====  ==== |===| = = = = = = = =
+IChemical 120   0    400    50   291 |120| * * . . . . . .
+IChemical 180   0    266   236   458 |180| . . * . . . . .
+IChemical 240   1    167   400   587 |240| . . . * * . . .
+IChemical 360   1    111   943   780 |360| . . . . . * . .
+IChemical 420   1     91  1000   800 |420| . . . . . . * .
+IChemical 480   1     67  1333   904 |480| . . . . . . . *
+Chemical 108    1    400    50   100 |108| * * . . . . . .
+Chemical 150    1    250   164   100 |150| . . * . . . . .
+Chemical 180    1    140   200   125 |180| . . . * * . . .
+Chemical 300    1    110   200   100 |300| . . . . . * . .
+Chemical 330    1     90   200   150 |330| . . . . . . * .
+Chemical 390    1     67   400   150 |390| . . . . . . . *
+Iridium 158     4    400    51   634 |158| * * . . . . . .
+Iridium 197     4    266   238  1221 |197| . . * . . . . .
+Iridium 261     4    167   408  1841 |261| . . . * * . . .
+Iridium 396     4    111   958  2136 |396| . . . . . * . .
+Iridium 459     4     91  1020  2461 |459| . . . . . . * .
+Iridium 527     4     67  1359  2727 |527| . . . . . . . *
+Tru-power 174   9    400    52  1867 |174| * * . . . . . .
+Tru-power 215   9    266   240  3599 |215| . . * . . . . .
+Tru-power 288   9    167   412  5490 |288| . . . * * . . .
+Tru-power 435   9    111   973  6399 |435| . . . . . * . .
+Tru-power 471   9     91  1040  7201 |471| . . . . . . * .
+Tru-power 577   9     67  1385  8100 |577| . . . . . . . *
+                                                           
+                                                           
+Name = Name of battery
+Rank = Required rank
+AFac = Armor factor.   This is a factor that says how much damage 
+      applied to the component is passed through.  An Armor factor of
+      40 means that only 40% of the damage is applied to the component,
+      and that 60% is deflected by the components toughness.  An armor
+      factor of 200 means that the damage is effectively doubled, 
+   meaning the component is not very sturdy.
+Wt   = Weight
+Cost = Base Cost
+Max  = Max battery storage
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+----------------------------------------------------------------------
+                                Shields Table
+----------------------------------------------------------------------
+                                                     S R S O G D R J
+                                                     H E E G I E E U
+                                    |==============| A M N R A M A G
+Type        Rank  Afac     Wt  Cost | Max Shld Enrg| D O S E N N P G
+=========== ====  ==== ======  ==== |==== ==== ====| = = = = = = = =
+Shield 300     0  1000    100   100 | 300   15    1| * * * * . . . .
+Shield 600     0   833    150  1080 | 600   30    3| * * * * * . . .
+Shield 900     1   769    200  2245 | 900   45    4| * * * * * * * .
+Shield 1200    1   667    269  3401 |1200   60    6| . * * * * * * *
+Shield 1500    2   588   2700  5049 |1500   75    8| . . * * * * * *
+Shield 1950    1   500   4500  8102 |1950   95   10| . . . . * * * *
+Shield 2400    1   435   8000 12005 |2400  110   12| . . . . . * * *
+Shield 2850    1   370  13333 14901 |2850  130   14| . . . . . . * *
+Shield 3300    2   323  16000 25486 |3300  170   18| . . . . . . . *
+Shield 3900    3   286  17000 33034 |3900  200   20| . . . . . . . *
+
+Type = Type of shield
+Rank = Required rank
+AFac = Armor factor. This is a factor that says how much damage 
+       applied to the component is passed through.  An Armor factor of
+       40 means that only 40% of the damage is applied to the component,
+       and that 60% is deflected by the components toughness.  An armor
+       factor of 200 means that the damage is effectively doubled, 
+       meaning the component is not very sturdy.
+Wt   = Weight
+Cost = Base cost
+Max  = Max shield pool
+Shld = Shield recharge per turn
+Enrg = Energy cost charged per turn
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+----------------------------------------------------------------------
+                                Sensors Table
+----------------------------------------------------------------------
+                                                      S R S O G D R J
+                                                      H E E G I E E U
+                                     |===============|A M N R A M A G
+Type           Rank  Afac   Wt  Cost |Enrg Max   LOS |D O S E N N P G
+============== ====  ====  ===  ==== |==== ===  =====|= = = = = = = =
+Standard 7.22     0  1000   50   100 |  0   4   WORST|* * * * * * * *
+Standard 12.14    0   833  100   500 |  2   5    POOR|* * * * * * * *
+Standard 15.1     1   714  150  1000 |  4   6    POOR|* * * * * * * *
+Crystal Mx        4   588  250  1625 |  7   8    POOR|* * * * * * * *
+Adv. Crystal      7   476  500  3050 | 14  10    FAIR|* * * * * * * *
+Scout 22.8        0   833   25   500 |  0   8    GOOD|* . * . . . . .
+Scout 30.6        0   714   50   800 |  5  10    GOOD|* . * . . . . .
+Scout 41.1        1   588  100  1375 |  6  11    BEST|* . * . . . . .
+Scout Om          5   476  300  2080 |  8  13    BEST|* . * . . . . .
+Scout Adv Om      8   400  600  5073 | 10  15    BEST|* . * . . . . .
+                                                                              
+Type = Type of sensors
+Rank = Required rank
+AFac = Armor factor. This is a factor that says how much damage 
+       applied to the component is passed through.  An Armor factor of
+       40 means that only 40% of the damage is applied to the component,
+       and that 60% is deflected by the components toughness.  An armor
+       factor of 200 means that the damage is effectively doubled,
+       meaning the component is not very sturdy.
+
+Wt   = Weight
+Cost = Base cost
+Enrg = Energy cost charged per turn
+Max  = Max Range
+LOS  = LOS (line-of-sight) ability description.  This describes
+       the ability to see objects out of a units direct line of sight
+       (over hills, in canyons, etc.)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+------------------------------------------------------------------------
+                       Targeting Computer Table
+------------------------------------------------------------------------
+                                                       S R S O G D R J   
+                                                       H E E G I E E U   
+                                                       A M N R A M A G   
+Name               Rank Afac   Wt Cost  Rep |Hit Enrg| D O S E N N P G   
+================== ==== ====  === ====  === |=== ====| = = = = = = = =   
+Bertrand-Altase       1  200   50   50   50 |  2    0| * * * * * * * *   
+Lock-On 100           0 1000   50  100   90 |  5    1| * * * * * * * *   
+Lock-On 205           1  800   55  250   90 |  9    2| * * * * * * * *   
+Lock-On 440           3  750   60  650   90 | 14    3| * * * * * * * *   
+Quickfire 11          4  650  100 1200   90 | 18    4| * * * * * * * *   
+Quickfire 11A         6  580  100 1875   90 | 23    8| * * * * * * * *   
+Lock-On 1000          7  490  150 2490   90 | 27   10| * * * * * * * *   
+Image Enhancement     9  420    0 3105  100 | 32   10| * * * * * * * *   
+True Lock            10  370  400 4230   90 | 36   10| * * * * * * * *   
+Fire Control Manager 11  323  600 5175  100 | 41   10| * * * * * * * *   
+Quickfire 3000       12  286  800 7275  100 | 45   10| * * * * * * * *   
+                                                                      
+                                                                         
+                                                                         
+Rank = Rank needed
+AFac = Armor factor. This is a factor that says how much damage 
+       applied to the component is passed through.  An Armor factor of
+       40 means that only 40% of the damage is applied to the component,
+       and that 60% is deflected by the components toughness.  An armor
+       factor of 200 means that the damage is effectively doubled, 
+       meaning the component is not very sturdy.
+
+Wt   = Weight
+Cost = Base cost
+Rep  = Repair cost
+Hit  = Hit bonus percentage (The bonus given for the chance to hit)
+Enrg = Energy auto-used each turn
+                                                                         
+                                                 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+------------------------------------------------------------------------
+                     Life Support Table
+------------------------------------------------------------------------
+                                                  S R S O G D R J
+                                                  H E E G I E E U
+                                ================= A M N R A M A G
+Name       Rank Afac   Wt  Cost |C/T  HI  SI  DI| D O S E N N P G
+========== ==== ====  ===  ==== |===  ==  ==  ==| = = = = = = = =
+Standard      0  400   10   100 |  0   0   0   0| * * * * * * * *
+Improved      1  323   20   250 |  3   1   0   1| * * * * * * * *
+Integrated    3  256   40   650 |  5   1   0   2| * * * * * * * *
+Total         3  204   60  1200 |  8   2   0   2| * * * * * * * *
+Multishell    5  164   80  1875 | 10   2   0   3| * * * * * * * *
+Reactive      5  132    0  2490 | 11   3   1   3| * * * * * * * *
+Med Sys       6  105  130  3105 | 13   4   1   4| * * * * * * * *
+Bioenviron    6   84  180  4230 | 15   4   2   5| * * * * * * * *
+Self-Repair   7   67  200  5175 | 17   5   2   5| * * * * * * * *
+Liquid Life   8   54  250  7275 | 20   6   2   5| * * * * * * * *
+                                                  
+
+Name = Name
+Rank = Required rank
+AFac = Armor factor. This is a factor that says how much damage 
+       applied to the component is passed through.  An Armor factor of
+       40 means that only 40% of the damage is applied to the component,
+       and that 60% is deflected by the components toughness.  An armor
+       factor of 200 means that the damage is effectively doubled,
+    meaning the component is not very sturdy.
+
+Wt   = Weight
+Cost = Base cost
+C/T  = Cost charged per turn
+HI   = Per-turn Health increment
+SI   = Per-turn Stability increment
+DI   = Per-turn Detoxing increment

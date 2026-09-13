@@ -1,0 +1,2596 @@
+
+=====================================================================
+Weapon name:                       SE400 Laser Cannon
+=====================================================================
+Required rank:                     0
+Armor factor:                      300
+Weight:                            55
+Base Cost:                         750
+Repair factor ( % of Base Cost ):  50
+Ammo Capacity:                     n/a
+Mount restrictions:        SHAD,REMO,SENS,OGRE,----,DEMN,REAP,JUGG
+
+Max shots per turn:                1
+Max targetable range:              10
+Range increment:                   2
+Damage increment:                  3
+Indirect Fire:                     No
+Skill used:                        ENERGY
+
+Damaged weapon effects:            Damage
+Disable percent:                   20
+Energy cost per use:               20
+
+Damage vs. shields:                50
+Damage vs. no shields:             10
+Damage that penetrates shields:    0
+Damage pct carryover:              20
+Number of hits/shot:               1
+Damage area (hexes):               1
+at target hex:                     100
+at any hex distance 1:             0
+at any hex distance 2:             0
+at any hex distance 3:             0
+
+Apply damage to hex even in miss:  No
+
+
+=====================================================================
+Weapon name:                       SE660 Laser Cannon
+=====================================================================
+Required rank:                     0
+Armor factor:                      300
+Weight:                            100
+Base Cost:                         3500
+Repair factor ( % of Base Cost ):  50
+Ammo Capacity:                     n/a
+Mount restrictions:        ----,----,----,OGRE,----,DEMN,REAP,JUGG
+
+Max shots per turn:                1
+Max targetable range:              15
+Range increment:                   3
+Damage increment:                  5
+Indirect Fire:                     No
+Skill used:                        ENERGY
+
+Damaged weapon effects:            Damage
+Disable percent:                   20
+Energy cost per use:               27
+
+Damage vs. shields:                75
+Damage vs. no shields:             15
+Damage that penetrates shields:    0
+Damage pct carryover:              20
+Number of hits/shot:               1
+Damage area (hexes):               1
+at target hex:                     100
+at any hex distance 1:             0
+at any hex distance 2:             0
+at any hex distance 3:             0
+
+Apply damage to hex even in miss:  No
+
+
+=====================================================================
+Weapon name:                       SE1000 Laser Cannon
+=====================================================================
+Required rank:                     1
+Armor factor:                      300
+Weight:                            175
+Base Cost:                         7000
+Repair factor ( % of Base Cost ):  50
+Ammo Capacity:                     n/a
+Mount restrictions:        ----,----,----,OGRE,----,DEMN,REAP,JUGG
+
+Max shots per turn:                1
+Max targetable range:              20
+Range increment:                   4
+Damage increment:                  4
+Indirect Fire:                     No
+Skill used:                        ENERGY
+
+Damaged weapon effects:            Damage
+Disable percent:                   20
+Energy cost per use:               36
+
+Damage vs. shields:                120
+Damage vs. no shields:             24
+Damage that penetrates shields:    0
+Damage pct carryover:              20
+Number of hits/shot:               1
+Damage area (hexes):               1
+at target hex:                     100
+at any hex distance 1:             0
+at any hex distance 2:             0
+at any hex distance 3:             0
+
+Apply damage to hex even in miss:  No
+
+
+=====================================================================
+Weapon name:                       SP Missile Launcher
+=====================================================================
+Required rank:                     0
+Armor factor:                      400
+Weight:                            50
+Base Cost:                         1000
+Repair factor ( % of Base Cost ):  50
+Ammo Capacity:                     10
+Mount restrictions:        SHAD,REMO,SENS,----,----,DEMN,REAP,JUGG
+
+Max shots per turn:                1
+Max targetable range:              30
+Range increment:                   6
+Damage increment:                  None
+Indirect Fire:                     Yes
+Skill used:                        MISSILE
+
+Damaged weapon effects:            To Hit
+Disable percent:                   30
+Energy cost per use:               0
+
+Damage vs. shields:                0
+Damage vs. no shields:             25
+Damage that penetrates shields:    3
+Damage pct carryover:              0
+Number of hits/shot:               2
+Damage area (hexes):               1
+at target hex:                     100
+at any hex distance 1:             0
+at any hex distance 2:             0
+at any hex distance 3:             0
+
+Apply damage to hex even in miss:  Yes
+
+
+=====================================================================
+Weapon name:                       SG Missile Launcher
+=====================================================================
+Required rank:                     0
+Armor factor:                      400
+Weight:                            75
+Base Cost:                         2000
+Repair factor ( % of Base Cost ):  50
+Ammo Capacity:                     10
+Mount restrictions:        ----,----,SENS,----,----,DEMN,REAP,JUGG
+
+Max shots per turn:                1
+Max targetable range:              30
+Range increment:                   None
+Damage increment:                  None
+Indirect Fire:                     Yes
+Skill used:                        MISSILE
+
+Damaged weapon effects:            To Hit
+Disable percent:                   30
+Energy cost per use:               0
+
+Damage vs. shields:                0
+Damage vs. no shields:             25
+Damage that penetrates shields:    3
+Damage pct carryover:              0
+Number of hits/shot:               3
+Damage area (hexes):               1
+at target hex:                     100
+at any hex distance 1:             0
+at any hex distance 2:             0
+at any hex distance 3:             0
+
+Apply damage to hex even in miss:  Yes
+
+
+=====================================================================
+Weapon name:                       MY Missile Launcher
+=====================================================================
+Required rank:                     1
+Armor factor:                      400
+Weight:                            90
+Base Cost:                         3000
+Repair factor ( % of Base Cost ):  50
+Ammo Capacity:                     6
+Mount restrictions:        ----,----,SENS,----,----,DEMN,REAP,JUGG
+
+Max shots per turn:                1
+Max targetable range:              20
+Range increment:                   4
+Damage increment:                  None
+Indirect Fire:                     Yes
+Skill used:                        MISSILE
+
+Damaged weapon effects:            Damage
+Disable percent:                   30
+Energy cost per use:               0
+
+Damage vs. shields:                0
+Damage vs. no shields:             5
+Damage that penetrates shields:    1
+Damage pct carryover:              0
+Number of hits/shot:               10
+Damage area (hexes):               2
+at target hex:                     100
+at any hex distance 1:             80
+at any hex distance 2:             0
+at any hex distance 3:             0
+
+Apply damage to hex even in miss:  Yes
+
+
+=====================================================================
+Weapon name:                       Light Electron Flux Whip (ELF)
+=====================================================================
+Required rank:                     1
+Armor factor:                      400
+Weight:                            75
+Base Cost:                         700
+Repair factor ( % of Base Cost ):  60
+Ammo Capacity:                     n/a
+Mount restrictions:        SHAD,REMO,SENS,OGRE,----,DEMN,REAP,JUGG 
+
+Max shots per turn:                1
+Max targetable range:              2
+Range increment:                   1
+Damage increment:                  1
+Indirect Fire:                     No
+Skill used:                        ELF
+
+Damaged weapon effects:            Damage
+Disable percent:                   5
+Energy cost per use:               40
+
+Damage vs. shields:                0
+Damage vs. no shields:             50
+Damage that penetrates shields:    50
+Damage pct carryover:              0
+Number of hits/shot:               1
+Damage area (hexes):               1
+at target hex:                     100
+at any hex distance 1:             0
+at any hex distance 2:             0
+at any hex distance 3:             0
+
+Apply damage to hex even in miss:  No
+
+
+=====================================================================
+Weapon name:                       Medium Electron Flux Whip (ELF)
+=====================================================================
+Required rank:                     1
+Armor factor:                      400
+Weight:                            90
+Base Cost:                         2500
+Repair factor ( % of Base Cost ):  60
+Ammo Capacity:                     n/a
+Mount restrictions:        ----,----,----,OGRE,----,DEMN,REAP,JUGG
+
+Max shots per turn:                1
+Max targetable range:              2
+Range increment:                   1
+Damage increment:                  1
+Indirect Fire:                     No
+Skill used:                        ELF
+
+Damaged weapon effects:            Damage
+Disable percent:                   5
+Energy cost per use:               50
+
+Damage vs. shields:                0
+Damage vs. no shields:             60
+Damage that penetrates shields:    60
+Damage pct carryover:              0
+Number of hits/shot:               1
+Damage area (hexes):               1
+at target hex:                     100
+at any hex distance 1:             0
+at any hex distance 2:             0
+at any hex distance 3:             0
+
+Apply damage to hex even in miss:  No
+
+
+=====================================================================
+Weapon name:                       Heavy Electron Flux Whip (ELF)
+=====================================================================
+Required rank:                     1
+Armor factor:                      500
+Weight:                            120
+Base Cost:                         6000
+Repair factor ( % of Base Cost ):  60
+Ammo Capacity:                     n/a
+Mount restrictions:        ----,----,----,OGRE,----,DEMN,REAP,JUGG
+
+Max shots per turn:                1
+Max targetable range:              2
+Range increment:                   2
+Damage increment:                  2
+Indirect Fire:                     No
+Skill used:                        ELF
+
+Damaged weapon effects:            Damage
+Disable percent:                   5
+Energy cost per use:               60
+
+Damage vs. shields:                0
+Damage vs. no shields:             75
+Damage that penetrates shields:    75
+Damage pct carryover:              0
+Number of hits/shot:               1
+Damage area (hexes):               1
+at target hex:                     100
+at any hex distance 1:             0
+at any hex distance 2:             0
+at any hex distance 3:             0
+
+Apply damage to hex even in miss:  No
+
+
+=====================================================================
+Weapon name:                       ElectroMagnetic Pulse Cannon (EMP)
+=====================================================================
+Required rank:                     1
+Armor factor:                      350
+Weight:                            105
+Base Cost:                         3000
+Repair factor ( % of Base Cost ):  60
+Ammo Capacity:                     n/a
+Mount restrictions:        SHAD,REMO,SENS,OGRE,----,DEMN,REAP,JUGG
+
+Max shots per turn:                1
+Max targetable range:              5
+Range increment:                   1
+Damage increment:                  1
+Indirect Fire:                     No
+Skill used:                        ADVTECH
+
+Damaged weapon effects:            Damage
+Disable percent:                   30
+Energy cost per use:               32
+
+Damage vs. shields:                150
+Damage vs. no shields:             0
+Damage that penetrates shields:    0
+Damage pct carryover:              0
+Number of hits/shot:               1
+Damage area (hexes):               1
+at target hex:                     100
+at any hex distance 1:             0
+at any hex distance 2:             0
+at any hex distance 3:             0
+
+Apply damage to hex even in miss:  No
+
+
+=====================================================================
+Weapon name:                       20mm Light Autocannon
+=====================================================================
+Required rank:                     0
+Armor factor:                      105
+Weight:                            90
+Base Cost:                         550
+Repair factor ( % of Base Cost ):  40
+Ammo Capacity:                     30
+Mount restrictions:        ----,REMO,SENS,OGRE,GIAN,----,----,JUGG
+
+Max shots per turn:                2
+Max targetable range:              10
+Range increment:                   2
+Damage increment:                  5
+Indirect Fire:                     No
+Skill used:                        CANNON
+
+Damaged weapon effects:            To Hit
+Disable percent:                   10
+Energy cost per use:               0
+
+Damage vs. shields:                0
+Damage vs. no shields:             6
+Damage that penetrates shields:    1
+Damage pct carryover:              0
+Number of hits/shot:               4
+Damage area (hexes):               1
+at target hex:                     100
+at any hex distance 1:             0
+at any hex distance 2:             0
+at any hex distance 3:             0
+
+Apply damage to hex even in miss:  No
+
+
+=====================================================================
+Weapon name:                       50mm Autocannon
+=====================================================================
+Required rank:                     0
+Armor factor:                      50
+Weight:                            125
+Base Cost:                         1500
+Repair factor ( % of Base Cost ):  40
+Ammo Capacity:                     18
+Mount restrictions:        ----,REMO,SENS,OGRE,GIAN,----,----,JUGG
+
+Max shots per turn:                2
+Max targetable range:              15
+Range increment:                   3
+Damage increment:                  8
+Indirect Fire:                     No
+Skill used:                        CANNON
+
+Damaged weapon effects:            To Hit
+Disable percent:                   10
+Energy cost per use:               0
+
+Damage vs. shields:                0
+Damage vs. no shields:             16
+Damage that penetrates shields:    3
+Damage pct carryover:              0
+Number of hits/shot:               2
+Damage area (hexes):               1
+at target hex:                     100
+at any hex distance 1:             0
+at any hex distance 2:             0
+at any hex distance 3:             0
+
+Apply damage to hex even in miss:  No
+
+
+=====================================================================
+Weapon name:                       120mm Heavy Autocannon
+=====================================================================
+Required rank:                     1
+Armor factor:                      35
+Weight:                            360
+Base Cost:                         4500
+Repair factor ( % of Base Cost ):  40
+Ammo Capacity:                     12
+Mount restrictions:        ----,----,----,----,GIAN,----,----,JUGG
+
+Max shots per turn:                1
+Max targetable range:              20
+Range increment:                   5
+Damage increment:                  10
+Indirect Fire:                     No
+Skill used:                        CANNON
+
+Damaged weapon effects:            To Hit
+Disable percent:                   10
+Energy cost per use:               0
+
+Damage vs. shields:                0
+Damage vs. no shields:             30
+Damage that penetrates shields:    4
+Damage pct carryover:              0
+Number of hits/shot:               3
+Damage area (hexes):               1
+at target hex:                     100
+at any hex distance 1:             0
+at any hex distance 2:             0
+at any hex distance 3:             0
+
+Apply damage to hex even in miss:  No
+
+
+=====================================================================
+Weapon name:                       30mm Rapid-Fire Chain Gun
+=====================================================================
+Required rank:                     1
+Armor factor:                      175
+Weight:                            100
+Base Cost:                         3850
+Repair factor ( % of Base Cost ):  45
+Ammo Capacity:                     24
+Mount restrictions:        ----,REMO,SENS,OGRE,GIAN,----,----,JUGG
+
+Max shots per turn:                2
+Max targetable range:              10
+Range increment:                   2
+Damage increment:                  5
+Indirect Fire:                     No
+Skill used:                        CANNON
+
+Damaged weapon effects:            To Hit
+Disable percent:                   20
+Energy cost per use:               0
+
+Damage vs. shields:                0
+Damage vs. no shields:             7
+Damage that penetrates shields:    2
+Damage pct carryover:              0
+Number of hits/shot:               5
+Damage area (hexes):               1
+at target hex:                     100
+at any hex distance 1:             0
+at any hex distance 2:             0
+at any hex distance 3:             0
+
+Apply damage to hex even in miss:  No
+
+
+=====================================================================
+Weapon name:                       200mm HEAP Gun
+=====================================================================
+Required rank:                     1
+Armor factor:                      20
+Weight:                            450
+Base Cost:                         7000
+Repair factor ( % of Base Cost ):  40
+Ammo Capacity:                     8
+Mount restrictions:        ----,----,----,----,GIAN,----,----,JUGG 
+
+Max shots per turn:                1
+Max targetable range:              25
+Range increment:                   5
+Damage increment:                  10
+Indirect Fire:                     No
+Skill used:                        CANNON
+
+Damaged weapon effects:            To Hit
+Disable percent:                   10
+Energy cost per use:               0
+
+Damage vs. shields:                0
+Damage vs. no shields:             110
+Damage that penetrates shields:    15
+Damage pct carryover:              0
+Number of hits/shot:               1
+Damage area (hexes):               1
+at target hex:                     100
+at any hex distance 1:             0
+at any hex distance 2:             0
+at any hex distance 3:             0
+
+Apply damage to hex even in miss:  No
+
+
+=====================================================================
+Weapon name:                       40mm "Ranger" Cannon
+=====================================================================
+Required rank:                     1
+Armor factor:                      20
+Weight:                            100
+Base Cost:                         2500
+Repair factor ( % of Base Cost ):  40
+Ammo Capacity:                     24
+Mount restrictions:        ----,----,----,----,GIAN,----,----,JUGG 
+
+Max shots per turn:                2
+Max targetable range:              30
+Range increment:                   10
+Damage increment:                  10
+Indirect Fire:                     No
+Skill used:                        CANNON
+
+Damaged weapon effects:            To Hit
+Disable percent:                   10
+Energy cost per use:               0
+
+Damage vs. shields:                0
+Damage vs. no shields:             30
+Damage that penetrates shields:    10
+Damage pct carryover:              0
+Number of hits/shot:               1
+Damage area (hexes):               1
+at target hex:                     100
+at any hex distance 1:             0
+at any hex distance 2:             0
+at any hex distance 3:             0
+
+Apply damage to hex even in miss:  No
+
+
+=====================================================================
+Weapon name:                       Blast Mortar
+=====================================================================
+Required rank:                     1
+Armor factor:                      100
+Weight:                            350
+Base Cost:                         5250
+Repair factor ( % of Base Cost ):  40
+Ammo Capacity:                     n/a
+Mount restrictions:        ----,----,----,----,GIAN,----,----,JUGG
+
+Max shots per turn:                1
+Max targetable range:              20
+Range increment:                   5
+Damage increment:                  10
+Indirect Fire:                     Yes
+Skill used:                        ENERGY
+
+Damaged weapon effects:            To Hit
+Disable percent:                   10
+Energy cost per use:               15
+
+Damage vs. shields:                75
+Damage vs. no shields:             15
+Damage that penetrates shields:    0
+Damage pct carryover:              20
+Number of hits/shot:               1
+Damage area (hexes):               2
+at target hex:                     100
+at any hex distance 1:             80
+at any hex distance 2:             0
+at any hex distance 3:             0
+
+Apply damage to hex even in miss:  No
+
+
+=====================================================================
+Weapon name:                       Jihad Missile System
+=====================================================================
+Required rank:                     1
+Armor factor:                      100
+Weight:                            50
+Base Cost:                         2000
+Repair factor ( % of Base Cost ):  100
+Ammo Capacity:                     1
+Mount restrictions:        ----,----,SENS,----,----,DEMN,REAP,JUGG
+
+Max shots per turn:                1
+Max targetable range:              2
+Range increment:                   1
+Damage increment:                  None
+Indirect Fire:                     Yes
+Skill used:                        MISSILE
+
+Damaged weapon effects:            Damage
+Disable percent:                   15
+Energy cost per use:               0
+
+Damage vs. shields:                0
+Damage vs. no shields:             20
+Damage that penetrates shields:    3
+Damage pct carryover:              0
+Number of hits/shot:               8
+Damage area (hexes):               3
+at target hex:                     100
+at any hex distance 1:             80
+at any hex distance 2:             50
+at any hex distance 3:             0
+
+Apply damage to hex even in miss:  Yes
+
+
+=====================================================================
+Weapon name:                       ElectroFlechette Cannon
+=====================================================================
+Required rank:                     1
+Armor factor:                      200
+Weight:                            120
+Base Cost:                         1800
+Repair factor ( % of Base Cost ):  60
+Ammo Capacity:                     30
+Mount restrictions:        ----,----,----,----,GIAN,----,----,JUGG 
+
+Max shots per turn:                1
+Max targetable range:              10
+Range increment:                   2
+Damage increment:                  2
+Indirect Fire:                     No
+Skill used:                        CANNON
+
+Damaged weapon effects:            Damage
+Disable percent:                   20
+Energy cost per use:               20
+
+Damage vs. shields:                3
+Damage vs. no shields:             3
+Damage that penetrates shields:    0
+Damage pct carryover:              100
+Number of hits/shot:               20
+Damage area (hexes):               1
+at target hex:                     100
+at any hex distance 1:             0
+at any hex distance 2:             0
+at any hex distance 3:             0
+
+Apply damage to hex even in miss:  No
+
+
+=====================================================================
+Weapon name:                       Particle Beam Weapon
+=====================================================================
+Required rank:                     4
+Armor factor:                      300
+Weight:                            150
+Base Cost:                         6000
+Repair factor ( % of Base Cost ):  60
+Ammo Capacity:                     n/a
+Mount restrictions:        ----,----,----,OGRE,----,DEMN,REAP,JUGG
+
+Max shots per turn:                1
+Max targetable range:              13
+Range increment:                   3
+Damage increment:                  4
+Indirect Fire:                     No
+Skill used:                        ADVTECH
+
+Damaged weapon effects:            Damage
+Disable percent:                   20
+Energy cost per use:               40
+
+Damage vs. shields:                100
+Damage vs. no shields:             100
+Damage that penetrates shields:    0
+Damage pct carryover:              100
+Number of hits/shot:               1
+Damage area (hexes):               1
+at target hex:                     100
+at any hex distance 1:             0
+at any hex distance 2:             0
+at any hex distance 3:             0
+
+Apply damage to hex even in miss:  No
+
+
+=====================================================================
+Weapon name:                       SC400 Compression Laser
+=====================================================================
+Required rank:                     2
+Armor factor:                      300
+Weight:                            60
+Base Cost:                         2000
+Repair factor ( % of Base Cost ):  55
+Ammo Capacity:                     n/a
+Mount restrictions:        SHAD,REMO,SENS,OGRE,----,DEMN,REAP,JUGG
+
+Max shots per turn:                1
+Max targetable range:              10
+Range increment:                   2
+Damage increment:                  2
+Indirect Fire:                     No
+Skill used:                        ENERGY
+
+Damaged weapon effects:            Damage
+Disable percent:                   15
+Energy cost per use:               18
+
+Damage vs. shields:                50
+Damage vs. no shields:             20
+Damage that penetrates shields:    0
+Damage pct carryover:              40
+Number of hits/shot:               1
+Damage area (hexes):               1
+at target hex:                     100
+at any hex distance 1:             0
+at any hex distance 2:             0
+at any hex distance 3:             0
+
+Apply damage to hex even in miss:  No
+
+
+=====================================================================
+Weapon name:                       SC1000 Compression Laser
+=====================================================================
+Required rank:                     2
+Armor factor:                      300
+Weight:                            180
+Base Cost:                         6500
+Repair factor ( % of Base Cost ):  55
+Ammo Capacity:                     n/a
+Mount restrictions:        ----,----,----,OGRE,----,DEMN,REAP,JUGG 
+
+Max shots per turn:                1
+Max targetable range:              20
+Range increment:                   4
+Damage increment:                  5
+Indirect Fire:                     No
+Skill used:                        ENERGY
+
+Damaged weapon effects:            Damage
+Disable percent:                   15
+Energy cost per use:               36
+
+Damage vs. shields:                120
+Damage vs. no shields:             48
+Damage that penetrates shields:    0
+Damage pct carryover:              40
+Number of hits/shot:               1
+Damage area (hexes):               1
+at target hex:                     100
+at any hex distance 1:             0
+at any hex distance 2:             0
+at any hex distance 3:             0
+
+Apply damage to hex even in miss:  No
+
+
+=====================================================================
+Weapon name:                       SCX Heavy Compression Laser
+=====================================================================
+Required rank:                     2
+Armor factor:                      400
+Weight:                            250
+Base Cost:                         9000
+Repair factor ( % of Base Cost ):  55
+Ammo Capacity:                     n/a
+Mount restrictions:        ----,----,----,----,----,DEMN,REAP,JUGG
+
+Max shots per turn:                1
+Max targetable range:              15
+Range increment:                   4
+Damage increment:                  4
+Indirect Fire:                     No
+Skill used:                        ENERGY
+
+Damaged weapon effects:            Damage
+Disable percent:                   15
+Energy cost per use:               48
+
+Damage vs. shields:                180
+Damage vs. no shields:             72
+Damage that penetrates shields:    0
+Damage pct carryover:              40
+Number of hits/shot:               1
+Damage area (hexes):               1
+at target hex:                     100
+at any hex distance 1:             0
+at any hex distance 2:             0
+at any hex distance 3:             0
+
+Apply damage to hex even in miss:  No
+
+
+=====================================================================
+Weapon name:                       MicroMissile Launcher
+=====================================================================
+Required rank:                     2
+Armor factor:                      250
+Weight:                            220
+Base Cost:                         4000
+Repair factor ( % of Base Cost ):  30
+Ammo Capacity:                     24
+Mount restrictions:        SHAD,REMO,SENS,----,----,DEMN,REAP,JUGG
+
+Max shots per turn:                3
+Max targetable range:              15
+Range increment:                   3
+Damage increment:                  None
+Indirect Fire:                     No
+Skill used:                        MISSILE
+
+Damaged weapon effects:            To Hit
+Disable percent:                   10
+Energy cost per use:               0
+
+Damage vs. shields:                0
+Damage vs. no shields:             10
+Damage that penetrates shields:    0
+Damage pct carryover:              0
+Number of hits/shot:               3
+Damage area (hexes):               1
+at target hex:                     100
+at any hex distance 1:             0
+at any hex distance 2:             0
+at any hex distance 3:             0
+
+Apply damage to hex even in miss:  Yes
+
+
+=====================================================================
+Weapon name:                       Plasma Cannon
+=====================================================================
+Required rank:                     3
+Armor factor:                      120
+Weight:                            150
+Base Cost:                         4000
+Repair factor ( % of Base Cost ):  60
+Ammo Capacity:                     n/a
+Mount restrictions:        ----,----,----,OGRE,----,DEMN,REAP,JUGG
+
+Max shots per turn:                1
+Max targetable range:              9
+Range increment:                   2
+Damage increment:                  3
+Indirect Fire:                     No
+Skill used:                        PLASMA
+
+Damaged weapon effects:            Damage
+Disable percent:                   20
+Energy cost per use:               50
+
+Damage vs. shields:                30
+Damage vs. no shields:             15
+Damage that penetrates shields:    0
+Damage pct carryover:              50
+Number of hits/shot:               5
+Damage area (hexes):               1
+at target hex:                     100
+at any hex distance 1:             05 }
+at any hex distance 2:             0
+at any hex distance 3:             0
+
+Apply damage to hex even in miss:  No
+
+
+=====================================================================
+Weapon name:                       Heavy Plasma Cannon
+=====================================================================
+Required rank:                     3
+Armor factor:                      100
+Weight:                            250
+Base Cost:                         6000
+Repair factor ( % of Base Cost ):  60
+Ammo Capacity:                     n/a
+Mount restrictions:        ----,----,----,----,----,DEMN,REAP,JUGG
+
+Max shots per turn:                1
+Max targetable range:              9
+Range increment:                   2
+Damage increment:                  3
+Indirect Fire:                     No
+Skill used:                        PLASMA
+
+Damaged weapon effects:            Damage
+Disable percent:                   20
+Energy cost per use:               75
+
+Damage vs. shields:                60
+Damage vs. no shields:             30
+Damage that penetrates shields:    0
+Damage pct carryover:              50
+Number of hits/shot:               5
+Damage area (hexes):               1
+at target hex:                     100
+at any hex distance 1:             0
+at any hex distance 2:             0
+at any hex distance 3:             0
+
+Apply damage to hex even in miss:  No
+
+
+=====================================================================
+Weapon name:                       SP2 Heavy Missile Launcher
+=====================================================================
+Required rank:                     3
+Armor factor:                      300
+Weight:                            400
+Base Cost:                         3000
+Repair factor ( % of Base Cost ):  20
+Ammo Capacity:                     8
+Mount restrictions:        ----,----,SENS,----,----,DEMN,REAP,JUGG
+
+Max shots per turn:                1
+Max targetable range:              30
+Range increment:                   6
+Damage increment:                  None
+Indirect Fire:                     Yes
+Skill used:                        MISSILE
+
+Damaged weapon effects:            To Hit
+Disable percent:                   30
+Energy cost per use:               0
+
+Damage vs. shields:                0
+Damage vs. no shields:             50
+Damage that penetrates shields:    5
+Damage pct carryover:              0
+Number of hits/shot:               2
+Damage area (hexes):               1
+at target hex:                     100
+at any hex distance 1:             0
+at any hex distance 2:             0
+at any hex distance 3:             0
+
+Apply damage to hex even in miss:  Yes
+
+
+=====================================================================
+Weapon name:                       Electromagnetic Pulse Beamer
+=====================================================================
+Required rank:                     4
+Armor factor:                      300
+Weight:                            120
+Base Cost:                         6000
+Repair factor ( % of Base Cost ):  60
+Ammo Capacity:                     n/a
+Mount restrictions:        ----,----,----,OGRE,----,DEMN,REAP,JUGG
+
+Max shots per turn:                1
+Max targetable range:              15
+Range increment:                   3
+Damage increment:                  5
+Indirect Fire:                     No
+Skill used:                        ADVTECH
+
+Damaged weapon effects:            Damage
+Disable percent:                   30
+Energy cost per use:               36
+
+Damage vs. shields:                250
+Damage vs. no shields:             0
+Damage that penetrates shields:    0
+Damage pct carryover:              0
+Number of hits/shot:               1
+Damage area (hexes):               1
+at target hex:                     100
+at any hex distance 1:             0
+at any hex distance 2:             0
+at any hex distance 3:             0
+
+Apply damage to hex even in miss:  No
+
+
+=====================================================================
+Weapon name:                       Devastator Chain Gun
+=====================================================================
+Required rank:                     4
+Armor factor:                      150
+Weight:                            150
+Base Cost:                         5250
+Repair factor ( % of Base Cost ):  50
+Ammo Capacity:                     30
+Mount restrictions:        ----,REMO,SENS,OGRE,GIAN,----,----,JUGG
+
+Max shots per turn:                3
+Max targetable range:              10
+Range increment:                   2
+Damage increment:                  5
+Indirect Fire:                     No
+Skill used:                        CANNON
+
+Damaged weapon effects:            To Hit
+Disable percent:                   20
+Energy cost per use:               0
+
+Damage vs. shields:                0
+Damage vs. no shields:             8
+Damage that penetrates shields:    1
+Damage pct carryover:              0
+Number of hits/shot:               4
+Damage area (hexes):               1
+at target hex:                     100
+at any hex distance 1:             0
+at any hex distance 2:             0
+at any hex distance 3:             0
+
+Apply damage to hex even in miss:  No
+
+
+=====================================================================
+Weapon name:                       Katyusha-Z Rocket System
+=====================================================================
+Required rank:                     4
+Armor factor:                      250
+Weight:                            320
+Base Cost:                         6250
+Repair factor ( % of Base Cost ):  20
+Ammo Capacity:                     6
+Mount restrictions:        ----,----,SENS,----,----,DEMN,REAP,JUGG
+
+Max shots per turn:                1
+Max targetable range:              30
+Range increment:                   6
+Damage increment:                  None
+Indirect Fire:                     Yes
+Skill used:                        MISSILE
+
+Damaged weapon effects:            Damage
+Disable percent:                   30
+Energy cost per use:               0
+
+Damage vs. shields:                0
+Damage vs. no shields:             25
+Damage that penetrates shields:    3
+Damage pct carryover:              0
+Number of hits/shot:               2
+Damage area (hexes):               3
+at target hex:                     100
+at any hex distance 1:             80
+at any hex distance 2:             80
+at any hex distance 3:             0
+
+Apply damage to hex even in miss:  Yes
+
+
+=====================================================================
+Weapon name:                       260mm Auto-Mortar
+=====================================================================
+Required rank:                     4
+Armor factor:                      150
+Weight:                            250
+Base Cost:                         7700
+Repair factor ( % of Base Cost ):  30
+Ammo Capacity:                     10
+Mount restrictions:        ----,----,----,----,GIAN,----,----,JUGG
+
+Max shots per turn:                1
+Max targetable range:              12
+Range increment:                   3
+Damage increment:                  None
+Indirect Fire:                     Yes
+Skill used:                        CANNON
+
+Damaged weapon effects:            Damage
+Disable percent:                   0
+Energy cost per use:               0
+
+Damage vs. shields:                0
+Damage vs. no shields:             10
+Damage that penetrates shields:    1
+Damage pct carryover:              0
+Number of hits/shot:               12
+Damage area (hexes):               2
+at target hex:                     100
+at any hex distance 1:             80
+at any hex distance 2:             0
+at any hex distance 3:             0
+
+Apply damage to hex even in miss:  No
+
+
+=====================================================================
+Weapon name:                       Automatic Electromagnetic Flux
+=====================================================================
+Required rank:                     3
+Armor factor:                      500
+Weight:                            75
+Base Cost:                         3300
+Repair factor ( % of Base Cost ):  55
+Ammo Capacity:                     n/a
+Mount restrictions:        SHAD,REMO,SENS,OGRE,----,DEMN,REAP,JUGG
+
+Max shots per turn:                3
+Max targetable range:              2
+Range increment:                   1
+Damage increment:                  1
+Indirect Fire:                     No
+Skill used:                        ELF
+
+Damaged weapon effects:            Damage
+Disable percent:                   5
+Energy cost per use:               10
+
+Damage vs. shields:                0
+Damage vs. no shields:             20
+Damage that penetrates shields:    20
+Damage pct carryover:              0
+Number of hits/shot:               1
+Damage area (hexes):               1
+at target hex:                     100
+at any hex distance 1:             0
+at any hex distance 2:             0
+at any hex distance 3:             0
+
+Apply damage to hex even in miss:  No
+
+
+=====================================================================
+Weapon name:                       210mm X-HEAP Cannon
+=====================================================================
+Required rank:                     4
+Armor factor:                      20
+Weight:                            400
+Base Cost:                         7000
+Repair factor ( % of Base Cost ):  50
+Ammo Capacity:                     15
+Mount restrictions:        ----,----,----,----,GIAN,----,----,JUGG
+
+Max shots per turn:                1
+Max targetable range:              20
+Range increment:                   10
+Damage increment:                  10
+Indirect Fire:                     No
+Skill used:                        CANNON
+
+Damaged weapon effects:            To Hit
+Disable percent:                   10
+Energy cost per use:               0
+
+Damage vs. shields:                0
+Damage vs. no shields:             140
+Damage that penetrates shields:    35
+Damage pct carryover:              0
+Number of hits/shot:               1
+Damage area (hexes):               1
+at target hex:                     100
+at any hex distance 1:             0
+at any hex distance 2:             0
+at any hex distance 3:             0
+
+Apply damage to hex even in miss:  No
+
+
+=====================================================================
+Weapon name:                       Light Particle Gun
+=====================================================================
+Required rank:                     5
+Armor factor:                      300
+Weight:                            96
+Base Cost:                         1500
+Repair factor ( % of Base Cost ):  70
+Ammo Capacity:                     n/a
+Mount restrictions:        ----,REMO,SENS,OGRE,GIAN,----,----,JUGG
+
+Max shots per turn:                1
+Max targetable range:              20
+Range increment:                   5
+Damage increment:                  10
+Indirect Fire:                     No
+Skill used:                        ADVTECH
+
+Damaged weapon effects:            To Hit
+Disable percent:                   15
+Energy cost per use:               18
+
+Damage vs. shields:                5
+Damage vs. no shields:             25
+Damage that penetrates shields:    0
+Damage pct carryover:              100
+Number of hits/shot:               3
+Damage area (hexes):               1
+at target hex:                     100
+at any hex distance 1:             0
+at any hex distance 2:             0
+at any hex distance 3:             0
+
+Apply damage to hex even in miss:  No
+
+
+=====================================================================
+Weapon name:                       Medium Particle Gun
+=====================================================================
+Required rank:                     5
+Armor factor:                      280
+Weight:                            175
+Base Cost:                         4000
+Repair factor ( % of Base Cost ):  70
+Ammo Capacity:                     n/a
+Mount restrictions:        ----,----,----,----,GIAN,----,----,JUGG
+
+Max shots per turn:                1
+Max targetable range:              20
+Range increment:                   5
+Damage increment:                  10
+Indirect Fire:                     No
+Skill used:                        ADVTECH
+
+Damaged weapon effects:            To Hit
+Disable percent:                   15
+Energy cost per use:               24
+
+Damage vs. shields:                8
+Damage vs. no shields:             40
+Damage that penetrates shields:    0
+Damage pct carryover:              100
+Number of hits/shot:               3
+Damage area (hexes):               1
+at target hex:                     100
+at any hex distance 1:             0
+at any hex distance 2:             0
+at any hex distance 3:             0
+
+Apply damage to hex even in miss:  No
+
+
+=====================================================================
+Weapon name:                       Heavy Particle Gun
+=====================================================================
+Required rank:                     5
+Armor factor:                      260
+Weight:                            700
+Base Cost:                         6000
+Repair factor ( % of Base Cost ):  70
+Ammo Capacity:                     n/a
+Mount restrictions:        ----,----,----,----,GIAN,----,----,JUGG
+
+Max shots per turn:                1
+Max targetable range:              20
+Range increment:                   5
+Damage increment:                  10
+Indirect Fire:                     No
+Skill used:                        ADVTECH
+
+Damaged weapon effects:            To Hit
+Disable percent:                   15
+Energy cost per use:               33
+
+Damage vs. shields:                12
+Damage vs. no shields:             60
+Damage that penetrates shields:    0
+Damage pct carryover:              100
+Number of hits/shot:               3
+Damage area (hexes):               1
+at target hex:                     100
+at any hex distance 1:             0
+at any hex distance 2:             0
+at any hex distance 3:             0
+
+Apply damage to hex even in miss:  No
+
+
+=====================================================================
+Weapon name:                       S-Heavy Particle Gun
+=====================================================================
+Required rank:                     6
+Armor factor:                      240
+Weight:                            550
+Base Cost:                         10000
+Repair factor ( % of Base Cost ):  70
+Ammo Capacity:                     n/a
+Mount restrictions:        ----,----,----,----,GIAN,----,----,JUGG
+
+Max shots per turn:                1
+Max targetable range:              20
+Range increment:                   5
+Damage increment:                  10
+Indirect Fire:                     No
+Skill used:                        ADVTECH
+
+Damaged weapon effects:            To Hit
+Disable percent:                   15
+Energy cost per use:               36
+
+Damage vs. shields:                20
+Damage vs. no shields:             120
+Damage that penetrates shields:    0
+Damage pct carryover:              100
+Number of hits/shot:               2
+Damage area (hexes):               1
+at target hex:                     100
+at any hex distance 1:             0
+at any hex distance 2:             0
+at any hex distance 3:             0
+
+Apply damage to hex even in miss:  No
+
+
+=====================================================================
+Weapon name:                       Neutron Gun
+=====================================================================
+Required rank:                     7
+Armor factor:                      400
+Weight:                            60
+Base Cost:                         8000
+Repair factor ( % of Base Cost ):  75
+Ammo Capacity:                     n/a
+Mount restrictions:        SHAD,REMO,SENS,OGRE,----,DEMN,REAP,JUGG
+
+Max shots per turn:                1
+Max targetable range:              20
+Range increment:                   5
+Damage increment:                  10
+Indirect Fire:                     No
+Skill used:                        ADVTECH
+
+Damaged weapon effects:            To Hit
+Disable percent:                   15
+Energy cost per use:               24
+
+Damage vs. shields:                12
+Damage vs. no shields:             60
+Damage that penetrates shields:    0
+Damage pct carryover:              100
+Number of hits/shot:               2
+Damage area (hexes):               1
+at target hex:                     100
+at any hex distance 1:             0
+at any hex distance 2:             0
+at any hex distance 3:             0
+
+Apply damage to hex even in miss:  No
+
+
+=====================================================================
+Weapon name:                       Neutron Beam Weapon
+=====================================================================
+Required rank:                     7
+Armor factor:                      450
+Weight:                            220
+Base Cost:                         7000
+Repair factor ( % of Base Cost ):  70
+Ammo Capacity:                     n/a
+Mount restrictions:        ----,----,----,OGRE,----,DEMN,REAP,JUGG
+
+Max shots per turn:                1
+Max targetable range:              20
+Range increment:                   4
+Damage increment:                  5
+Indirect Fire:                     No
+Skill used:                        ADVTECH
+
+Damaged weapon effects:            Damage
+Disable percent:                   15
+Energy cost per use:               60
+
+Damage vs. shields:                100
+Damage vs. no shields:             100
+Damage that penetrates shields:    0
+Damage pct carryover:              100
+Number of hits/shot:               2
+Damage area (hexes):               1
+at target hex:                     100
+at any hex distance 1:             0
+at any hex distance 2:             0
+at any hex distance 3:             0
+
+Apply damage to hex even in miss:  No
+
+
+=====================================================================
+Weapon name:                       Saturation Missile Launcher
+=====================================================================
+Required rank:                     6
+Armor factor:                      300
+Weight:                            150
+Base Cost:                         6000
+Repair factor ( % of Base Cost ):  10
+Ammo Capacity:                     5
+Mount restrictions:        ----,----,SENS,----,----,DEMN,REAP,JUGG
+
+Max shots per turn:                1
+Max targetable range:              25
+Range increment:                   5
+Damage increment:                  None
+Indirect Fire:                     Yes
+Skill used:                        MISSILE
+
+Damaged weapon effects:            Damage
+Disable percent:                   30
+Energy cost per use:               0
+
+Damage vs. shields:                0
+Damage vs. no shields:             15
+Damage that penetrates shields:    2
+Damage pct carryover:              0
+Number of hits/shot:               5
+Damage area (hexes):               4
+at target hex:                     100
+at any hex distance 1:             80
+at any hex distance 2:             60
+at any hex distance 3:             30
+
+Apply damage to hex even in miss:  Yes
+
+
+=====================================================================
+Weapon name:                       Hunter-Killer Missile Launcher
+=====================================================================
+Required rank:                     7
+Armor factor:                      300
+Weight:                            350
+Base Cost:                         12000
+Repair factor ( % of Base Cost ):  20
+Ammo Capacity:                     8
+Mount restrictions:        ----,----,----,----,----,DEMN,REAP,JUGG
+
+Max shots per turn:                1
+Max targetable range:              30
+Range increment:                   15
+Damage increment:                  None
+Indirect Fire:                     Yes
+Skill used:                        MISSILE
+
+Damaged weapon effects:            To Hit
+Disable percent:                   30
+Energy cost per use:               0
+
+Damage vs. shields:                0
+Damage vs. no shields:             40
+Damage that penetrates shields:    4
+Damage pct carryover:              0
+Number of hits/shot:               5
+Damage area (hexes):               1
+at target hex:                     100
+at any hex distance 1:             0
+at any hex distance 2:             0
+at any hex distance 3:             0
+
+Apply damage to hex even in miss:  Yes
+
+
+=====================================================================
+Weapon name:                       SP500 Light Pulse Laser
+=====================================================================
+Required rank:                     6
+Armor factor:                      300
+Weight:                            60
+Base Cost:                         1200
+Repair factor ( % of Base Cost ):  60
+Ammo Capacity:                     n/a
+Mount restrictions:        SHAD,REMO,SENS,OGRE,----,DEMN,REAP,JUGG
+
+Max shots per turn:                1
+Max targetable range:              10
+Range increment:                   2
+Damage increment:                  3
+Indirect Fire:                     No
+Skill used:                        ENERGY
+
+Damaged weapon effects:            Damage
+Disable percent:                   20
+Energy cost per use:               30
+
+Damage vs. shields:                50
+Damage vs. no shields:             10
+Damage that penetrates shields:    0
+Damage pct carryover:              20
+Number of hits/shot:               3
+Damage area (hexes):               1
+at target hex:                     100
+at any hex distance 1:             0
+at any hex distance 2:             0
+at any hex distance 3:             0
+
+Apply damage to hex even in miss:  No
+
+
+=====================================================================
+Weapon name:                       SP750 Standard Pulse Laser
+=====================================================================
+Required rank:                     6
+Armor factor:                      300
+Weight:                            180
+Base Cost:                         7000
+Repair factor ( % of Base Cost ):  60
+Ammo Capacity:                     n/a
+Mount restrictions:        ----,----,----,OGRE,----,DEMN,REAP,JUGG
+
+Max shots per turn:                1
+Max targetable range:              15
+Range increment:                   3
+Damage increment:                  5
+Indirect Fire:                     No
+Skill used:                        ENERGY
+
+Damaged weapon effects:            Damage
+Disable percent:                   20
+Energy cost per use:               36
+
+Damage vs. shields:                80
+Damage vs. no shields:             16
+Damage that penetrates shields:    0
+Damage pct carryover:              20
+Number of hits/shot:               3
+Damage area (hexes):               1
+at target hex:                     100
+at any hex distance 1:             0
+at any hex distance 2:             0
+at any hex distance 3:             0
+
+Apply damage to hex even in miss:  No
+
+
+=====================================================================
+Weapon name:                       SP1200 Magna Pulse Laser
+=====================================================================
+Required rank:                     6
+Armor factor:                      300
+Weight:                            390
+Base Cost:                         11000
+Repair factor ( % of Base Cost ):  60
+Ammo Capacity:                     n/a
+Mount restrictions:        ----,----,----,----,----,DEMN,REAP,JUGG
+
+Max shots per turn:                1
+Max targetable range:              20
+Range increment:                   4
+Damage increment:                  7
+Indirect Fire:                     No
+Skill used:                        ENERGY
+
+Damaged weapon effects:            Damage
+Disable percent:                   20
+Energy cost per use:               45
+
+Damage vs. shields:                120
+Damage vs. no shields:             24
+Damage that penetrates shields:    0
+Damage pct carryover:              20
+Number of hits/shot:               3
+Damage area (hexes):               1
+at target hex:                     100
+at any hex distance 1:             0
+at any hex distance 2:             0
+at any hex distance 3:             0
+
+Apply damage to hex even in miss:  No
+
+
+=====================================================================
+Weapon name:                       90mm Accelerator Cannon
+=====================================================================
+Required rank:                     6
+Armor factor:                      150
+Weight:                            210
+Base Cost:                         6500
+Repair factor ( % of Base Cost ):  65
+Ammo Capacity:                     20
+Mount restrictions:        ----,REMO,SENS,OGRE,GIAN,----,----,JUGG
+
+Max shots per turn:                2
+Max targetable range:              12
+Range increment:                   3
+Damage increment:                  5
+Indirect Fire:                     No
+Skill used:                        CANNON
+
+Damaged weapon effects:            Damage
+Disable percent:                   15
+Energy cost per use:               18
+
+Damage vs. shields:                5
+Damage vs. no shields:             25
+Damage that penetrates shields:    5
+Damage pct carryover:              100
+Number of hits/shot:               3
+Damage area (hexes):               1
+at target hex:                     100
+at any hex distance 1:             0
+at any hex distance 2:             0
+at any hex distance 3:             0
+
+Apply damage to hex even in miss:  No
+
+
+=====================================================================
+Weapon name:                       SE700 Laser Gatling
+=====================================================================
+Required rank:                     7
+Armor factor:                      350
+Weight:                            50
+Base Cost:                         4500
+Repair factor ( % of Base Cost ):  70
+Ammo Capacity:                     n/a
+Mount restrictions:        ----,----,----,OGRE,----,DEMN,REAP,JUGG
+
+Max shots per turn:                4
+Max targetable range:              18
+Range increment:                   4
+Damage increment:                  6
+Indirect Fire:                     No
+Skill used:                        ENERGY
+
+Damaged weapon effects:            Damage
+Disable percent:                   25
+Energy cost per use:               10
+
+Damage vs. shields:                32
+Damage vs. no shields:             6
+Damage that penetrates shields:    0
+Damage pct carryover:              20
+Number of hits/shot:               2
+Damage area (hexes):               1
+at target hex:                     100
+at any hex distance 1:             0
+at any hex distance 2:             0
+at any hex distance 3:             0
+
+Apply damage to hex even in miss:  No
+
+
+=====================================================================
+Weapon name:                       SP-X Rapid Missile System
+=====================================================================
+Required rank:                     6
+Armor factor:                      250
+Weight:                            290
+Base Cost:                         7200
+Repair factor ( % of Base Cost ):  20
+Ammo Capacity:                     20
+Mount restrictions:        ----,----,----,----,----,DEMN,REAP,JUGG
+
+Max shots per turn:                4
+Max targetable range:              30
+Range increment:                   6
+Damage increment:                  None
+Indirect Fire:                     Yes
+Skill used:                        MISSILE
+
+Damaged weapon effects:            To Hit
+Disable percent:                   30
+Energy cost per use:               0
+
+Damage vs. shields:                0
+Damage vs. no shields:             6
+Damage that penetrates shields:    1
+Damage pct carryover:              0
+Number of hits/shot:               8
+Damage area (hexes):               1
+at target hex:                     100
+at any hex distance 1:             80
+at any hex distance 2:             0
+at any hex distance 3:             0
+
+Apply damage to hex even in miss:  Yes
+
+
+=====================================================================
+Weapon name:                       Plasma Beam
+=====================================================================
+Required rank:                     7
+Armor factor:                      150
+Weight:                            190
+Base Cost:                         7750
+Repair factor ( % of Base Cost ):  60
+Ammo Capacity:                     n/a
+Mount restrictions:        ----,----,----,OGRE,----,DEMN,REAP,JUGG
+
+Max shots per turn:                1
+Max targetable range:              12
+Range increment:                   3
+Damage increment:                  3
+Indirect Fire:                     No
+Skill used:                        PLASMA
+
+Damaged weapon effects:            Damage
+Disable percent:                   20
+Energy cost per use:               60
+
+Damage vs. shields:                90
+Damage vs. no shields:             45
+Damage that penetrates shields:    0
+Damage pct carryover:              50
+Number of hits/shot:               3
+Damage area (hexes):               1
+at target hex:                     100
+at any hex distance 1:             0
+at any hex distance 2:             0
+at any hex distance 3:             0
+
+Apply damage to hex even in miss:  No
+
+
+=====================================================================
+Weapon name:                       Plasma Mortar
+=====================================================================
+Required rank:                     7
+Armor factor:                      175
+Weight:                            400
+Base Cost:                         7000
+Repair factor ( % of Base Cost ):  30
+Ammo Capacity:                     n/a
+Mount restrictions:        ----,----,----,----,GIAN,----,----,JUGG
+
+Max shots per turn:                2
+Max targetable range:              12
+Range increment:                   4
+Damage increment:                  6
+Indirect Fire:                     Yes
+Skill used:                        PLASMA
+
+Damaged weapon effects:            Damage
+Disable percent:                   15
+Energy cost per use:               16
+
+Damage vs. shields:                16
+Damage vs. no shields:             8
+Damage that penetrates shields:    0
+Damage pct carryover:              50
+Number of hits/shot:               5
+Damage area (hexes):               2
+at target hex:                     100
+at any hex distance 1:             80
+at any hex distance 2:             0
+at any hex distance 3:             0
+
+Apply damage to hex even in miss:  No
+
+
+=====================================================================
+Weapon name:                       Chain Electromagnetic Flux
+=====================================================================
+Required rank:                     5
+Armor factor:                      500
+Weight:                            155
+Base Cost:                         5000
+Repair factor ( % of Base Cost ):  50
+Ammo Capacity:                     n/a
+Mount restrictions:        SHAD,REMO,SENS,OGRE,----,DEMN,REAP,JUGG
+
+Max shots per turn:                4
+Max targetable range:              2
+Range increment:                   1
+Damage increment:                  1
+Indirect Fire:                     No
+Skill used:                        ELF
+
+Damaged weapon effects:            Damage
+Disable percent:                   5
+Energy cost per use:               10
+
+Damage vs. shields:                0
+Damage vs. no shields:             25
+Damage that penetrates shields:    25
+Damage pct carryover:              0
+Number of hits/shot:               1
+Damage area (hexes):               1
+at target hex:                     100
+at any hex distance 1:             0
+at any hex distance 2:             0
+at any hex distance 3:             0
+
+Apply damage to hex even in miss:  No
+
+
+=====================================================================
+Weapon name:                       Thermal Lance
+=====================================================================
+Required rank:                     8
+Armor factor:                      10
+Weight:                            100
+Base Cost:                         2500
+Repair factor ( % of Base Cost ):  30
+Ammo Capacity:                     n/a
+Mount restrictions:        SHAD,REMO,SENS,OGRE,----,DEMN,REAP,JUGG
+
+Max shots per turn:                1
+Max targetable range:              1
+Range increment:                   1
+Damage increment:                  1
+Indirect Fire:                     No
+Skill used:                        ADVTECH
+
+Damaged weapon effects:            Damage
+Disable percent:                   0
+Energy cost per use:               80
+
+Damage vs. shields:                300
+Damage vs. no shields:             300
+Damage that penetrates shields:    0
+Damage pct carryover:              100
+Number of hits/shot:               1
+Damage area (hexes):               1
+at target hex:                     100
+at any hex distance 1:             0
+at any hex distance 2:             0
+at any hex distance 3:             0
+
+Apply damage to hex even in miss:  No
+
+
+=====================================================================
+Weapon name:                       Thermal Needler
+=====================================================================
+Required rank:                     9
+Armor factor:                      100
+Weight:                            25
+Base Cost:                         4000
+Repair factor ( % of Base Cost ):  80
+Ammo Capacity:                     n/a
+Mount restrictions:        SHAD,REMO,SENS,OGRE,----,DEMN,REAP,JUGG
+
+Max shots per turn:                1
+Max targetable range:              15
+Range increment:                   3
+Damage increment:                  3
+Indirect Fire:                     No
+Skill used:                        ADVTECH
+
+Damaged weapon effects:            Damage
+Disable percent:                   15
+Energy cost per use:               40
+
+Damage vs. shields:                0
+Damage vs. no shields:             10
+Damage that penetrates shields:    10
+Damage pct carryover:              0
+Number of hits/shot:               10
+Damage area (hexes):               1
+at target hex:                     100
+at any hex distance 1:             0
+at any hex distance 2:             0
+at any hex distance 3:             0
+
+Apply damage to hex even in miss:  No
+
+
+=====================================================================
+Weapon name:                       Fusion Flamer
+=====================================================================
+Required rank:                     8
+Armor factor:                      175
+Weight:                            72
+Base Cost:                         1250
+Repair factor ( % of Base Cost ):  50
+Ammo Capacity:                     n/a
+Mount restrictions:        SHAD,REMO,SENS,OGRE,----,DEMN,REAP,JUGG
+
+Max shots per turn:                1
+Max targetable range:              9
+Range increment:                   2
+Damage increment:                  3
+Indirect Fire:                     No
+Skill used:                        PLASMA
+
+Damaged weapon effects:            Damage
+Disable percent:                   10
+Energy cost per use:               30
+
+Damage vs. shields:                32
+Damage vs. no shields:             24
+Damage that penetrates shields:    0
+Damage pct carryover:              67
+Number of hits/shot:               4
+Damage area (hexes):               1
+at target hex:                     100
+at any hex distance 1:             0
+at any hex distance 2:             0
+at any hex distance 3:             0
+
+Apply damage to hex even in miss:  No
+
+
+=====================================================================
+Weapon name:                       Fusion Cannon
+=====================================================================
+Required rank:                     8
+Armor factor:                      200
+Weight:                            188
+Base Cost:                         2500
+Repair factor ( % of Base Cost ):  50
+Ammo Capacity:                     n/a
+Mount restrictions:        ----,----,----,OGRE,----,DEMN,REAP,JUGG
+
+Max shots per turn:                1
+Max targetable range:              9
+Range increment:                   2
+Damage increment:                  3
+Indirect Fire:                     No
+Skill used:                        PLASMA
+
+Damaged weapon effects:            Damage
+Disable percent:                   10
+Energy cost per use:               45
+
+Damage vs. shields:                48
+Damage vs. no shields:             32
+Damage that penetrates shields:    0
+Damage pct carryover:              67
+Number of hits/shot:               4
+Damage area (hexes):               1
+at target hex:                     100
+at any hex distance 1:             0
+at any hex distance 2:             0
+at any hex distance 3:             0
+
+Apply damage to hex even in miss:  No
+
+
+=====================================================================
+Weapon name:                       Fusion Annihilator
+=====================================================================
+Required rank:                     8
+Armor factor:                      200
+Weight:                            310
+Base Cost:                         6000
+Repair factor ( % of Base Cost ):  50
+Ammo Capacity:                     n/a
+Mount restrictions:        ----,----,----,----,----,DEMN,REAP,JUGG
+
+Max shots per turn:                1
+Max targetable range:              9
+Range increment:                   2
+Damage increment:                  3
+Indirect Fire:                     No
+Skill used:                        PLASMA
+
+Damaged weapon effects:            Damage
+Disable percent:                   10
+Energy cost per use:               60
+
+Damage vs. shields:                72
+Damage vs. no shields:             48
+Damage that penetrates shields:    0
+Damage pct carryover:              67
+Number of hits/shot:               4
+Damage area (hexes):               1
+at target hex:                     100
+at any hex distance 1:             0
+at any hex distance 2:             0
+at any hex distance 3:             0
+
+Apply damage to hex even in miss:  No
+
+
+=====================================================================
+Weapon name:                       100mm Accelerator Chain Gun
+=====================================================================
+Required rank:                     10
+Armor factor:                      175
+Weight:                            290
+Base Cost:                         11000
+Repair factor ( % of Base Cost ):  15
+Ammo Capacity:                     24
+Mount restrictions:        ----,REMO,SENS,OGRE,GIAN,----,----,JUGG
+
+Max shots per turn:                2
+Max targetable range:              12
+Range increment:                   3
+Damage increment:                  5
+Indirect Fire:                     No
+Skill used:                        CANNON
+
+Damaged weapon effects:            Damage
+Disable percent:                   15
+Energy cost per use:               24
+
+Damage vs. shields:                6
+Damage vs. no shields:             30
+Damage that penetrates shields:    6
+Damage pct carryover:              100
+Number of hits/shot:               4
+Damage area (hexes):               1
+at target hex:                     100
+at any hex distance 1:             0
+at any hex distance 2:             0
+at any hex distance 3:             0
+
+Apply damage to hex even in miss:  No
+
+
+=====================================================================
+Weapon name:                       SP800 Pulse Laser Gatling
+=====================================================================
+Required rank:                     8
+Armor factor:                      350
+Weight:                            75
+Base Cost:                         8800
+Repair factor ( % of Base Cost ):  20
+Ammo Capacity:                     n/a
+Mount restrictions:        ----,----,----,OGRE,----,DEMN,REAP,JUGG
+
+Max shots per turn:                2
+Max targetable range:              10
+Range increment:                   2
+Damage increment:                  3
+Indirect Fire:                     No
+Skill used:                        ENERGY
+
+Damaged weapon effects:            Damage
+Disable percent:                   25
+Energy cost per use:               24
+
+Damage vs. shields:                40
+Damage vs. no shields:             10
+Damage that penetrates shields:    0
+Damage pct carryover:              20
+Number of hits/shot:               4
+Damage area (hexes):               1
+at target hex:                     100
+at any hex distance 1:             0
+at any hex distance 2:             0
+at any hex distance 3:             0
+
+Apply damage to hex even in miss:  No
+
+
+=====================================================================
+Weapon name:                       Hunter-Killer Rapid Missile System
+=====================================================================
+Required rank:                     9
+Armor factor:                      200
+Weight:                            450
+Base Cost:                         12000
+Repair factor ( % of Base Cost ):  15
+Ammo Capacity:                     16
+Mount restrictions:        ----,----,SENS,----,----,DEMN,REAP,JUGG
+
+Max shots per turn:                4
+Max targetable range:              30
+Range increment:                   15
+Damage increment:                  None
+Indirect Fire:                     Yes
+Skill used:                        MISSILE
+
+Damaged weapon effects:            To Hit
+Disable percent:                   30
+Energy cost per use:               8
+
+Damage vs. shields:                0
+Damage vs. no shields:             40
+Damage that penetrates shields:    6
+Damage pct carryover:              0
+Number of hits/shot:               2
+Damage area (hexes):               1
+at target hex:                     100
+at any hex distance 1:             80
+at any hex distance 2:             0
+at any hex distance 3:             0
+
+Apply damage to hex even in miss:  Yes
+
+
+=====================================================================
+Weapon name:                       Electromagnetic Pulse Blaster
+=====================================================================
+Required rank:                     9
+Armor factor:                      300
+Weight:                            175
+Base Cost:                         9000
+Repair factor ( % of Base Cost ):  55
+Ammo Capacity:                     n/a
+Mount restrictions:        SHAD,REMO,SENS,OGRE,----,DEMN,REAP,JUGG
+
+Max shots per turn:                2
+Max targetable range:              15
+Range increment:                   3
+Damage increment:                  5
+Indirect Fire:                     No
+Skill used:                        ADVTECH
+
+Damaged weapon effects:            Damage
+Disable percent:                   30
+Energy cost per use:               24
+
+Damage vs. shields:                150
+Damage vs. no shields:             0
+Damage that penetrates shields:    0
+Damage pct carryover:              0
+Number of hits/shot:               2
+Damage area (hexes):               1
+at target hex:                     100
+at any hex distance 1:             0
+at any hex distance 2:             0
+at any hex distance 3:             0
+
+Apply damage to hex even in miss:  No
+
+
+=====================================================================
+Weapon name:                       Heavy Saturation Rocket System
+=====================================================================
+Required rank:                     10
+Armor factor:                      200
+Weight:                            500
+Base Cost:                         16000
+Repair factor ( % of Base Cost ):  15
+Ammo Capacity:                     4
+Mount restrictions:        ----,----,----,----,----,DEMN,REAP,JUGG
+
+Max shots per turn:                1
+Max targetable range:              25
+Range increment:                   5
+Damage increment:                  None
+Indirect Fire:                     Yes
+Skill used:                        MISSILE
+
+Damaged weapon effects:            Damage
+Disable percent:                   20
+Energy cost per use:               0
+
+Damage vs. shields:                0
+Damage vs. no shields:             30
+Damage that penetrates shields:    3
+Damage pct carryover:              0
+Number of hits/shot:               5
+Damage area (hexes):               4
+at target hex:                     100
+at any hex distance 1:             80
+at any hex distance 2:             60
+at any hex distance 3:             30
+
+Apply damage to hex even in miss:  Yes
+
+
+=====================================================================
+Weapon name:                       Fusion Mortar
+=====================================================================
+Required rank:                     10
+Armor factor:                      200
+Weight:                            550
+Base Cost:                         5525
+Repair factor ( % of Base Cost ):  30
+Ammo Capacity:                     24
+Mount restrictions:        ----,----,----,----,GIAN,----,----,JUGG
+
+Max shots per turn:                2
+Max targetable range:              12
+Range increment:                   4
+Damage increment:                  6
+Indirect Fire:                     Yes
+Skill used:                        PLASMA
+
+Damaged weapon effects:            Damage
+Disable percent:                   15
+Energy cost per use:               18
+
+Damage vs. shields:                18
+Damage vs. no shields:             12
+Damage that penetrates shields:    0
+Damage pct carryover:              67
+Number of hits/shot:               6
+Damage area (hexes):               2
+at target hex:                     100
+at any hex distance 1:             80
+at any hex distance 2:             0
+at any hex distance 3:             0
+
+Apply damage to hex even in miss:  No
+
+
+=====================================================================
+Weapon name:                       Electromagnetic Flux Mortar
+=====================================================================
+Required rank:                     10
+Armor factor:                      500
+Weight:                            475
+Base Cost:                         15575
+Repair factor ( % of Base Cost ):  25
+Ammo Capacity:                     n/a
+Mount restrictions:        ----,----,----,OGRE,----,DEMN,REAP,JUGG
+
+Max shots per turn:                2
+Max targetable range:              12
+Range increment:                   4
+Damage increment:                  6
+Indirect Fire:                     Yes
+Skill used:                        ELF
+
+Damaged weapon effects:            Damage
+Disable percent:                   10
+Energy cost per use:               16
+
+Damage vs. shields:                0
+Damage vs. no shields:             20
+Damage that penetrates shields:    20
+Damage pct carryover:              0
+Number of hits/shot:               2
+Damage area (hexes):               2
+at target hex:                     100
+at any hex distance 1:             80
+at any hex distance 2:             0
+at any hex distance 3:             0
+
+Apply damage to hex even in miss:  No
+
+
+=====================================================================
+Weapon name:                       Light Compression Blaster
+=====================================================================
+Required rank:                     11
+Armor factor:                      200
+Weight:                            210
+Base Cost:                         10000
+Repair factor ( % of Base Cost ):  65
+Ammo Capacity:                     n/a
+Mount restrictions:        ----,----,----,OGRE,----,DEMN,REAP,JUGG
+
+Max shots per turn:                2
+Max targetable range:              20
+Range increment:                   4
+Damage increment:                  5
+Indirect Fire:                     No
+Skill used:                        ENERGY
+
+Damaged weapon effects:            Damage
+Disable percent:                   15
+Energy cost per use:               15
+
+Damage vs. shields:                80
+Damage vs. no shields:             64
+Damage that penetrates shields:    0
+Damage pct carryover:              80
+Number of hits/shot:               1
+Damage area (hexes):               1
+at target hex:                     100
+at any hex distance 1:             0
+at any hex distance 2:             0
+at any hex distance 3:             0
+
+Apply damage to hex even in miss:  No
+
+
+=====================================================================
+Weapon name:                       Heavy Compression Blaster
+=====================================================================
+Required rank:                     11
+Armor factor:                      200
+Weight:                            425
+Base Cost:                         18000
+Repair factor ( % of Base Cost ):  65
+Ammo Capacity:                     n/a
+Mount restrictions:        ----,----,----,----,----,DEMN,REAP,JUGG
+
+Max shots per turn:                2
+Max targetable range:              20
+Range increment:                   4
+Damage increment:                  5
+Indirect Fire:                     No
+Skill used:                        ENERGY
+
+Damaged weapon effects:            Damage
+Disable percent:                   15
+Energy cost per use:               25
+
+Damage vs. shields:                160
+Damage vs. no shields:             128
+Damage that penetrates shields:    0
+Damage pct carryover:              80
+Number of hits/shot:               1
+Damage area (hexes):               1
+at target hex:                     100
+at any hex distance 1:             0
+at any hex distance 2:             0
+at any hex distance 3:             0
+
+Apply damage to hex even in miss:  No
+
+
+=====================================================================
+Weapon name:                       HOG Missile Launcher
+=====================================================================
+Required rank:                     11
+Armor factor:                      100
+Weight:                            1200
+Base Cost:                         8000
+Repair factor ( % of Base Cost ):  20
+Ammo Capacity:                     1
+Mount restrictions:        SHAD,REMO,SENS,----,----,DEMN,REAP,JUGG
+
+Max shots per turn:                1
+Max targetable range:              2
+Range increment:                   1
+Damage increment:                  None
+Indirect Fire:                     Yes
+Skill used:                        MISSILE
+
+Damaged weapon effects:            Damage
+Disable percent:                   20
+Energy cost per use:               0
+
+Damage vs. shields:                0
+Damage vs. no shields:             75
+Damage that penetrates shields:    7
+Damage pct carryover:              0
+Number of hits/shot:               10
+Damage area (hexes):               3
+at target hex:                     100
+at any hex distance 1:             80
+at any hex distance 2:             60
+at any hex distance 3:             0
+
+Apply damage to hex even in miss:  Yes
+
+
+=====================================================================
+Weapon name:                       Rapid Saturation Rocket System
+=====================================================================
+Required rank:                     13
+Armor factor:                      150
+Weight:                            650
+Base Cost:                         15000
+Repair factor ( % of Base Cost ):  20
+Ammo Capacity:                     8
+Mount restrictions:        ----,----,SENS,----,----,DEMN,REAP,JUGG
+
+Max shots per turn:                2
+Max targetable range:              30
+Range increment:                   6
+Damage increment:                  None
+Indirect Fire:                     Yes
+Skill used:                        MISSILE
+
+Damaged weapon effects:            Damage
+Disable percent:                   15
+Energy cost per use:               0
+
+Damage vs. shields:                0
+Damage vs. no shields:             9
+Damage that penetrates shields:    1
+Damage pct carryover:              0
+Number of hits/shot:               15
+Damage area (hexes):               3
+at target hex:                     100
+at any hex distance 1:             80
+at any hex distance 2:             60
+at any hex distance 3:             0
+
+Apply damage to hex even in miss:  Yes
+
+
+=====================================================================
+Weapon name:                       Fusion Gatling
+=====================================================================
+Required rank:                     12
+Armor factor:                      225
+Weight:                            215
+Base Cost:                         9500
+Repair factor ( % of Base Cost ):  70
+Ammo Capacity:                     n/a
+Mount restrictions:        ----,----,----,OGRE,----,DEMN,REAP,JUGG
+
+Max shots per turn:                4
+Max targetable range:              9
+Range increment:                   2
+Damage increment:                  3
+Indirect Fire:                     No
+Skill used:                        PLASMA
+
+Damaged weapon effects:            Damage
+Disable percent:                   15
+Energy cost per use:               15
+
+Damage vs. shields:                15
+Damage vs. no shields:             10
+Damage that penetrates shields:    0
+Damage pct carryover:              67
+Number of hits/shot:               6
+Damage area (hexes):               1
+at target hex:                     100
+at any hex distance 1:             0
+at any hex distance 2:             0
+at any hex distance 3:             0
+
+Apply damage to hex even in miss:  No
+
+
+=====================================================================
+Weapon name:                       ATN Autocannon
+=====================================================================
+Required rank:                     12
+Armor factor:                      5
+Weight:                            1350
+Base Cost:                         120000
+Repair factor ( % of Base Cost ):  10
+Ammo Capacity:                     n/a
+Mount restrictions:        ----,----,----,----,----,----,----,JUGG
+
+Max shots per turn:                6
+Max targetable range:              18
+Range increment:                   6
+Damage increment:                  9
+Indirect Fire:                     No
+Skill used:                        ADVTECH
+
+Damaged weapon effects:            Damage
+Disable percent:                   5
+Energy cost per use:               16
+
+Damage vs. shields:                0
+Damage vs. no shields:             20
+Damage that penetrates shields:    20
+Damage pct carryover:              0
+Number of hits/shot:               2
+Damage area (hexes):               1
+at target hex:                     100
+at any hex distance 1:             0
+at any hex distance 2:             0
+at any hex distance 3:             0
+
+Apply damage to hex even in miss:  No
+
+
+=====================================================================
+Weapon name:                       280mm ATX
+=====================================================================
+Required rank:                     13
+Armor factor:                      5
+Weight:                            1650
+Base Cost:                         198000
+Repair factor ( % of Base Cost ):  10
+Ammo Capacity:                     18
+Mount restrictions:        ----,----,----,----,----,----,----,JUGG
+
+Max shots per turn:                1
+Max targetable range:              25
+Range increment:                   10
+Damage increment:                  10
+Indirect Fire:                     No
+Skill used:                        CANNON
+
+Damaged weapon effects:            Damage
+Disable percent:                   5
+Energy cost per use:               0
+
+Damage vs. shields:                25
+Damage vs. no shields:             120
+Damage that penetrates shields:    25
+Damage pct carryover:              0
+Number of hits/shot:               4
+Damage area (hexes):               3
+at target hex:                     100
+at any hex distance 1:             50
+at any hex distance 2:             20
+at any hex distance 3:             0
+
+Apply damage to hex even in miss:  No
+
+
+
+=====================================================================
+LEGEND
+=====================================================================
+
+Required rank: The rank that the weapon first becomes available.
+
+Armor factor:  Armor factor.   This is a factor that says how much damage 
+               applied to the component is passed through.  An Armor factor
+               of 40 means that only 40% of the damage is applied to the
+               component, and that 60% is deflected by the components
+               toughness.  An armor factor of 200 means that the damage is
+               effectively doubled, meaning the component is not very 
+               sturdy.
+
+Weight:        The effective weight of the weapon.
+
+Base Cost:     The original cost of the weapon at the rank level at 
+               which the weapon first becomes available.  Note that the
+               longer a weapon has been available, the cheaper it is to
+               produce.
+
+Repair factor ( % of Base Cost ): 
+               How much does the weapon cost to repair vs. new.
+               A factor of 100 would mean it costs the same (100%)
+               to repair a component that was destroyed as buying a 
+               new one.  A factor of 50 would mean that it costs
+               only half as much (50%) to repair the component as buying
+               a new one.
+
+Ammo Capacity: The ammunition capacity of the weapon.
+
+Mount restrictions: Shows which HERC models can carry this weapon.
+
+Max shots per turn: Number of times the weapon may fire each turn               
+
+Max targetable range:  Maximum range of the weapon in hexes.
+
+Range increment: Determines the ability of the weapon to hit 
+   accurately at a distance.  Out to a distance in hexes equal to 
+   the range increment, the chance to hit is 100%.  Then, between 
+   that distance and twice that distance, the chance of a hit is 80%.
+   This continues, reducing by 20% for each subsequent range
+   increment. Weapons without range increments always have a 100%
+   base chance of a hit.         
+              
+Damage increment(DI): Determines the ability of the weapon to 
+   damage at a distance.  Out to a distance in hexes equal to the
+   DI, the damage inflicted is full.  Then, between that distance
+   and twice that distance, the amount of damage inflicted is half
+   of the original damage amount.  This continues, reducing by half
+   of the current damage amount for each subsequent damage increment.
+   
+Indirect Fire: Does the weapon the ability to fire indirectly?
+
+Skill used: The bioderm skill rating used to determine the
+   probability of hitting a target.
+
+Damaged weapon effects: The way a weapon responds to being damaged.
+
+Disable percent: The damage percentage at which the weapon becomes
+   disabled and inoperable.
+
+Energy cost per use: The number of energy points required to fire
+   the weapon once.
+
+Damage vs. shields: The amount of damage each hit inflicts against
+   the target's shield.
+   IMPORTANT NOTE: To get the full damage for the weapon, multiply
+                   by the 'Number of hits/shot'
+
+Damage vs. no shields: The amount of damage each hit inflicts
+   against the target's armor.           
+   IMPORTANT NOTE: To get the full damage for the weapon, multiply
+                   by the 'Number of hits/shot'
+
+Damage that penetrates shields: The amount of damage each hit inflicts
+   against a target's armor if that target is shielded.
+   IMPORTANT NOTE: To get the full damage for the weapon, multiply
+                   by the 'Number of hits/shot'
+
+Damage pct carryover:  The percentage of remaining shield damage
+   carried over from shields to armor if the shields buckle with a hit.
+
+Number of hits/shot: The number of hits each shot inflicts. Each 
+   firing of a weapon is a single "shot", but can have several "hits".
+   If a weapon is listed as having 10 hits per shot and each hit
+   does 25 points of damage, it will do a total of 250 points of damage.
+
+Damage area (hexes): The number of hexes each shot damages.
+
+at target hex:  The damage percentage inflicted on the target 
+   hex.(Always 100%)
+
+at any hex distance 1: The percentage of damage inflicted on targets
+   one hex away from the target hex.
+
+at any hex distance 2: The percentage of damage inflicted on targets
+   two hexes away from the target hex.
+
+at any hex distance 3: The percentage of damage inflicted on targets
+   three hexes away from the target hex.  
+
+Apply damage to hex even in miss:  (Yes/No)
+   This defines whether the weapon will has the possibility of doing any
+   damage to target that it missed.  A laser is pinpoint enough that when
+   it misses, it truly misses.  Most missiles have a large enough explosion
+   that if they miss by a little but still hit their general target hex, 
+   they will do their damage.
+
+
