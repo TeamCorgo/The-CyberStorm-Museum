@@ -243,6 +243,14 @@ The game credits **Sound Ideas® sound effects library**.
 **XLS → TODO Conversion:** `0 / 1` files converted\
 *Tools used:* 
 
+**BOX → PNG Conversion:** `35 / 35` files converted\
+*Tools used:* [box converter](./tools/box/box%20converter.html)
+*Explanation:* `.box` files define rectangular UI placement and dimensions, while `.png` files are used to visualize their contents.
+
+**PLY → PNG Conversion:** `5 / 5` files converted\
+*Tools used:* [ply converter](./tools/box/ply%20converter.html)
+*Explanation:* `.ply` files contain vector information to generated 2D polygons for mouse hover trigger events. `.png` files are used to visualize their contents.
+
 **XXX → XXX Conversion:** `1 / 1` files converted\
 *Tools used:* No conversion needed. The file is a compressed copy of the **Miles DirectSound driver**. The `.xxx` extension is used to prevent Microsoft Windows from treating the file as a `.dll` and interfering with the process.
 
