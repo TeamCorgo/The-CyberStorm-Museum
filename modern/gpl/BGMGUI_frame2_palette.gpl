@@ -1,0 +1,260 @@
+GIMP Palette
+Name: BGMGUI_frame2_palette
+Columns: 16
+#
+115   0 115	index_000 (reserved)
+255   0 255	index_001 (reserved)
+255   0 255	index_002 (reserved)
+255   0 255	index_003 (reserved)
+255   0 255	index_004 (reserved)
+255   0 255	index_005 (reserved)
+255   0 255	index_006 (reserved)
+255   0 255	index_007 (reserved)
+255   0 255	index_008 (reserved)
+255   0 255	index_009 (reserved)
+255   0 255	index_010
+255   0 255	index_011
+255   0 255	index_012
+255   0 255	index_013
+255   0 255	index_014
+255   0 255	index_015
+255   0 255	index_016
+255   0 255	index_017
+255   0 255	index_018
+255   0 255	index_019
+255   0 255	index_020
+255   0 255	index_021
+255   0 255	index_022
+255   0 255	index_023
+255   0 255	index_024
+255   0 255	index_025
+255   0 255	index_026
+255   0 255	index_027
+255   0 255	index_028
+255   0 255	index_029
+255   0 255	index_030
+255   0 255	index_031
+255   0 255	index_032
+255   0 255	index_033
+255   0 255	index_034
+255   0 255	index_035
+255   0 255	index_036
+255   0 255	index_037
+255   0 255	index_038
+255   0 255	index_039
+255   0 255	index_040
+255   0 255	index_041
+255   0 255	index_042
+255   0 255	index_043
+255   0 255	index_044
+255   0 255	index_045
+255   0 255	index_046
+255   0 255	index_047
+255   0 255	index_048
+255   0 255	index_049
+255   0 255	index_050
+255   0 255	index_051
+255   0 255	index_052
+255   0 255	index_053
+255   0 255	index_054
+255   0 255	index_055
+255   0 255	index_056
+255   0 255	index_057
+255   0 255	index_058
+255   0 255	index_059
+255   0 255	index_060
+255   0 255	index_061
+255   0 255	index_062
+255   0 255	index_063
+255   0 255	index_064
+255   0 255	index_065
+255   0 255	index_066
+255   0 255	index_067
+255   0 255	index_068
+255   0 255	index_069
+255   0 255	index_070
+255   0 255	index_071
+255   0 255	index_072
+255   0 255	index_073
+255   0 255	index_074
+255   0 255	index_075
+255   0 255	index_076
+255   0 255	index_077
+255   0 255	index_078
+255   0 255	index_079
+255   0 255	index_080
+255   0 255	index_081
+255   0 255	index_082
+255   0 255	index_083
+255   0 255	index_084
+255   0 255	index_085
+255   0 255	index_086
+255   0 255	index_087
+255   0 255	index_088
+255   0 255	index_089
+255   0 255	index_090
+255   0 255	index_091
+255   0 255	index_092
+255   0 255	index_093
+255   0 255	index_094
+255   0 255	index_095
+255   0 255	index_096
+255   0 255	index_097
+255   0 255	index_098
+255   0 255	index_099
+255   0 255	index_100
+255   0 255	index_101
+255   0 255	index_102
+255   0 255	index_103
+255   0 255	index_104
+255   0 255	index_105
+255   0 255	index_106
+255   0 255	index_107
+255   0 255	index_108
+255   0 255	index_109
+255   0 255	index_110
+255   0 255	index_111
+255   0 255	index_112
+255   0 255	index_113
+255   0 255	index_114
+255   0 255	index_115
+255   0 255	index_116
+255   0 255	index_117
+255   0 255	index_118
+255   0 255	index_119
+255   0 255	index_120
+255   0 255	index_121
+255   0 255	index_122
+255   0 255	index_123
+255   0 255	index_124
+255   0 255	index_125
+255   0 255	index_126
+255   0 255	index_127
+255   0 255	index_128
+255   0 255	index_129
+255   0 255	index_130
+255   0 255	index_131
+255   0 255	index_132
+255   0 255	index_133
+255   0 255	index_134
+255   0 255	index_135
+255   0 255	index_136
+255   0 255	index_137
+255   0 255	index_138
+255   0 255	index_139
+255   0 255	index_140
+255   0 255	index_141
+255   0 255	index_142
+255   0 255	index_143
+255   0 255	index_144
+255   0 255	index_145
+255   0 255	index_146
+255   0 255	index_147
+255   0 255	index_148
+255   0 255	index_149
+255   0 255	index_150
+255   0 255	index_151
+255   0 255	index_152
+255   0 255	index_153
+255   0 255	index_154
+255   0 255	index_155
+255   0 255	index_156
+255   0 255	index_157
+255   0 255	index_158
+255   0 255	index_159
+255   0 255	index_160
+255   0 255	index_161
+255   0 255	index_162
+255   0 255	index_163
+255   0 255	index_164
+255   0 255	index_165
+255   0 255	index_166
+255   0 255	index_167
+255   0 255	index_168
+255   0 255	index_169
+255   0 255	index_170
+255   0 255	index_171
+255   0 255	index_172
+255   0 255	index_173
+255   0 255	index_174
+255   0 255	index_175
+  0   0   0	index_176
+255 223 199	index_177
+255 179 135	index_178
+255 159  71	index_179
+235  71  51	index_180
+123 111  95	index_181
+255  51  23	index_182
+231  51  27	index_183
+255  39  19	index_184
+167  79  55	index_185
+195  55  35	index_186
+167  51  27	index_187
+107  67  47	index_188
+ 67  79  71	index_189
+155  39  27	index_190
+115  43  31	index_191
+ 67  51  39	index_192
+  0  19  51	index_193
+  0  27  79	index_194
+  0  35  95	index_195
+  0  39 115	index_196
+  0  59 167	index_197
+  0  67 195	index_198
+  0  79 231	index_199
+ 19 103 255	index_200
+ 51  43   7	index_201
+ 79  63  11	index_202
+ 95  79   7	index_203
+111  95  11	index_204
+155 131  11	index_205
+187 155  11	index_206
+247 207  15	index_207
+227   0   0	index_208
+251 247   0	index_209
+ 79  83  79	index_210
+103 111  99	index_211
+155 163 147	index_212
+179 187 175	index_213
+207 207 199	index_214
+123 239 231	index_215
+123 231 219	index_216
+ 95 191 179	index_217
+ 75 151 139	index_218
+ 51 115 107	index_219
+ 39  99  95	index_220
+ 35  83  75	index_221
+ 27  79  75	index_222
+ 19  63  59	index_223
+ 11  51  43	index_224
+ 11  43  43	index_225
+ 11  43  35	index_226
+  0  43  35	index_227
+  0  35  35	index_228
+  0  35  27	index_229
+ 19  19  19	index_230
+  0 223   0	index_231
+  0 207   0	index_232
+  0 183   0	index_233
+  0 179   0	index_234
+  0 171   0	index_235
+  0 143   0	index_236
+  0 119   0	index_237
+  0  95   0	index_238
+  0  79   0	index_239
+  0  75   0	index_240
+  0  63   0	index_241
+  0  55   0	index_242
+  0  47   0	index_243
+  0  43   0	index_244
+  0  31   0	index_245
+255   0 255	index_246 (reserved)
+255   0 255	index_247 (reserved)
+255   0 255	index_248 (reserved)
+255   0 255	index_249 (reserved)
+255   0 255	index_250 (reserved)
+255   0 255	index_251 (reserved)
+255   0 255	index_252 (reserved)
+255   0 255	index_253 (reserved)
+255   0 255	index_254 (reserved)
+255 255 255	index_255 (reserved)

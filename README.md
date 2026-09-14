@@ -228,6 +228,10 @@ The game credits **Sound Ideas® sound effects library**.
 **OGG → OGG Conversion:** `3 / 3` files converted\
 *Tools used:* No conversion needed.
 
+**PLX → GPL Conversion:** `39 / 39` files converted\
+*Tools used:* [plx converter](./tools/plx/plx%20converter.html)
+*Explanation:* `.plx` files contain color palette information used by other file formats. `.anx`, `.bmx`, and `.flx` files can also contain embedded `.plx` data. The modern equivalent is the `.gpl` **GIMP Palette** format, which is also the palette format used by **Aseprite**.
+
 ## Data Formats
 **RBX → RBX Conversion:** `4 / 4` files converted (Not included in this repo)\
 *Tools used:* [rbx converter](./tools/rbx/rbx%20converter.html)\
