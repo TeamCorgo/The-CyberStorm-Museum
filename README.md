@@ -215,6 +215,9 @@ The game credits **Sound Ideas® sound effects library**.
 *Tools used:* [fnx converter](./tools/fnx/fnx%20converter.html)\
 *Explanation:* `.FNX` files are fonts with a shading, gradient, or shadow effect (fat). Without the gradient applied, the text can be difficult to read. A readable (slim) version is also provided, as modern font formats do not support the gradient effect.
 
+**ART → PNG Conversion:** `1 / 1` files converted\
+*Tools used:* [art converter](./tools/art/art%20converter.html)
+
 ## Audio Formats
 **WAX → WAV Conversion:** `439 / 439` files converted\
 *Tools used:* [SoX](https://sourceforge.net/projects/sox/) cannot convert files directly and needs addtional context fed into the conversion process. [wax2wav.py](https://github.com/juanitogan/rbxit/blob/master/tools/wax2wav.py) is used to supply **SoX** with headers needed for the conversion.
@@ -222,7 +225,7 @@ The game credits **Sound Ideas® sound effects library**.
 **CD Audio → FLAC & MP3 Conversion:** `3 / 3` files converted\
 *Tools used:* **Windows Media Player Legacy**
 
-**OGG → OGG Conversion:** 3 / 3` files converted\
+**OGG → OGG Conversion:** `3 / 3` files converted\
 *Tools used:* No conversion needed.
 
 ## Data Formats
