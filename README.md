@@ -106,6 +106,10 @@ Similar to `anx/bnx` files, some `.flx` files contain embedded `.plx` palette da
 *Tools used:* [HelpScribble](https://www.helpscribble.com/)\
 *Explanation:* `.shg` files are more than just images; they can also contain mouse-clickable zones, similar to HTML image maps. When a `.shg` file represented a visual menu, a corresponding HTML file was manually created to contain the HTML image map.
 
+**BIN → CSV Conversion:** `41 / 41` files converted\
+*Tools used:* [bin converter](./tools/bin/bin%20converter.html)\
+*Explanation:* The game’s `.exe` references `.bin` files to handle language and string substitutions for localization. Because the text is separated from the executable’s function calls, it can be difficult to trace on-screen text back to the corresponding `.exe` caller function. The [bin tracker](./modern/bin%20tracker.csv) is used to assist with searching, mapping, and identifying these references.
+
 ### Replacment [Help/Manual Website](https://www.corgo.org/cs-help/) is online.
 
 [Installation Guide](./publications/Installation%20Guide.pdf), [Quick Reference Card](./publications/Quick%20Reference%20Card.pdf), [Prima Strategy Guide](./publications/Prima%20Strategy%20Guide.pdf), MVIEWER2.EXE & METALSTO.MVB replaced with [cs-help](https://github.com/TeamCorgo/CS-Help) (sub project), InterAction Magazine issues [27](./publications/InterAction%20Issue%2027%20(Summer%201996).pdf), [28](./publications/InterAction%20Issue%2028%20(Fall%201996).pdf), [29](./publications/InterAction%20Issue%2029%20(Holiday%201996).pdf), [30](./publications/InterAction%20Issue%2030%20(Spring%201997).pdf), Patch v1.1 [documents](./raw%20game%20assets/V1.1%20Patch%20Docs.zip).
