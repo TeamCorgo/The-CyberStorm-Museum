@@ -202,6 +202,13 @@ The game credits **Sound Ideas® sound effects library**.
 **Video Production:** James Carey, David Aughenbaugh
 
 ## Visual Formats
+**ANX → PNG Conversion:** `746 / 746` files converted\
+**BMX → PNG Conversion:** `152 / 152` files converted\
+*Tools used:* [anx bmx converter](./tools/anx%20bmx/anx%20bmx%20converter.html)
+*Explanation:* `.anx` and `.bmx` are the same format under different file extensions. They contain visual pixel data and may contain multiple frames. The majority of files rely on externally defined `.plx` color palettes, while some files embed their own palette information.
+
+Some images also contain “cutouts” specific regions whose palette information can be dynamically changed by the game’s code. This allows simple animation effects, such as the blinking lights on HERC, without requiring separate image frames.
+
 **AVI → AVI Conversion:** `3 / 3` files converted\
 *Tools used:* No conversion needed.
 
