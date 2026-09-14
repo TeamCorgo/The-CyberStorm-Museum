@@ -212,7 +212,7 @@ The game credits **Sound Ideas® sound effects library**.
 *Tools used:* No conversion needed.
 
 **FNX → TTF & PNG Conversion:** `6 / 6` files converted\
-*Tools used:* No conversion needed.\
+*Tools used:* [fnx converter](./tools/fnx/fnx%20converter.html)\
 *Explanation:* `.FNX` files are fonts with a shading, gradient, or shadow effect (fat). Without the gradient applied, the text can be difficult to read. A readable (slim) version is also provided, as modern font formats do not support the gradient effect.
 
 ## Audio Formats
