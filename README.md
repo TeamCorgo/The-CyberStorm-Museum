@@ -204,10 +204,18 @@ The game credits **Sound Ideas® sound effects library**.
 ## Visual Formats
 **ANX → PNG Conversion:** `746 / 746` files converted\
 **BMX → PNG Conversion:** `152 / 152` files converted\
-*Tools used:* [anx bmx converter](./tools/anx%20bmx/anx%20bmx%20converter.html)
+*Tools used:* [anx bmx converter](./tools/anx%20bmx/anx%20bmx%20converter.html)\
 *Explanation:* `.anx` and `.bmx` are the same format under different file extensions. They contain visual pixel data and may contain multiple frames. The majority of files rely on externally defined `.plx` color palettes, while some files embed their own palette information.
 
+
 Some images also contain “cutouts” specific regions whose palette information can be dynamically changed by the game’s code. This allows simple animation effects, such as the blinking lights on HERC, without requiring separate image frames.
+
+**FLX → PNG frames Conversion:** `256 / 256` files converted\
+*Tools used:* [flx converter](./tools/flx/flx%20converter.html)\
+*Explanation:* `.flx` files are used to display sequenced visual data. With no audio files contained within; audio information is synchronized by a frame counter in code.
+
+
+Similar to `anx/bnx` files, some `.flx` files contain embedded `.plx` palette data. Additionally, some files are stored in an “upside-down” configuration.
 
 **AVI → AVI Conversion:** `3 / 3` files converted\
 *Tools used:* No conversion needed.
@@ -227,7 +235,8 @@ Some images also contain “cutouts” specific regions whose palette informatio
 
 ## Audio Formats
 **WAX → WAV Conversion:** `439 / 439` files converted\
-*Tools used:* [SoX](https://sourceforge.net/projects/sox/) cannot convert files directly and needs addtional context fed into the conversion process. [wax2wav.py](https://github.com/juanitogan/rbxit/blob/master/tools/wax2wav.py) is used to supply **SoX** with headers needed for the conversion.
+*Tools used:* [SoX](https://sourceforge.net/projects/sox/) & [wax2wav.py](https://github.com/juanitogan/rbxit/blob/master/tools/wax2wav.py)\
+*Explanation:*  **wax2wav.py** is used to supply **SoX** required header information to perform the conversion.
 
 **CD Audio → FLAC & MP3 Conversion:** `3 / 3` files converted\
 *Tools used:* **Windows Media Player Legacy**
@@ -236,7 +245,7 @@ Some images also contain “cutouts” specific regions whose palette informatio
 *Tools used:* No conversion needed.
 
 **PLX → GPL Conversion:** `39 / 39` files converted\
-*Tools used:* [plx converter](./tools/plx/plx%20converter.html)
+*Tools used:* [plx converter](./tools/plx/plx%20converter.html)\
 *Explanation:* `.plx` files contain color palette information used by other file formats. `.anx`, `.bmx`, and `.flx` files can also contain embedded `.plx` data. The modern equivalent is the `.gpl` **GIMP Palette** format, which is also the palette format used by **Aseprite**.
 
 ## Data Formats
@@ -251,13 +260,14 @@ Some images also contain “cutouts” specific regions whose palette informatio
 *Tools used:* 
 
 **BOX → PNG Conversion:** `35 / 35` files converted\
-*Tools used:* [box converter](./tools/box/box%20converter.html)
+*Tools used:* [box converter](./tools/box/box%20converter.html)\
 *Explanation:* `.box` files define rectangular UI placement and dimensions, while `.png` files are used to visualize their contents.
 
 **PLY → PNG Conversion:** `5 / 5` files converted\
-*Tools used:* [ply converter](./tools/box/ply%20converter.html)
+*Tools used:* [ply converter](./tools/box/ply%20converter.html)\
 *Explanation:* `.ply` files contain vector information to generated 2D polygons for mouse hover trigger events. `.png` files are used to visualize their contents.
 
 **XXX → XXX Conversion:** `1 / 1` files converted\
-*Tools used:* No conversion needed. The file is a compressed copy of the **Miles DirectSound driver**. The `.xxx` extension is used to prevent Microsoft Windows from treating the file as a `.dll` and interfering with the process.
+*Tools used:* No conversion needed.\
+*Explanation:* The file is a compressed copy of the **Miles DirectSound driver**. The `.xxx` extension is used to prevent Microsoft Windows from treating the file as a `.dll` and interfering with the process.
 
