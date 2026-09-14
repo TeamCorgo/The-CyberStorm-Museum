@@ -108,7 +108,7 @@ Similar to `anx/bnx` files, some `.flx` files contain embedded `.plx` palette da
 
 **BIN → CSV Conversion:** `41 / 41` files converted\
 *Tools used:* [bin converter](./tools/bin/bin%20converter.html)\
-*Explanation:* The game’s `.exe` references `.bin` files to handle language and string substitutions for localization. Because the text is separated from the executable’s function calls, it can be difficult to trace on-screen text back to the corresponding `.exe` caller function. The [bin tracker](./modern/bin%20tracker.csv) is used to assist with searching, mapping, and identifying these references.
+*Explanation:* The game’s `.exe` references `.bin` files to handle language and string substitutions for localization. Because the text is separated from the executable’s function calls, it can be difficult to trace on-screen text back to the corresponding `.exe` caller function. The [bin tracker](./modern/bin%20tracker.csv) is used to assist with searching, mapping, and identifying these references. 
 
 ### Replacment [Help/Manual Website](https://www.corgo.org/cs-help/) is online.
 
