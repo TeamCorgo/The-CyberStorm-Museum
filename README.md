@@ -201,9 +201,19 @@ The game credits **Sound Ideas® sound effects library**.
 
 **Video Production:** James Carey, David Aughenbaugh
 
-## Video Formats
+## Visual Formats
 **AVI → AVI Conversion:** `3 / 3` files converted\
 *Tools used:* No conversion needed.
+
+**EXE → CUR & PNG Conversion:** `7 / 7` files converted\
+*Tools used:* [Resource Hacker](https://www.angusj.com/resourcehacker/)
+
+**ICO → ICO Conversion:** `3 / 3` files converted\
+*Tools used:* No conversion needed.
+
+**FNX → TTF & PNG Conversion:** `6 / 6` files converted\
+*Tools used:* No conversion needed.\
+*Explanation:* `.FNX` files are fonts with a shading, gradient, or shadow effect (fat). Without the gradient applied, the text can be difficult to read. A readable (slim) version is also provided, as modern font formats do not support the gradient effect.
 
 ## Audio Formats
 **WAX → WAV Conversion:** `439 / 439` files converted\
