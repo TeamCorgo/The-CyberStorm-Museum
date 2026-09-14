@@ -216,14 +216,15 @@ footer{font-family:var(--mono); font-size:11.5px; color:var(--text-faint); text-
 
 <script>
 (function(){
-  let downloadsPromise = null;
-  function getDownloads(){
-    if (!downloadsPromise){
-      downloadsPromise = (window.claude && window.claude.use)
-        ? window.claude.use('downloads').catch(() => null)
-        : Promise.resolve(null);
-    }
-    return downloadsPromise;
+  function saveBlob(filename, blob){
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = filename;
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
   }
 
   const dropEl = document.getElementById('drop');
@@ -445,16 +446,11 @@ footer{font-family:var(--mono); font-size:11.5px; color:var(--text-faint); text-
     progressBar.style.width = '100%';
     const filename = currentBaseName + '_extracted.zip';
 
-    const downloads = await getDownloads();
-    if (downloads){
-      try {
-        await downloads.save({ filename, data: blob });
-        setStatus('ok', `Done — ${currentEntries.length} files written to ${filename}`);
-      } catch (err){
-        setStatus('err', 'Save was cancelled or failed: ' + (err && err.message ? err.message : err));
-      }
-    } else {
-      setStatus('err', 'This viewer can’t offer file downloads — open this page in claude.ai to save the .zip.');
+    try {
+      saveBlob(filename, blob);
+      setStatus('ok', `Done — ${currentEntries.length} files written to ${filename}`);
+    } catch (err){
+      setStatus('err', 'Save failed: ' + (err && err.message ? err.message : err));
     }
     extractBtn.disabled = false;
   });
