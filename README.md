@@ -28,27 +28,83 @@ There is no reason *MissionForce: CyberStorm* should remain without a community 
 
 
 # Preservation status
-To properly preserve the game and ensure compatibility with future devices and software, the assets contained within the game should be extracted or otherwise separated in a structured way. Ideally, this process should be reversible, allowing improved assets such as higher-quality audio files to be reinserted into the game later. There also appears to be overlap between multiple Dynamix projects, suggesting that there may be useful cross-project insights or shared preservation techniques applicable to games from that era.
+## Visual Formats
+**ANX → PNG Conversion:** `746 / 746` files converted\
+**BMX → PNG Conversion:** `152 / 152` files converted\
+*Tools used:* [anx bmx converter](./tools/anx%20bmx/anx%20bmx%20converter.html)\
+*Explanation:* `.anx` and `.bmx` are the same format under different file extensions. They contain visual pixel data and may contain multiple frames. The majority of files rely on externally defined `.plx` color palettes, while some files embed their own palette information.
 
-## Audio
-Music Progress: 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩 100%\
-SFX Progress: 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩 100%
 
-Stored within a [sub project](https://github.com/TeamCorgo/CS-Audio).
+Some images also contain “cutouts” specific regions whose palette information can be dynamically changed by the game’s code. This allows simple animation effects, such as the blinking lights on HERC, without requiring separate image frames.
 
-## Graphics
-Progress: 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩 100%
+**FLX → PNG frames Conversion:** `256 / 256` files converted\
+*Tools used:* [flx converter](./tools/flx/flx%20converter.html)\
+*Explanation:* `.flx` files are used to display sequenced visual data. With no audio files contained within; audio information is synchronized by a frame counter in code.
 
-Stored within a [sub project](https://github.com/TeamCorgo/CS-Graphics).\
-Fonts and Cursors are preserved. UI elements are also preserved along with UI placement information.
 
-## Videos
-Progress: 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩 100%
+Similar to `anx/bnx` files, some `.flx` files contain embedded `.plx` palette data. Additionally, some files are stored in an “upside-down” configuration.
 
-Stored within the CS-Graphics Github project.
+**AVI → AVI Conversion:** `3 / 3` files converted\
+*Tools used:* No conversion needed.
 
-## Paper & Digital Documents
-Progress: 🟩🟩🟩🟩🟩🟩🟩🟩🟩⬜ 90% 
+**EXE → CUR & PNG Conversion:** `7 / 7` files converted\
+*Tools used:* [Resource Hacker](https://www.angusj.com/resourcehacker/)
+
+**ICO → ICO Conversion:** `3 / 3` files converted\
+*Tools used:* No conversion needed.
+
+**FNX → TTF & PNG Conversion:** `6 / 6` files converted\
+*Tools used:* [fnx converter](./tools/fnx/fnx%20converter.html)\
+*Explanation:* `.FNX` files are fonts with a shading, gradient, or shadow effect (fat). Without the gradient applied, the text can be difficult to read. A readable (slim) version is also provided, as modern font formats do not support the gradient effect.
+
+**ART → PNG Conversion:** `1 / 1` files converted\
+*Tools used:* [art converter](./tools/art/art%20converter.html)
+
+## Audio Formats
+**WAX → WAV Conversion:** `439 / 439` files converted\
+*Tools used:* [SoX](https://sourceforge.net/projects/sox/) & [wax2wav.py](https://github.com/juanitogan/rbxit/blob/master/tools/wax2wav.py)\
+*Explanation:*  **wax2wav.py** is used to supply **SoX** required header information to perform the conversion.
+
+**CD Audio → FLAC & MP3 Conversion:** `3 / 3` files converted\
+*Tools used:* **Windows Media Player Legacy**
+
+**OGG → OGG Conversion:** `3 / 3` files converted\
+*Tools used:* No conversion needed.
+
+**PLX → GPL Conversion:** `39 / 39` files converted\
+*Tools used:* [plx converter](./tools/plx/plx%20converter.html)\
+*Explanation:* `.plx` files contain color palette information used by other file formats. `.anx`, `.bmx`, and `.flx` files can also contain embedded `.plx` data. The modern equivalent is the `.gpl` **GIMP Palette** format, which is also the palette format used by **Aseprite**.
+
+## Data Formats
+**RBX → RBX Conversion:** `4 / 4` files converted (Not included in this repo)\
+*Tools used:* [rbx converter](./tools/rbx/rbx%20converter.html)\
+*Explanation:* `.rbx` files are archives that contain game assets. Since the files contained within them will already be preserved in the `raw files` folder, there is no need to duplicate the archive contents.
+
+**TXT → TODO Conversion:** `0 / 17` files converted\
+*Tools used:* 
+
+**XLS → TODO Conversion:** `0 / 1` files converted\
+*Tools used:* 
+
+**BOX → PNG Conversion:** `35 / 35` files converted\
+*Tools used:* [box converter](./tools/box/box%20converter.html)\
+*Explanation:* `.box` files define rectangular UI placement and dimensions, while `.png` files are used to visualize their contents.
+
+**PLY → PNG Conversion:** `5 / 5` files converted\
+*Tools used:* [ply converter](./tools/box/ply%20converter.html)\
+*Explanation:* `.ply` files contain vector information to generated 2D polygons for mouse hover trigger events. `.png` files are used to visualize their contents.
+
+**XXX → XXX Conversion:** `1 / 1` files converted\
+*Tools used:* No conversion needed.\
+*Explanation:* The file is a compressed copy of the **Miles DirectSound driver**. The `.xxx` extension is used to prevent Microsoft Windows from treating the file as a `.dll` and interfering with the process.
+
+**MVB → (temp)RTF → HTML Conversion:** `1 / 1` files converted\
+*Tools used:* [HelpDeco V2.1](https://www.oocities.org/mwinterhoff/helpdeco.htm) & [Soffice](https://github.com/beenotung/soffice) & [rtf converter.sh](./tools/rtf/rtf%20converter.sh)\
+*Explanation:* **HelpDeco** exports text into `.rtf` and images as `.shg`. `.rtf` documents were fed by **rtf converter** into **Soffice** to generate `.html` files. The `.html` files took manual corrective measures afterwords.
+
+**SHG → BMP Conversion:** `155 / 155` files converted\
+*Tools used:* [HelpScribble](https://www.helpscribble.com/)\
+*Explanation:* `.shg` files are more than just images; they can also contain mouse-clickable zones, similar to HTML image maps. When a `.shg` file represented a visual menu, a corresponding HTML file was manually created to contain the HTML image map.
 
 ### Replacment [Help/Manual Website](https://www.corgo.org/cs-help/) is online.
 
@@ -201,74 +257,4 @@ No credits are attributed, however the theme appears to be reasonably well devel
 The game credits **Sound Ideas® sound effects library**.
 
 **Video Production:** James Carey, David Aughenbaugh
-
-## Visual Formats
-**ANX → PNG Conversion:** `746 / 746` files converted\
-**BMX → PNG Conversion:** `152 / 152` files converted\
-*Tools used:* [anx bmx converter](./tools/anx%20bmx/anx%20bmx%20converter.html)\
-*Explanation:* `.anx` and `.bmx` are the same format under different file extensions. They contain visual pixel data and may contain multiple frames. The majority of files rely on externally defined `.plx` color palettes, while some files embed their own palette information.
-
-
-Some images also contain “cutouts” specific regions whose palette information can be dynamically changed by the game’s code. This allows simple animation effects, such as the blinking lights on HERC, without requiring separate image frames.
-
-**FLX → PNG frames Conversion:** `256 / 256` files converted\
-*Tools used:* [flx converter](./tools/flx/flx%20converter.html)\
-*Explanation:* `.flx` files are used to display sequenced visual data. With no audio files contained within; audio information is synchronized by a frame counter in code.
-
-
-Similar to `anx/bnx` files, some `.flx` files contain embedded `.plx` palette data. Additionally, some files are stored in an “upside-down” configuration.
-
-**AVI → AVI Conversion:** `3 / 3` files converted\
-*Tools used:* No conversion needed.
-
-**EXE → CUR & PNG Conversion:** `7 / 7` files converted\
-*Tools used:* [Resource Hacker](https://www.angusj.com/resourcehacker/)
-
-**ICO → ICO Conversion:** `3 / 3` files converted\
-*Tools used:* No conversion needed.
-
-**FNX → TTF & PNG Conversion:** `6 / 6` files converted\
-*Tools used:* [fnx converter](./tools/fnx/fnx%20converter.html)\
-*Explanation:* `.FNX` files are fonts with a shading, gradient, or shadow effect (fat). Without the gradient applied, the text can be difficult to read. A readable (slim) version is also provided, as modern font formats do not support the gradient effect.
-
-**ART → PNG Conversion:** `1 / 1` files converted\
-*Tools used:* [art converter](./tools/art/art%20converter.html)
-
-## Audio Formats
-**WAX → WAV Conversion:** `439 / 439` files converted\
-*Tools used:* [SoX](https://sourceforge.net/projects/sox/) & [wax2wav.py](https://github.com/juanitogan/rbxit/blob/master/tools/wax2wav.py)\
-*Explanation:*  **wax2wav.py** is used to supply **SoX** required header information to perform the conversion.
-
-**CD Audio → FLAC & MP3 Conversion:** `3 / 3` files converted\
-*Tools used:* **Windows Media Player Legacy**
-
-**OGG → OGG Conversion:** `3 / 3` files converted\
-*Tools used:* No conversion needed.
-
-**PLX → GPL Conversion:** `39 / 39` files converted\
-*Tools used:* [plx converter](./tools/plx/plx%20converter.html)\
-*Explanation:* `.plx` files contain color palette information used by other file formats. `.anx`, `.bmx`, and `.flx` files can also contain embedded `.plx` data. The modern equivalent is the `.gpl` **GIMP Palette** format, which is also the palette format used by **Aseprite**.
-
-## Data Formats
-**RBX → RBX Conversion:** `4 / 4` files converted (Not included in this repo)\
-*Tools used:* [rbx converter](./tools/rbx/rbx%20converter.html)\
-*Explanation:* `.rbx` files are archives that contain game assets. Since the files contained within them will already be preserved in the `raw files` folder, there is no need to duplicate the archive contents.
-
-**TXT → TODO Conversion:** `0 / 17` files converted\
-*Tools used:* 
-
-**XLS → TODO Conversion:** `0 / 1` files converted\
-*Tools used:* 
-
-**BOX → PNG Conversion:** `35 / 35` files converted\
-*Tools used:* [box converter](./tools/box/box%20converter.html)\
-*Explanation:* `.box` files define rectangular UI placement and dimensions, while `.png` files are used to visualize their contents.
-
-**PLY → PNG Conversion:** `5 / 5` files converted\
-*Tools used:* [ply converter](./tools/box/ply%20converter.html)\
-*Explanation:* `.ply` files contain vector information to generated 2D polygons for mouse hover trigger events. `.png` files are used to visualize their contents.
-
-**XXX → XXX Conversion:** `1 / 1` files converted\
-*Tools used:* No conversion needed.\
-*Explanation:* The file is a compressed copy of the **Miles DirectSound driver**. The `.xxx` extension is used to prevent Microsoft Windows from treating the file as a `.dll` and interfering with the process.
 
