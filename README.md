@@ -31,14 +31,14 @@ There is no reason *MissionForce: CyberStorm* should remain without a community 
 ## Visual Formats
 **ANX → PNG Conversion:** `746 / 746` files converted\
 **BMX → PNG Conversion:** `152 / 152` files converted\
-*Tools used:* [anx bmx converter](./tools/anx%20bmx/anx%20bmx%20converter.html)\
+*Tools used:* [anx bmx converter](https://www.corgo.org/cs-tools/anx_bmx_converter.html)\
 *Explanation:* `.anx` and `.bmx` are the same format under different file extensions. They contain visual pixel data and may contain multiple frames. The majority of files rely on externally defined `.plx` color palettes, while some files embed their own palette information.
 
 
 Some images also contain “cutouts” specific regions whose palette information can be dynamically changed by the game’s code. This allows simple animation effects, such as the blinking lights on HERC, without requiring separate image frames.
 
 **FLX → PNG frames Conversion:** `256 / 256` files converted\
-*Tools used:* [flx converter](./tools/flx/flx%20converter.html)\
+*Tools used:* [flx converter](https://www.corgo.org/cs-tools/flx_converter.html)\
 *Explanation:* `.flx` files are used to display sequenced visual data. With no audio files contained within; audio information is synchronized by a frame counter in code.
 
 
@@ -54,11 +54,11 @@ Similar to `anx/bnx` files, some `.flx` files contain embedded `.plx` palette da
 *Tools used:* No conversion needed.
 
 **FNX → TTF & PNG Conversion:** `6 / 6` files converted\
-*Tools used:* [fnx converter](./tools/fnx/fnx%20converter.html)\
+*Tools used:* [fnx converter](https://www.corgo.org/cs-tools/fnx_converter.html)\
 *Explanation:* `.FNX` files are fonts with a shading, gradient, or shadow effect (fat). Without the gradient applied, the text can be difficult to read. A readable (slim) version is also provided, as modern font formats do not support the gradient effect.
 
 **ART → PNG Conversion:** `1 / 1` files converted\
-*Tools used:* [art converter](./tools/art/art%20converter.html)
+*Tools used:* [art converter](https://www.corgo.org/cs-tools/art_converter.html)
 
 ## Audio Formats
 **WAX → WAV Conversion:** `439 / 439` files converted\
@@ -72,12 +72,12 @@ Similar to `anx/bnx` files, some `.flx` files contain embedded `.plx` palette da
 *Tools used:* No conversion needed.
 
 **PLX → GPL Conversion:** `39 / 39` files converted\
-*Tools used:* [plx converter](./tools/plx/plx%20converter.html)\
+*Tools used:* [plx converter](https://www.corgo.org/cs-tools/plx_converter.html)\
 *Explanation:* `.plx` files contain color palette information used by other file formats. `.anx`, `.bmx`, and `.flx` files can also contain embedded `.plx` data. The modern equivalent is the `.gpl` **GIMP Palette** format, which is also the palette format used by **Aseprite**.
 
 ## Data Formats
 **RBX → RBX Conversion:** `4 / 4` files converted (Not included in this repo)\
-*Tools used:* [rbx converter](./tools/rbx/rbx%20converter.html)\
+*Tools used:* [rbx converter](https://www.corgo.org/cs-tools/rbx_converter.html)\
 *Explanation:* `.rbx` files are archives that contain game assets. Since the files contained within them will already be preserved in the `raw files` folder, there is no need to duplicate the archive contents.
 
 **TXT → TODO Conversion:** `0 / 17` files converted\
@@ -87,11 +87,11 @@ Similar to `anx/bnx` files, some `.flx` files contain embedded `.plx` palette da
 *Tools used:* 
 
 **BOX → PNG Conversion:** `35 / 35` files converted\
-*Tools used:* [box converter](./tools/box/box%20converter.html)\
+*Tools used:* [box converter](https://www.corgo.org/cs-tools/box_converter.html)\
 *Explanation:* `.box` files define rectangular UI placement and dimensions, while `.png` files are used to visualize their contents.
 
 **PLY → PNG Conversion:** `5 / 5` files converted\
-*Tools used:* [ply converter](./tools/box/ply%20converter.html)\
+*Tools used:* [ply converter](https://www.corgo.org/cs-tools/ply_converter.html)\
 *Explanation:* `.ply` files contain vector information to generated 2D polygons for mouse hover trigger events. `.png` files are used to visualize their contents.
 
 **XXX → XXX Conversion:** `1 / 1` files converted\
@@ -107,7 +107,7 @@ Similar to `anx/bnx` files, some `.flx` files contain embedded `.plx` palette da
 *Explanation:* `.shg` files are more than just images; they can also contain mouse-clickable zones, similar to HTML image maps. When a `.shg` file represented a visual menu, a corresponding HTML file was manually created to contain the HTML image map.
 
 **BIN → CSV Conversion:** `41 / 41` files converted\
-*Tools used:* [bin converter](./tools/bin/bin%20converter.html)\
+*Tools used:* [bin converter](https://www.corgo.org/cs-tools/bin_converter.html)\
 *Explanation:* The game’s `.exe` references `.bin` files to handle language and string substitutions for localization. Because the text is separated from the executable’s function calls, it can be difficult to trace on-screen text back to the corresponding `.exe` caller function. The [bin tracker](./modern/bin%20tracker.csv) is used to assist with searching, mapping, and identifying these references. 
 
 **DAT → CSV Conversion:** `55 / 55` files converted\
