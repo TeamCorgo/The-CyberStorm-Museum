@@ -1,5 +1,3 @@
-
-
 # Delete previous runs
 rm -f -- *.html
 
@@ -27,7 +25,6 @@ for file in *.html; do
         mv "$file" "${base}.html"
     fi
 done
-
 
 # Remove header tag
 for file in *.html; do
