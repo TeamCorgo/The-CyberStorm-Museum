@@ -110,6 +110,10 @@ Similar to `anx/bnx` files, some `.flx` files contain embedded `.plx` palette da
 *Tools used:* [bin converter](./tools/bin/bin%20converter.html)\
 *Explanation:* The game’s `.exe` references `.bin` files to handle language and string substitutions for localization. Because the text is separated from the executable’s function calls, it can be difficult to trace on-screen text back to the corresponding `.exe` caller function. The [bin tracker](./modern/bin%20tracker.csv) is used to assist with searching, mapping, and identifying these references. 
 
+**DAT → CSV Conversion:** `55 / 55` files converted\
+*Tools used:* [dat converter](./tools/dat/flx%20file%20spec.md)\
+*Explanation:* Stores the game's world and mission data separately from its code: terrain recipes, world art and colors, per-mission lighting presets, and lookup tables the engine indexes into at runtime. `WORLDS.DAT` ties each scenario to a world tile, which in turn pulls in matching terrain and art files, while a handful of shared files (hex-cursor animation, faction unit recoloring, random-mission odds) are reused across every mission. No `.dat` file contains executable code, so the exporter converts each one to `.csv` to best represent its contents.
+
 **cstorm.exe → XLSX & GAR Conversion:** `1 / 1` files converted\
 *Tools used:* **Ghidra**\
 *Explanation:* **Ghidra** was used to reverse engineer the function calls and provide a description of its role. [cstorm](./modern/cstorm%20tracker.xlsx) is used to track the 2,174 functions.
