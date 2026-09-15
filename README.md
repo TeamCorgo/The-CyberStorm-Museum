@@ -110,11 +110,11 @@ Similar to `anx/bnx` files, some `.flx` files contain embedded `.plx` palette da
 *Tools used:* [bin converter](./tools/bin/bin%20converter.html)\
 *Explanation:* The game’s `.exe` references `.bin` files to handle language and string substitutions for localization. Because the text is separated from the executable’s function calls, it can be difficult to trace on-screen text back to the corresponding `.exe` caller function. The [bin tracker](./modern/bin%20tracker.csv) is used to assist with searching, mapping, and identifying these references. 
 
-**cstorm.exe → XLSX Conversion:** `1 / 1` files converted\
+**cstorm.exe → XLSX & GAR Conversion:** `1 / 1` files converted\
 *Tools used:* **Ghidra**\
 *Explanation:* **Ghidra** was used to reverse engineer the function calls and provide a description of its role. [cstorm](./modern/cstorm%20tracker.xlsx) is used to track the 2,174 functions.
 
-**cwarsdll.dll → XLSX Conversion:** `1 / 1` files converted\
+**cwarsdll.dll → XLSX & GAR Conversion:** `1 / 1` files converted\
 *Tools used:* **Ghidra**\
 *Explanation:* **Ghidra** was used to reverse engineer the function calls and provide a description of its role. [cwardsdll](./modern/cwarsdll%20tracker.xlsx) is used to track the 1,464 functions.
 
