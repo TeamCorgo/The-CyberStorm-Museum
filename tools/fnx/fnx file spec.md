@@ -1,12 +1,12 @@
-# `.FNX` File Format Specification
+# .FNX File Format Specification
 
-`.FNX` is a bitmap font format containing font metrics, character widths, glyph offsets, and glyph bitmap data.
+## Overview
+
+An `.FNX` file is a bitmap font: it stores the size and shape of every glyph the font needs — how wide each character is, where its pixel data sits, and the pixels themselves — plus a few overall metrics like glyph height. Glyphs are packed together in a compact per-character table, addressed by character code, so a text renderer can look up any character's shape in one step.
 
 All multi-byte values are **little-endian**.
 
-An `.FNX` file may optionally be wrapped in a `PKX:` compressed resource container.
-
----
+An `.FNX` file may optionally be wrapped in a compressed resource container.
 
 ## 1. File Structure
 
@@ -16,8 +16,6 @@ An `.FNX` file consists of either:
 - a `PKX:` container containing a compressed FNX payload.
 
 When a `PKX:` container is present, decompression produces the FNX payload described in Section 2.
-
----
 
 ## 2. Optional `PKX:` Container
 
@@ -45,9 +43,7 @@ If the three magic values are absent, the file is treated as an uncompressed FNX
 | `12` (`0x0C`) | Extended RLE |
 | `14` (`0x0E`) | LZSS |
 
----
-
-# 3. FNX Payload Header
+## 3. FNX Payload Header
 
 The FNX payload begins with a 40-byte (`0x28`) header.
 
@@ -72,9 +68,7 @@ FNX:
 
 The three table offsets are **file-relative byte offsets**.
 
----
-
-# 4. Character Range
+## 4. Character Range
 
 The font contains `charCount` consecutive character codes beginning at `firstCharCode`.
 
@@ -86,9 +80,7 @@ The stored character range is therefore:
 
 **`firstCharCode` through `firstCharCode + charCount - 1`**
 
----
-
-# 5. Glyph Offset Table
+## 5. Glyph Offset Table
 
 The glyph offset table is located at `offsetTableOff`.
 
@@ -108,9 +100,7 @@ The absolute position of a glyph's bitmap is therefore:
 
 There is no per-glyph size field. The bitmap size is determined by the glyph width, font mode, and glyph height.
 
----
-
-# 6. Character Width Table
+## 6. Character Width Table
 
 The character width table is located at `widthTableOff`.
 
@@ -130,9 +120,7 @@ A width of `0` indicates a zero-width glyph.
 
 Character `0x20` (space) may have a nonzero width but has no rendered bitmap.
 
----
-
-# 7. Bitmap Data
+## 7. Bitmap Data
 
 Glyph bitmap data begins at `bitmapDataOff`.
 
@@ -146,8 +134,6 @@ Bitmap size is determined as follows:
 |---|---|---:|---:|
 | `1` | 1bpp | `(width + 7) / 8` | `rowStride × glyphHeight` |
 | Other | 8bpp | `width` | `width × glyphHeight` |
-
----
 
 ## 7.1 1bpp Bitmap Format
 
@@ -176,8 +162,6 @@ A set bit represents a rendered pixel.
 
 A clear bit represents transparency.
 
----
-
 ## 7.2 8bpp Bitmap Format
 
 When `fontMode` is any value other than `1`, each pixel occupies one byte.
@@ -200,9 +184,7 @@ Consequently, different nonzero pixel values can represent different colors with
 
 The `.FNX` file does not contain RGB color definitions.
 
----
-
-# 8. Font Metrics
+## 8. Font Metrics
 
 ### `glyphHeight`
 
@@ -224,9 +206,7 @@ The number of glyphs stored in the font.
 
 Each character has an independent advance width stored in the 256-byte width table.
 
----
-
-# 9. Typical Data Layout
+## 9. Typical Data Layout
 
 A typical FNX payload is arranged as:
 
@@ -251,9 +231,7 @@ A typical 224-glyph font therefore has:
 - 256-byte character width table
 - Remaining bytes containing glyph bitmaps
 
----
-
-# 10. Rendering Semantics
+## 10. Rendering Semantics
 
 The FNX format provides the font data used by the renderer. Some rendering behavior is external to the file.
 
@@ -285,9 +263,7 @@ The corresponding color is obtained externally rather than stored in the FNX fil
 
 Effects such as bold, italic/skew, underline, and other text rendering modes are applied by the renderer and are not stored in the FNX format.
 
----
-
-# 11. LZSS Compression — Codec `14`
+## 11. LZSS Compression — Codec `14`
 
 Codec `14` uses a 4096-byte sliding window.
 
@@ -342,9 +318,7 @@ Back-references may overlap the source region.
 
 A final segment-continuation group may contain fewer than eight control bits as specified by `segmentFlag`.
 
----
-
-# 12. Extended RLE — Codec `12`
+## 12. Extended RLE — Codec `12`
 
 Codec `12` uses control bytes with both short and extended forms.
 
@@ -392,9 +366,7 @@ Extended run-fill count:
 
 An extended run-fill is followed by one fill byte.
 
----
-
-# 13. RLE — Codec `1`
+## 13. RLE — Codec `1`
 
 Codec `1` uses a single-byte control scheme.
 
@@ -412,9 +384,7 @@ For a run-fill:
 
 Run lengths range from 1 to 127 bytes.
 
----
-
-# 14. Format Overview
+## 14. Format Overview
 
 ```text
 FNX File
