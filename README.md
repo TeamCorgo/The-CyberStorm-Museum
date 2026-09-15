@@ -15,15 +15,13 @@ There is no reason *MissionForce: CyberStorm* should remain without a community 
 
 # Ways to play
 1. **Digital Release**  
-   [GOG.com](https://www.gog.com/en/game/missionforce_cyberstorm) sells the game for approximately **$5.99 USD**.  
-   This release includes the **v1.1 patch** and runs out of the box on modern systems, aside from missing links to the external Windows help and manual files.
+   [GOG.com](https://www.gog.com/en/game/missionforce_cyberstorm) sells the game for approximately **$5.99 USD**. This release includes the **v1.1 patch** and runs out of the box on modern systems, aside from missing links to the external Windows help and manual files.
 
 2. **Original CD Release**  
    [eBay](https://www.ebay.com) frequently has loose CD copies available for around **$10.00 USD**, while complete boxed copies typically sell for around **$60.00 USD**. Physical releases usually require manual intervention to install updates and run properly on modern operating systems.
 
 3. **Preservation Copy**  
-   [Archive.org](https://archive.org/details/missionforce-cyberstorm) hosts preserved `.iso` image of the game.  
-   This versions also require manual intervention to install patches and configure compatibility on modern systems.
+   [Archive.org](https://archive.org/details/missionforce-cyberstorm) hosts preserved `.iso` image of the game. This versions also require manual intervention to install patches and configure compatibility on modern systems.
 
 
 # Preservation status
