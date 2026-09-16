@@ -13,6 +13,11 @@ Other classic communities have already demonstrated what is possible when passio
 
 There is no reason *MissionForce: CyberStorm* should remain without a community presence. The foundation still exists; the game is obtainable, functional, and mechanically unique even by modern standards. What is missing is a centralized effort to preserve knowledge, document its systems, archive its history, and make entry into the game approachable for new players.
 
+<p align="center">
+  <img src="./overhead/3D Rotate.gif" alt="MissionForce: CyberStorm Box">
+</p>
+
+
 # Ways to play
 1. **Digital Release**  
    [GOG.com](https://www.gog.com/en/game/missionforce_cyberstorm) sells the game for approximately **$5.99 USD**. This release includes the **v1.1 patch** and runs out of the box on modern systems, aside from missing links to the external Windows help and manual files.
