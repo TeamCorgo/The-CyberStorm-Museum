@@ -190,6 +190,10 @@ The game credits **Sound Ideas® sound effects library**.
 
 
 Some images also contain “cutouts” specific regions whose palette information can be dynamically changed by the game’s code. This allows simple animation effects, such as the blinking lights on HERC, without requiring separate image frames.
+<p align="center">
+  <img src="./overhead/anx.gif" alt="ANX BMX Tool">
+</p>
+
 
 **FLX → PNG frames Conversion:** `256 / 256` files converted\
 *Tools used:* [flx converter](https://www.corgo.org/cs-tools/flx_converter.html)\
@@ -197,6 +201,9 @@ Some images also contain “cutouts” specific regions whose palette informatio
 
 
 Similar to `anx/bnx` files, some `.flx` files contain embedded `.plx` palette data. Additionally, some files are stored in an “upside-down” configuration.
+<p align="center">
+  <img src="./overhead/flx.gif" alt="FLX Tool">
+</p>
 
 **AVI → AVI Conversion:** `3 / 3` files converted\
 *Tools used:* No conversion needed.
@@ -210,9 +217,15 @@ Similar to `anx/bnx` files, some `.flx` files contain embedded `.plx` palette da
 **FNX → TTF & PNG Conversion:** `6 / 6` files converted\
 *Tools used:* [fnx converter](https://www.corgo.org/cs-tools/fnx_converter.html)\
 *Explanation:* `.FNX` files are fonts with a shading, gradient, or shadow effect (fat). Without the gradient applied, the text can be difficult to read. A readable (slim) version is also provided, as modern font formats do not support the gradient effect.
+<p align="center">
+  <img src="./overhead/fnx.gif" alt="FNX Tool">
+</p>
 
 **ART → PNG Conversion:** `1 / 1` files converted\
 *Tools used:* [art converter](https://www.corgo.org/cs-tools/art_converter.html)
+<p align="center">
+  <img src="./overhead/art.gif" alt="ART Tool">
+</p>
 
 ## Audio Formats
 **WAX → WAV Conversion:** `439 / 439` files converted\
@@ -228,11 +241,17 @@ Similar to `anx/bnx` files, some `.flx` files contain embedded `.plx` palette da
 **PLX → GPL Conversion:** `39 / 39` files converted\
 *Tools used:* [plx converter](https://www.corgo.org/cs-tools/plx_converter.html)\
 *Explanation:* `.plx` files contain color palette information used by other file formats. `.anx`, `.bmx`, and `.flx` files can also contain embedded `.plx` data. The modern equivalent is the `.gpl` **GIMP Palette** format, which is also the palette format used by **Aseprite**.
+<p align="center">
+  <img src="./overhead/plx.gif" alt="PLX Tool">
+</p>
 
 ## Data Formats
 **RBX → RBX Conversion:** `4 / 4` files converted (Not included in this repo)\
 *Tools used:* [rbx converter](https://www.corgo.org/cs-tools/rbx_converter.html)\
 *Explanation:* `.rbx` files are archives that contain game assets. Since the files contained within them will already be preserved in the `raw files` folder, there is no need to duplicate the archive contents.
+<p align="center">
+  <img src="./overhead/rbx.gif" alt="RBX Tool">
+</p>
 
 **TXT → TODO Conversion:** `0 / 17` files converted\
 *Tools used:* 
@@ -243,10 +262,16 @@ Similar to `anx/bnx` files, some `.flx` files contain embedded `.plx` palette da
 **BOX → PNG Conversion:** `35 / 35` files converted\
 *Tools used:* [box converter](https://www.corgo.org/cs-tools/box_converter.html)\
 *Explanation:* `.box` files define rectangular UI placement and dimensions, while `.png` files are used to visualize their contents.
+<p align="center">
+  <img src="./overhead/box.gif" alt="BOX Tool">
+</p>
 
 **PLY → PNG Conversion:** `5 / 5` files converted\
 *Tools used:* [ply converter](https://www.corgo.org/cs-tools/ply_converter.html)\
 *Explanation:* `.ply` files contain vector information to generated 2D polygons for mouse hover trigger events. `.png` files are used to visualize their contents.
+<p align="center">
+  <img src="./overhead/ply.gif" alt="PLY Tool">
+</p>
 
 **XXX → XXX Conversion:** `1 / 1` files converted\
 *Tools used:* No conversion needed.\
@@ -255,6 +280,9 @@ Similar to `anx/bnx` files, some `.flx` files contain embedded `.plx` palette da
 **MVB → (temp)RTF → HTML Conversion:** `1 / 1` files converted\
 *Tools used:* [HelpDeco V2.1](https://www.oocities.org/mwinterhoff/helpdeco.htm) & [Soffice](https://github.com/beenotung/soffice) & [rtf converter.sh](./tools/rtf/rtf%20converter.sh)\
 *Explanation:* **HelpDeco** exports text into `.rtf` and images as `.shg`. `.rtf` documents were fed by **rtf converter** into **Soffice** to generate `.html` files. The `.html` files took manual corrective measures afterwords.
+<p align="center">
+  <img src="./overhead/help.gif" alt="Online Help Viewer">
+</p>
 
 **SHG → BMP Conversion:** `155 / 155` files converted\
 *Tools used:* [HelpScribble](https://www.helpscribble.com/)\
