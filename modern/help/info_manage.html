@@ -1,58 +1,35 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="utf-8">
     <title>Manage Hercs</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-<img src="./images/info_manage.bmp">
-
-<p>
-There are
-(eventually) eight types of Hercs. Each one can be configured
-differently with different weapons, armor, drives, reactors,
-batteries, computers, shields, sensors, mining equipment, life
-support systems, and other devices. Click on the Herc you want to
-configure. From here, you can change or add weapons and devices.
-Click on any existing weapon, device, or Empty slot to see a list of
-other components that can be mounted there. Then click on any
-component name for its description. An important element of each
-description is how that component will affect the Herc’s Speed
-Rating (its ability to move quickly). 
-</p>
-
-<table width="590" cellpadding="7" cellspacing="0">
-	
-	
+<table class="breadcrumb" role="navigation" cellpadding="2" cellspacing="0" aria-label="Breadcrumb">
 	<tr valign="top">
-		<td width="407"><p>
-			<img src="./images/info_manage_1.bmp">
-		</td>
-		<td width="155"><p>
-			Each
-			component also has a price. A negative price means that component
-			has less value than what is already mounted to that particular
-			hard point. A negative price will return that amount to your
-			credit pool if purchased.</p>
-			
-			<p>This
-			is also where you repair Hercs that have sustained battle damage.
-			After you have selected a Herc, click on the Repair button and you
-			will see options to repair only the Herc highlighted or the entire
-			fleet. Choose what you can afford. Partial <u>repairs</u>
-			can also be made while on the <u>Battlefield</u>
-			if your Herc has a <u>repair
-			device</u>
-			mounted.</p>
-			
-			<p>You
-			can re-name any Herc by clicking on its name in this screen (after
-			you have first selected it).</p>
-			
+		<td><p><a href="./index.html">Home</a></p></td>
+		<td><p>&rsaquo;</p></td>
+		<td><p><a href="./menu_hercbay.html">Herc Base Menu</a></p></td>
+		<td><p>&rsaquo;</p></td>
+		<td><p><a href="./base_hercbay.html">Herc Bay</a></p></td>
+		<td><p>&rsaquo;</p></td>
+		<td><p><b>Manage Hercs</b></p></td>
+	</tr>
+</table>
+<img src="./images/info_manage.png" alt="Manage Hercs">
+
+<p>There are (eventually) eight types of Hercs. Each one can be configured differently with different weapons, armor, drives, reactors, batteries, computers, shields, sensors, mining equipment, life support systems, and other devices. Click on the Herc you want to configure. From here, you can change or add weapons and devices. Click on any existing weapon, device, or Empty slot to see a list of other components that can be mounted there. Then click on any component name for its description. An important element of each description is how that component will affect the Herc’s Speed Rating (its ability to move quickly).</p>
+
+<table class="figure">
+	<tr>
+		<td><img src="./images/info_manage_1.png" alt="Manage Hercs screen showing the Herc inventory and a green wireframe Herc with its reactor and speed ratings"></td>
+		<td>
+			<p>Each component also has a price. A negative price means that component has less value than what is already mounted to that particular hard point. A negative price will return that amount to your credit pool if purchased.</p>
+			<p>This is also where you repair Hercs that have sustained battle damage. After you have selected a Herc, click on the Repair button and you will see options to repair only the Herc highlighted or the entire fleet. Choose what you can afford. Partial <a href="./device_repair.html">repairs</a> can also be made while on the <a href="./menu_battlefield.html">Battlefield</a> if your Herc has a <a href="./device_repair.html">repair device</a> mounted.</p>
+			<p>You can rename any Herc by clicking on its name in this screen (after you have first selected it).</p>
 		</td>
 	</tr>
 </table>
-
-
-
 </body>
 </html>

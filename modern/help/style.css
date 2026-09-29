@@ -1,10 +1,9 @@
 body{
 	background: #000000;
 	color: #C0C0C0;
-	font-size: 10pt;
 	line-height: 125%;
-	font-family: Times New Roman;
-    font-size: large;
+	font-family: "Times New Roman", Times, serif;
+	font-size: large;
 	width: 640px;
 	margin: 0 auto;
 	text-align: left;
@@ -12,6 +11,104 @@ body{
 }
 
 a:link{color: #FFFF00;}
-a:active{color: #02A902;}
 a:visited{color: #FFFF00;}
+a:active{color: #02A902;}
 a{text-decoration: none;}
+
+/* Breadcrumb trail: wraps between steps, never inside a step */
+.breadcrumb{margin: 26px 0;}
+.breadcrumb tr{display: block;}
+.breadcrumb td p{margin: 0;}
+.breadcrumb td{
+	display: inline-block;
+	white-space: nowrap;
+}
+
+/* Content tables (shared by all pages) */
+.data{
+	width: 100%;
+	margin: 12px 0;
+	border-collapse: collapse;
+	font-size: medium;
+}
+.data th{
+	text-align: left;
+	vertical-align: bottom;
+	padding: 4px 5px;
+	border-bottom: 1px solid #C0C0C0;
+}
+.data td{
+	padding: 3px 5px;
+	vertical-align: top;
+}
+.data .num{text-align: center;}
+.data td.section{
+	padding-top: 14px;
+	font-weight: bold;
+}
+
+/* Term / description lists */
+.terms{
+	margin: 12px 0;
+	border-collapse: collapse;
+}
+.terms td{
+	padding: 4px 6px;
+	vertical-align: top;
+}
+.terms td:first-child{
+	white-space: nowrap;
+	padding-right: 16px;
+}
+
+/* Lists of links laid out in columns */
+.linklist{
+	margin: 12px 0;
+	border-collapse: collapse;
+}
+.linklist td{
+	padding: 3px 24px 3px 6px;
+	vertical-align: top;
+}
+.linklist td p{margin: 0;}
+
+/* Image beside text */
+.figure{
+	margin: 12px 0;
+	border-collapse: collapse;
+}
+.figure td{
+	padding: 0 12px 0 0;
+	vertical-align: top;
+}
+.figure td:last-child{padding-right: 0;}
+.figure td p:first-child{margin-top: 0;}
+
+/* Bioderm Biographies page */
+.bioderm-section{
+	margin: 24px 0 8px;
+	font-size: x-large;
+	letter-spacing: 1px;
+}
+.bioderm{
+	margin-top: 16px;
+	border-spacing: 0;
+}
+.bioderm td{
+	padding: 4px;
+	vertical-align: top;
+}
+.bioderm .portrait{padding-right: 12px;}
+.bioderm .name{
+	font-size: x-large;
+	font-weight: bold;
+	letter-spacing: 1px;
+	vertical-align: bottom;
+}
+.skills td:first-child, .skills td:nth-child(4){white-space: nowrap;}
+.skills th:nth-child(4), .skills td:nth-child(4){padding-left: 20px;}
+.bioderm-rule{
+	border: 0;
+	border-top: 1px solid #333333;
+	margin: 24px 0 0;
+}
