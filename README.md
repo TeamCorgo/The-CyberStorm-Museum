@@ -216,7 +216,7 @@ Similar to `anx/bnx` files, some `.flx` files contain embedded `.plx` palette da
 
 **FNX → TTF & PNG Conversion:** `6 / 6` files converted\
 *Tools used:* [fnx converter](https://www.corgo.org/cs-tools/fnx_converter.html)\
-*Explanation:* `.FNX` files are fonts with a shading, gradient, or shadow effect (fat). Without the gradient applied, the text can be difficult to read. A readable (slim) version is also provided, as modern font formats do not support the gradient effect.
+*Explanation:* `.FNX` files are fonts with a shading, gradient, or shadow effect (fat). Without the gradient applied, the text can be difficult to read so a readable (slim) version is also provided.
 <p align="center">
   <img src="./overhead/fnx.gif" alt="FNX Tool">
 </p>
