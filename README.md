@@ -31,12 +31,11 @@ There is no reason *MissionForce: CyberStorm* should remain without a community 
 # Publications
 ### Replacment [Help/Manual Website](https://www.corgo.org/cs-help/) is online.
 
-[Installation Guide](./publications/Installation%20Guide.pdf), [Quick Reference Card](./publications/Quick%20Reference%20Card.pdf), [Prima Strategy Guide](./publications/Prima%20Strategy%20Guide.pdf), MVIEWER2.EXE & METALSTO.MVB replaced with [cs-help](https://github.com/TeamCorgo/CS-Help) (sub project), InterAction Magazine issues [27](./publications/InterAction%20Issue%2027%20(Summer%201996).pdf), [28](./publications/InterAction%20Issue%2028%20(Fall%201996).pdf), [29](./publications/InterAction%20Issue%2029%20(Holiday%201996).pdf), [30](./publications/InterAction%20Issue%2030%20(Spring%201997).pdf), Patch v1.1 [documents](./raw%20game%20assets/V1.1%20Patch%20Docs.zip).
+[Installation Guide](./publications/Installation%20Guide.pdf), [Quick Reference Card](./publications/Quick%20Reference%20Card.pdf), MVIEWER2.EXE & METALSTO.MVB replaced with [cs-help](https://github.com/TeamCorgo/CS-Help) (sub project), InterAction Magazine issues [27](./publications/InterAction%20Issue%2027%20(Summer%201996).pdf), [28](./publications/InterAction%20Issue%2028%20(Fall%201996).pdf), [29](./publications/InterAction%20Issue%2029%20(Holiday%201996).pdf), [30](./publications/InterAction%20Issue%2030%20(Spring%201997).pdf), Patch v1.1 [documents](./raw%20game%20assets/V1.1%20Patch%20Docs.zip).
 
-Next step: HQ game box scans are needed, CD game case, Demo discs.
 
 ## Prima Strategy Guide
-John Sauer wrote an [official strategy guide](./publications/Prima%20Strategy%20Guide.pdf) for MissionForce: CyberStorm under the Prima Publishing label. Produced with direct support from Dynamix, the guide provides extensive gameplay information, mechanics explanations, and strategic insight that were largely absent from the retail release.
+John Sauer wrote an **official strategy guide** for MissionForce: CyberStorm under the Prima Publishing label. Produced with direct support from Dynamix, the guide provides extensive gameplay information, mechanics explanations, and strategic insight that were largely absent from the retail release.
 
 Given the depth and importance of its content, the guide arguably should have served as the in-box manual for players.
 
@@ -253,11 +252,9 @@ Similar to `anx/bnx` files, some `.flx` files contain embedded `.plx` palette da
   <img src="./overhead/rbx.gif" alt="RBX Tool">
 </p>
 
-**TXT → TODO Conversion:** `0 / 17` files converted\
-*Tools used:* 
-
-**XLS → TODO Conversion:** `0 / 1` files converted\
-*Tools used:* 
+**TXT → XLSX Conversion:** `17 / 17` files converted\
+**XLS → XLSX Conversion:** `1 / 1` files converted\
+*Tools used:*  Manual formatting was used to create `stats.xlsx` document.
 
 **BOX → PNG Conversion:** `35 / 35` files converted\
 *Tools used:* [box converter](https://www.corgo.org/cs-tools/box_converter.html)\
